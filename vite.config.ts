@@ -50,14 +50,14 @@ const VARIANT_META: Record<string, {
   features: string[];
 }> = {
   full: {
-    title: 'World Monitor - Real-Time Global Intelligence Dashboard',
-    description: 'Real-time global intelligence dashboard with live news, markets, military tracking, infrastructure monitoring, and geopolitical data. OSINT in one view.',
+    title: 'Neural Newscast - Global Monitor',
+    description: 'AI-powered global monitor with live news, markets, military tracking, infrastructure monitoring, and geopolitical data.',
     keywords: 'global intelligence, geopolitical dashboard, world news, market data, military bases, nuclear facilities, undersea cables, conflict zones, real-time monitoring, situation awareness, OSINT, flight tracking, AIS ships, earthquake monitor, protest tracker, power outages, oil prices, government spending, polymarket predictions',
-    url: 'https://worldmonitor.app/',
-    siteName: 'World Monitor',
-    shortName: 'WorldMonitor',
-    subject: 'Real-Time Global Intelligence and Situation Awareness',
-    classification: 'Intelligence Dashboard, OSINT Tool, News Aggregator',
+    url: 'https://monitor.neuralnewscast.com/',
+    siteName: 'Neural Newscast - Global Monitor',
+    shortName: 'NeuralNewscastGlobalMonitor',
+    subject: 'AI-Powered Global Intelligence and Situation Awareness',
+    classification: 'Global Intelligence Dashboard, OSINT Tool, News Aggregator',
     categories: ['news', 'productivity'],
     features: [
       'Real-time news aggregation',
@@ -693,8 +693,8 @@ export default defineConfig({
         scope: '/',
         display: 'standalone',
         orientation: 'any',
-        theme_color: '#0a0f0a',
-        background_color: '#0a0f0a',
+        theme_color: '#00122a',
+        background_color: '#1a2332',
         categories: activeMeta.categories,
         icons: [
           { src: '/favico/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },

@@ -1,31 +1,31 @@
-{
+﻿{
   "app": {
     "title": "World Monitor",
-    "description": "Informations détaillées et données pour des pays spécifiques."
+    "description": "Informations dÃ©taillÃ©es et donnÃ©es pour des pays spÃ©cifiques."
   },
   "countryBrief": {
     "identifying": "Identification du pays...",
-    "locating": "Localisation de la région...",
-    "limitedCoverage": "Couverture limitée",
-    "instabilityIndex": "Indice d'instabilité",
-    "notTracked": "Non suivi — {{country}} n'est pas dans la liste CII tier-1",
+    "locating": "Localisation de la rÃ©gion...",
+    "limitedCoverage": "Couverture limitÃ©e",
+    "instabilityIndex": "Indice d'instabilitÃ©",
+    "notTracked": "Non suivi â€” {{country}} n'est pas dans la liste CII tier-1",
     "intelBrief": "Brief Renseignement",
-    "generatingBrief": "Génération du brief...",
-    "topNews": "Actualités principales",
+    "generatingBrief": "GÃ©nÃ©ration du brief...",
+    "topNews": "ActualitÃ©s principales",
     "activeSignals": "Signaux actifs",
     "timeline": "Chronologie 7 jours",
-    "predictionMarkets": "Marchés de prédiction",
-    "loadingMarkets": "Chargement des marchés...",
+    "predictionMarkets": "MarchÃ©s de prÃ©diction",
+    "loadingMarkets": "Chargement des marchÃ©s...",
     "infrastructure": "Exposition infrastructure",
-    "briefUnavailable": "Brief IA indisponible — configurez GROQ_API_KEY dans les paramètres.",
+    "briefUnavailable": "Brief IA indisponible â€” configurez GROQ_API_KEY dans les paramÃ¨tres.",
     "cached": "En cache",
     "fresh": "Frais",
-    "noMarkets": "Aucun marché trouvé",
+    "noMarkets": "Aucun marchÃ© trouvÃ©",
     "loadingIndex": "Chargement index...",
     "components": {
       "unrest": "Troubles",
       "conflict": "Conflit",
-      "security": "Sécurité",
+      "security": "SÃ©curitÃ©",
       "information": "Information"
     },
     "signals": {
@@ -33,8 +33,8 @@
       "militaryAir": "avions mil.",
       "militarySea": "navires mil.",
       "outages": "pannes",
-      "earthquakes": "séismes",
-      "displaced": "déplacés",
+      "earthquakes": "sÃ©ismes",
+      "displaced": "dÃ©placÃ©s",
       "climate": "Stress climatique",
       "conflictEvents": "conflits",
       "gpsJammingZones": "GPS Jamming Zones"
@@ -45,18 +45,18 @@
       "d": "il y a {{count}} j"
     },
     "infra": {
-      "pipeline": "Oléoducs",
-      "cable": "Câbles sous-marins",
-      "datacenter": "Centres de données",
+      "pipeline": "OlÃ©oducs",
+      "cable": "CÃ¢bles sous-marins",
+      "datacenter": "Centres de donnÃ©es",
       "base": "Bases militaires",
-      "nuclear": "Installations nucléaires",
+      "nuclear": "Installations nuclÃ©aires",
       "port": "Ports"
     },
     "levels": {
       "critical": "Critique",
-      "high": "Élevé",
+      "high": "Ã‰levÃ©",
       "elevated": "Accru",
-      "moderate": "Modéré",
+      "moderate": "ModÃ©rÃ©",
       "normal": "Normal",
       "low": "Faible"
     },
@@ -66,12 +66,12 @@
       "stable": "Stable"
     },
     "fallback": {
-      "instabilityIndex": "**Indice d'instabilité : {{score}}/100** ({{level}}, {{trend}})",
-      "protestsDetected": "{{count}} manifestations actives détectées",
-      "aircraftTracked": "{{count}} aéronefs militaires suivis",
+      "instabilityIndex": "**Indice d'instabilitÃ© : {{score}}/100** ({{level}}, {{trend}})",
+      "protestsDetected": "{{count}} manifestations actives dÃ©tectÃ©es",
+      "aircraftTracked": "{{count}} aÃ©ronefs militaires suivis",
       "vesselsTracked": "{{count}} navires militaires suivis",
       "internetOutages": "{{count}} pannes Internet",
-      "recentEarthquakes": "{{count}} séismes récents",
+      "recentEarthquakes": "{{count}} sÃ©ismes rÃ©cents",
       "stockIndex": "Indice boursier : {{value}}",
       "recentHeadlines": "**Derniers titres :**"
     }
@@ -81,92 +81,92 @@
     "tech": "TECH",
     "live": "EN DIRECT",
     "search": "Recherche",
-    "settings": "PARAMÈTRES",
+    "settings": "PARAMÃˆTRES",
     "sources": "SOURCES",
     "copyLink": "Copier le lien",
-    "fullscreen": "Plein écran",
-    "pinMap": "Épingler la carte en haut",
+    "fullscreen": "Plein Ã©cran",
+    "pinMap": "Ã‰pingler la carte en haut",
     "viewOnGitHub": "Voir sur GitHub",
     "filterSources": "Filtrer les sources...",
-    "sourcesEnabled": "{{enabled}}/{{total}} activé",
+    "sourcesEnabled": "{{enabled}}/{{total}} activÃ©",
     "finance": "FINANCE",
     "toggleTheme": "Basculer en mode sombre/clair",
-    "panelDisplayCaption": "Choisissez les panneaux à afficher sur le tableau de bord",
-    "tabGeneral": "Général",
+    "panelDisplayCaption": "Choisissez les panneaux Ã  afficher sur le tableau de bord",
+    "tabGeneral": "GÃ©nÃ©ral",
     "tabPanels": "Panneaux",
     "tabSources": "Sources",
     "languageLabel": "Langue",
     "sourceRegionAll": "Tout",
     "sourceRegionWorldwide": "Mondial",
-    "sourceRegionUS": "États-Unis",
+    "sourceRegionUS": "Ã‰tats-Unis",
     "sourceRegionMiddleEast": "Moyen-Orient",
     "sourceRegionAfrica": "Afrique",
-    "sourceRegionLatAm": "Amérique latine",
+    "sourceRegionLatAm": "AmÃ©rique latine",
     "sourceRegionAsiaPacific": "Asie-Pacifique",
     "sourceRegionEurope": "Europe",
-    "sourceRegionTopical": "Thématique",
+    "sourceRegionTopical": "ThÃ©matique",
     "sourceRegionIntel": "Renseignement",
-    "sourceRegionTechNews": "Actualités Tech",
+    "sourceRegionTechNews": "ActualitÃ©s Tech",
     "sourceRegionAiMl": "IA et ML",
     "sourceRegionStartupsVc": "Startups et VC",
-    "sourceRegionRegionalTech": "Écosystèmes Régionaux",
-    "sourceRegionDeveloper": "Développeurs",
-    "sourceRegionCybersecurity": "Cybersécurité",
+    "sourceRegionRegionalTech": "Ã‰cosystÃ¨mes RÃ©gionaux",
+    "sourceRegionDeveloper": "DÃ©veloppeurs",
+    "sourceRegionCybersecurity": "CybersÃ©curitÃ©",
     "sourceRegionTechPolicy": "Politique et Recherche",
-    "sourceRegionTechMedia": "Médias et Podcasts",
-    "sourceRegionMarkets": "Marchés et Analyse",
+    "sourceRegionTechMedia": "MÃ©dias et Podcasts",
+    "sourceRegionMarkets": "MarchÃ©s et Analyse",
     "sourceRegionFixedIncomeFx": "Taux et Devises",
-    "sourceRegionCommodities": "Matières Premières",
+    "sourceRegionCommodities": "MatiÃ¨res PremiÃ¨res",
     "sourceRegionCryptoDigital": "Crypto et Digital",
-    "sourceRegionCentralBanks": "Banques Centrales et Économie",
-    "sourceRegionDeals": "Opérations et Entreprises",
-    "sourceRegionFinRegulation": "Régulation Financière",
+    "sourceRegionCentralBanks": "Banques Centrales et Ã‰conomie",
+    "sourceRegionDeals": "OpÃ©rations et Entreprises",
+    "sourceRegionFinRegulation": "RÃ©gulation FinanciÃ¨re",
     "sourceRegionGulfMena": "Golfe et MENA",
     "filterPanels": "Filtrer les panneaux...",
     "panelCatCore": "Principal",
     "panelCatIntelligence": "Renseignement",
-    "panelCatRegionalNews": "Actualités Régionales",
-    "panelCatMarketsFinance": "Marchés & Finance",
-    "panelCatTopical": "Thématiques",
-    "panelCatDataTracking": "Données & Suivi",
+    "panelCatRegionalNews": "ActualitÃ©s RÃ©gionales",
+    "panelCatMarketsFinance": "MarchÃ©s & Finance",
+    "panelCatTopical": "ThÃ©matiques",
+    "panelCatDataTracking": "DonnÃ©es & Suivi",
     "panelCatTechAi": "Tech & IA",
     "panelCatStartupsVc": "Startups & VC",
-    "panelCatSecurityPolicy": "Sécurité & Politique",
-    "panelCatMarkets": "Marchés",
+    "panelCatSecurityPolicy": "SÃ©curitÃ© & Politique",
+    "panelCatMarkets": "MarchÃ©s",
     "panelCatFixedIncomeFx": "Obligataire & Devises",
-    "panelCatCommodities": "Matières Premières",
+    "panelCatCommodities": "MatiÃ¨res PremiÃ¨res",
     "panelCatCryptoDigital": "Crypto & Digital",
-    "panelCatCentralBanks": "Banques Centrales & Économie",
+    "panelCatCentralBanks": "Banques Centrales & Ã‰conomie",
     "panelCatDeals": "Transactions & Institutionnel",
     "panelCatGulfMena": "Golfe & MENA",
     "panelCatTradePolicy": "Politique Commerciale"
   },
   "panels": {
-    "liveNews": "Actualités en direct",
-    "markets": "Marchés",
+    "liveNews": "ActualitÃ©s en direct",
+    "markets": "MarchÃ©s",
     "map": "Situation mondiale",
     "techMap": "Tech mondiale",
-    "status": "État du système",
+    "status": "Ã‰tat du systÃ¨me",
     "insights": "Insights IA",
-    "strategicPosture": "Posture stratégique IA",
-    "cii": "Instabilité pays",
-    "strategicRisk": "Vue d'ensemble des risques stratégiques",
+    "strategicPosture": "Posture stratÃ©gique IA",
+    "cii": "InstabilitÃ© pays",
+    "strategicRisk": "Vue d'ensemble des risques stratÃ©giques",
     "intel": "Flux de renseignements",
     "gdeltIntel": "Renseignements en direct",
     "cascade": "Cascade d'infrastructure",
-    "politics": "Actualités mondiales",
-    "us": "États-Unis",
+    "politics": "ActualitÃ©s mondiales",
+    "us": "Ã‰tats-Unis",
     "europe": "Europe",
     "middleeast": "Moyen-Orient",
     "africa": "Afrique",
-    "latam": "Amérique latine",
+    "latam": "AmÃ©rique latine",
     "asia": "Asie-Pacifique",
-    "energy": "Énergie & Ressources",
+    "energy": "Ã‰nergie & Ressources",
     "gov": "Gouvernement",
-    "thinktanks": "Groupes de Réflexion",
-    "polymarket": "Prédictions",
-    "commodities": "Matières premières",
-    "economic": "Indicateurs économiques",
+    "thinktanks": "Groupes de RÃ©flexion",
+    "polymarket": "PrÃ©dictions",
+    "commodities": "MatiÃ¨res premiÃ¨res",
+    "economic": "Indicateurs Ã©conomiques",
     "tradePolicy": "Politique Commerciale",
     "finance": "Finance",
     "tech": "Technologie",
@@ -176,78 +176,78 @@
     "layoffs": "Suivi des licenciements",
     "monitors": "Mes moniteurs",
     "satelliteFires": "Incendies",
-    "macroSignals": "Radar de marché",
+    "macroSignals": "Radar de marchÃ©",
     "etfFlows": "Suivi ETF BTC",
     "stablecoins": "Stablecoins",
     "ucdpEvents": "Conflits UCDP",
-    "displacement": "Déplacements HCR",
+    "displacement": "DÃ©placements HCR",
     "climate": "Anomalies climatiques",
     "populationExposure": "Exposition de la population",
     "startups": "Startups & Capital-risque",
     "vcblogs": "Insights VC & Essais",
-    "regionalStartups": "Actualités startups mondiales",
+    "regionalStartups": "ActualitÃ©s startups mondiales",
     "unicorns": "Suivi des licornes",
-    "accelerators": "Accélérateurs & Demo Days",
-    "security": "Cybersécurité",
-    "policy": "Politique & Régulation IA",
-    "regulation": "Tableau de bord régulation IA",
-    "hardware": "Semiconducteurs & Matériel",
+    "accelerators": "AccÃ©lÃ©rateurs & Demo Days",
+    "security": "CybersÃ©curitÃ©",
+    "policy": "Politique & RÃ©gulation IA",
+    "regulation": "Tableau de bord rÃ©gulation IA",
+    "hardware": "Semiconducteurs & MatÃ©riel",
     "cloud": "Cloud et infrastructure",
-    "dev": "Communauté développeurs",
+    "dev": "CommunautÃ© dÃ©veloppeurs",
     "github": "Tendances GitHub",
     "ipo": "IPO & SPAC",
     "funding": "Financement & VC",
     "producthunt": "Product Hunt",
-    "events": "Événements Tech",
-    "serviceStatus": "État des services",
-    "techReadiness": "Indice de maturité technologique",
-    "techHubs": "Pôles Technologiques",
+    "events": "Ã‰vÃ©nements Tech",
+    "serviceStatus": "Ã‰tat des services",
+    "techReadiness": "Indice de maturitÃ© technologique",
+    "techHubs": "PÃ´les Technologiques",
     "gccInvestments": "Investissements du CCG",
-    "geoHubs": "Centres géopolitiques",
+    "geoHubs": "Centres gÃ©opolitiques",
     "liveWebcams": "Webcams en Direct",
-    "securityAdvisories": "Avis de Sécurité",
+    "securityAdvisories": "Avis de SÃ©curitÃ©",
     "orefSirens": "Israel Sirens",
     "telegramIntel": "Renseignement Telegram"
   },
   "modals": {
     "search": {
       "placeholder": "Rechercher ou saisir une commande...",
-      "hint": "Recherche • Pays • Couches • Panneaux • Navigation • Paramètres",
-      "recent": "Recherches récentes",
-      "empty": "Rechercher des données ou exécuter des commandes",
-      "noResults": "Aucun résultat trouvé",
+      "hint": "Recherche â€¢ Pays â€¢ Couches â€¢ Panneaux â€¢ Navigation â€¢ ParamÃ¨tres",
+      "recent": "Recherches rÃ©centes",
+      "empty": "Rechercher des donnÃ©es ou exÃ©cuter des commandes",
+      "noResults": "Aucun rÃ©sultat trouvÃ©",
       "navigate": "naviguer",
-      "select": "sélectionner",
+      "select": "sÃ©lectionner",
       "close": "fermer",
       "types": {
         "country": "Pays",
-        "news": "Actualités",
+        "news": "ActualitÃ©s",
         "hotspot": "Point chaud",
-        "market": "Marché",
-        "prediction": "Prédiction",
+        "market": "MarchÃ©",
+        "prediction": "PrÃ©diction",
         "conflict": "Conflit",
         "base": "Base militaire",
-        "pipeline": "Oléoduc",
-        "cable": "Câble sous-marin",
-        "datacenter": "Centre de données",
-        "earthquake": "Séisme",
+        "pipeline": "OlÃ©oduc",
+        "cable": "CÃ¢ble sous-marin",
+        "datacenter": "Centre de donnÃ©es",
+        "earthquake": "SÃ©isme",
         "outage": "Panne",
-        "nuclear": "Site nucléaire",
+        "nuclear": "Site nuclÃ©aire",
         "irradiator": "Irradiateur",
         "techcompany": "Entreprise Tech",
         "ailab": "Labo IA",
         "startup": "Startup",
-        "techevent": "Événement Tech",
-        "techhq": "Siège Tech",
-        "accelerator": "Accélérateur"
+        "techevent": "Ã‰vÃ©nement Tech",
+        "techhq": "SiÃ¨ge Tech",
+        "accelerator": "AccÃ©lÃ©rateur"
       },
       "placeholderTech": "Rechercher ou saisir une commande...",
-      "hintTech": "Recherche • Entreprises • Labos IA • Couches • Navigation • Paramètres",
+      "hintTech": "Recherche â€¢ Entreprises â€¢ Labos IA â€¢ Couches â€¢ Navigation â€¢ ParamÃ¨tres",
       "placeholderFinance": "Rechercher ou saisir une commande...",
-      "hintFinance": "Recherche • Bourses • Marchés • Couches • Navigation • Paramètres"
+      "hintFinance": "Recherche â€¢ Bourses â€¢ MarchÃ©s â€¢ Couches â€¢ Navigation â€¢ ParamÃ¨tres"
     },
     "signal": {
-      "title": "DÉCOUVERTE RENSEIGNEMENT",
+      "title": "DÃ‰COUVERTE RENSEIGNEMENT",
       "soundAlerts": "Alertes sonores",
       "dismiss": "Fermer",
       "confidence": "Confiance",
@@ -255,198 +255,187 @@
       "action": "Action :",
       "note": "Note :",
       "suppress": "Supprimer ce terme",
-      "suppressed": "Supprimé",
-      "predictionLeading": "Prédiction en avance",
+      "suppressed": "SupprimÃ©",
+      "predictionLeading": "PrÃ©diction en avance",
       "newsLeading": "Actus en avance",
       "silentDivergence": "Divergence silencieuse",
-      "velocitySpike": "Pic de vélocité",
-      "keywordSpike": "Pic de mot-clé",
+      "velocitySpike": "Pic de vÃ©locitÃ©",
+      "keywordSpike": "Pic de mot-clÃ©",
       "convergence": "Convergence",
       "triangulation": "Triangulation",
       "flowDrop": "Chute de flux",
       "flowPriceDivergence": "Divergence Flux/Prix",
-      "geoConvergence": "Convergence géographique",
-      "marketMove": "Mouvement de marché expliqué",
+      "geoConvergence": "Convergence gÃ©ographique",
+      "marketMove": "Mouvement de marchÃ© expliquÃ©",
       "sectorCascade": "Cascade sectorielle",
-      "militarySurge": "Montée militaire",
+      "militarySurge": "MontÃ©e militaire",
       "country": "Pays :",
-      "scoreChange": "Évolution du score :",
-      "instabilityLevel": "Niveau d'instabilité :",
+      "scoreChange": "Ã‰volution du score :",
+      "instabilityLevel": "Niveau d'instabilitÃ© :",
       "primaryDriver": "Facteur principal :",
       "location": "Localisation :",
-      "eventTypes": "Types d'événements :",
-      "eventCount": "Nombre d'événements :",
-      "eventCountValue": "{{count}} événements en 24h",
+      "eventTypes": "Types d'Ã©vÃ©nements :",
+      "eventCount": "Nombre d'Ã©vÃ©nements :",
+      "eventCountValue": "{{count}} Ã©vÃ©nements en 24h",
       "source": "Source :",
-      "countriesAffected": "Pays affectés :",
+      "countriesAffected": "Pays affectÃ©s :",
       "impactLevel": "Niveau d'impact :",
-      "focalPoints": "POINTS FOCAUX CORRÉLÉS",
-      "newsCorrelation": "CORRÉLATION D'ACTUALITÉS",
+      "focalPoints": "POINTS FOCAUX CORRÃ‰LÃ‰S",
+      "newsCorrelation": "CORRÃ‰LATION D'ACTUALITÃ‰S",
       "viewOnMap": "Voir sur la carte"
     },
     "story": {
-      "generating": "Génération de l'histoire...",
+      "generating": "GÃ©nÃ©ration de l'histoire...",
       "save": "Sauvegarder",
       "whatsapp": "WhatsApp",
       "twitter": "X",
       "linkedin": "LinkedIn",
       "copyLink": "Lien",
-      "saved": "Sauvegardé !",
-      "copied": "Copié !",
+      "saved": "SauvegardÃ© !",
+      "copied": "CopiÃ© !",
       "opening": "Ouverture...",
-      "error": "Échec de la génération.",
+      "error": "Ã‰chec de la gÃ©nÃ©ration.",
       "shareTitle": "Partager l'histoire",
       "close": "Fermer"
     },
     "mobileWarning": {
       "title": "Vue Mobile",
-      "description": "Vous consultez une version mobile simplifiée centrée sur la région MENA avec les couches essentielles activées.",
-      "tip": "Astuce : Utilisez les boutons de vue (GLOBAL/US/MENA) pour changer de région. Appuyez sur les marqueurs pour voir les détails.",
+      "description": "Vous consultez une version mobile simplifiÃ©e centrÃ©e sur la rÃ©gion MENA avec les couches essentielles activÃ©es.",
+      "tip": "Astuce : Utilisez les boutons de vue (GLOBAL/US/MENA) pour changer de rÃ©gion. Appuyez sur les marqueurs pour voir les dÃ©tails.",
       "dontShowAgain": "Ne plus afficher",
       "gotIt": "Compris"
-    },
-    "downloadBanner": {
-      "title": "Application Bureau Disponible",
-      "description": "Performance native, stockage local sécurisé des clés, cartes hors ligne.",
-      "macSilicon": "macOS (Apple Silicon)",
-      "macIntel": "macOS (Intel)",
-      "windows": "Windows (.exe)",
-      "linux": "Linux (.AppImage)",
-      "dismiss": "Ignorer",
-      "showAllPlatforms": "Afficher toutes les plateformes",
-      "showLess": "Afficher moins"
     },
     "runtimeConfig": {
       "title": "Configuration Bureau",
       "alertTitle": {
-        "configured": "Paramètres de bureau configurés",
-        "needsKeys": "Configurez les clés API pour débloquer les fonctionnalités",
-        "some": "Certaines fonctionnalités nécessitent des clés API"
+        "configured": "ParamÃ¨tres de bureau configurÃ©s",
+        "needsKeys": "Configurez les clÃ©s API pour dÃ©bloquer les fonctionnalitÃ©s",
+        "some": "Certaines fonctionnalitÃ©s nÃ©cessitent des clÃ©s API"
       },
-      "openSettings": "Ouvrir les Paramètres",
+      "openSettings": "Ouvrir les ParamÃ¨tres",
       "summary": {
         "desktop": "Mode Bureau",
-        "web": "Mode Web (lecture seule, identifiants gérés par le serveur)",
-        "secrets": "secrets locaux configurés",
-        "available": "fonctionnalités disponibles"
+        "web": "Mode Web (lecture seule, identifiants gÃ©rÃ©s par le serveur)",
+        "secrets": "secrets locaux configurÃ©s",
+        "available": "fonctionnalitÃ©s disponibles"
       },
       "status": {
-        "ready": "Prêt",
+        "ready": "PrÃªt",
         "staged": "En attente",
-        "needsKeys": "Clés Requises",
+        "needsKeys": "ClÃ©s Requises",
         "invalid": "Invalide",
         "missing": "Manquant",
         "valid": "Valide",
         "looksInvalid": "Semble invalide"
       },
       "placeholder": {
-        "setSecret": "Définir secret",
+        "setSecret": "DÃ©finir secret",
         "staged": "En attente (sauvegarder avec OK)"
       },
       "help": {
-        "URLHAUS_AUTH_KEY": "Utilisé pour les API URLhaus et ThreatFox.",
+        "URLHAUS_AUTH_KEY": "UtilisÃ© pour les API URLhaus et ThreatFox.",
         "OTX_API_KEY": "Source d'enrichissement optionnelle pour la couche cybermenaces.",
-        "ABUSEIPDB_API_KEY": "Source d'enrichissement optionnelle pour la réputation IP malveillante.",
-        "FINNHUB_API_KEY": "Cours des actions et données de marché en temps réel.",
-        "NASA_FIRMS_API_KEY": "Système d'information sur les incendies pour la gestion des ressources.",
-        "OLLAMA_API_URL": "e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio) — OpenAI-compatible endpoint.",
-        "OLLAMA_MODEL": "e.g. llama3.1:8b — model tag to use for summarization."
+        "ABUSEIPDB_API_KEY": "Source d'enrichissement optionnelle pour la rÃ©putation IP malveillante.",
+        "FINNHUB_API_KEY": "Cours des actions et donnÃ©es de marchÃ© en temps rÃ©el.",
+        "NASA_FIRMS_API_KEY": "SystÃ¨me d'information sur les incendies pour la gestion des ressources.",
+        "OLLAMA_API_URL": "e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio) â€” OpenAI-compatible endpoint.",
+        "OLLAMA_MODEL": "e.g. llama3.1:8b â€” model tag to use for summarization."
       }
     },
     "settingsWindow": {
-      "validating": "Validation des clés API...",
-      "saved": "Paramètres enregistrés",
-      "failed": "Échec de l'enregistrement : {{error}}",
-      "verifyFailed": "Clés vérifiées enregistrées. Échec : {{errors}}",
-      "verboseOn": "Journalisation détaillée sidecar CLI ACTIVÉE (enregistré)",
-      "verboseOff": "Journalisation détaillée sidecar CLI DÉSACTIVÉE (enregistré)",
-      "invokeFail": "Échec de l'exécution de {{command}}. Vérifiez le journal du bureau.",
+      "validating": "Validation des clÃ©s API...",
+      "saved": "ParamÃ¨tres enregistrÃ©s",
+      "failed": "Ã‰chec de l'enregistrement : {{error}}",
+      "verifyFailed": "ClÃ©s vÃ©rifiÃ©es enregistrÃ©es. Ã‰chec : {{errors}}",
+      "verboseOn": "Journalisation dÃ©taillÃ©e sidecar CLI ACTIVÃ‰E (enregistrÃ©)",
+      "verboseOff": "Journalisation dÃ©taillÃ©e sidecar CLI DÃ‰SACTIVÃ‰E (enregistrÃ©)",
+      "invokeFail": "Ã‰chec de l'exÃ©cution de {{command}}. VÃ©rifiez le journal du bureau.",
       "openLogs": "Dossier des journaux ouvert",
       "openApiLog": "Journal API ouvert",
       "sidecarError": "Impossible de joindre le sidecar pour basculer le mode verbeux",
-      "noTraffic": "Aucun trafic enregistré pour le moment.",
+      "noTraffic": "Aucun trafic enregistrÃ© pour le moment.",
       "sidecarUnreachable": "Sidecar inaccessible.",
-      "logCleared": "Journal effacé.",
+      "logCleared": "Journal effacÃ©.",
       "table": {
         "time": "Heure",
-        "method": "Méthode",
+        "method": "MÃ©thode",
         "path": "Chemin",
         "status": "Statut",
-        "duration": "Durée"
+        "duration": "DurÃ©e"
       }
     },
     "countryIntel": {
       "identifying": "Identification du pays...",
-      "locating": "Localisation de la région...",
-      "instabilityIndex": "Indice d'instabilité",
+      "locating": "Localisation de la rÃ©gion...",
+      "instabilityIndex": "Indice d'instabilitÃ©",
       "protests": "manifestations",
       "militaryAircraft": "avions mil.",
       "militaryVessels": "navires mil.",
       "outages": "pannes",
-      "earthquakes": "séismes",
+      "earthquakes": "sÃ©ismes",
       "loadingIndex": "Chargement indice...",
-      "loadingMarkets": "Chargement marchés prédiction...",
-      "generatingBrief": "Génération briefing renseignement...",
+      "loadingMarkets": "Chargement marchÃ©s prÃ©diction...",
+      "generatingBrief": "GÃ©nÃ©ration briefing renseignement...",
       "cached": "En cache",
       "fresh": "Frais",
-      "noMarkets": "Aucun marché de prédiction trouvé",
-      "predictionMarkets": "Marchés de Prédiction",
-      "unavailable": "Briefing IA indisponible — configurez GROQ_API_KEY dans les Paramètres."
+      "noMarkets": "Aucun marchÃ© de prÃ©diction trouvÃ©",
+      "predictionMarkets": "MarchÃ©s de PrÃ©diction",
+      "unavailable": "Briefing IA indisponible â€” configurez GROQ_API_KEY dans les ParamÃ¨tres."
     },
     "countryBrief": {
       "components": {
         "unrest": "Troubles",
         "conflict": "Conflit",
-        "security": "Sécurité",
+        "security": "SÃ©curitÃ©",
         "information": "Information"
       },
       "signals": {
         "protests": "manifestations",
-        "militaryAir": "mil. aéronef",
+        "militaryAir": "mil. aÃ©ronef",
         "militarySea": "mil. navires",
         "outages": "pannes",
         "earthquakes": "tremblements de terre",
-        "displaced": "déplacé",
+        "displaced": "dÃ©placÃ©",
         "climate": "Stress climatique",
-        "conflictEvents": "événements de conflit",
+        "conflictEvents": "Ã©vÃ©nements de conflit",
         "gpsJammingZones": "GPS Jamming Zones"
       },
       "loadingIndex": "Chargement de l'index...",
       "identifying": "Identifier le pays...",
-      "locating": "Localisation de la région...",
-      "limitedCoverage": "Couverture limitée",
-      "instabilityIndex": "Indice d'instabilité",
-      "notTracked": "Non suivi — {{country}} ne figure pas dans la liste CII de niveau 1",
-      "intelBrief": "Mémoire de renseignement",
-      "generatingBrief": "Génération d'un briefing de renseignement...",
+      "locating": "Localisation de la rÃ©gion...",
+      "limitedCoverage": "Couverture limitÃ©e",
+      "instabilityIndex": "Indice d'instabilitÃ©",
+      "notTracked": "Non suivi â€” {{country}} ne figure pas dans la liste CII de niveau 1",
+      "intelBrief": "MÃ©moire de renseignement",
+      "generatingBrief": "GÃ©nÃ©ration d'un briefing de renseignement...",
       "topNews": "Meilleures nouvelles",
       "activeSignals": "Signaux actifs",
       "timeline": "Chronologie de 7 jours",
-      "predictionMarkets": "Marchés de prédiction",
-      "loadingMarkets": "Chargement des marchés de prédiction...",
+      "predictionMarkets": "MarchÃ©s de prÃ©diction",
+      "loadingMarkets": "Chargement des marchÃ©s de prÃ©diction...",
       "infrastructure": "Exposition aux infrastructures",
-      "briefUnavailable": "Brief AI indisponible – configurez GROQ_API_KEY dans Paramètres.",
+      "briefUnavailable": "Brief AI indisponible â€“ configurez GROQ_API_KEY dans ParamÃ¨tres.",
       "cached": "En cache",
-      "fresh": "Récent",
-      "noMarkets": "Aucun marché de prédiction trouvé",
+      "fresh": "RÃ©cent",
+      "noMarkets": "Aucun marchÃ© de prÃ©diction trouvÃ©",
       "timeAgo": {
         "m": "il y a {{count}} min",
         "h": "il y a {{count}} h",
         "d": "il y a {{count}} j"
       },
       "infra": {
-        "pipeline": "Oléoducs",
-        "cable": "Câbles sous-marins",
-        "datacenter": "Centres de données",
+        "pipeline": "OlÃ©oducs",
+        "cable": "CÃ¢bles sous-marins",
+        "datacenter": "Centres de donnÃ©es",
         "base": "Bases militaires",
-        "nuclear": "Installations nucléaires",
+        "nuclear": "Installations nuclÃ©aires",
         "port": "Ports"
       },
       "levels": {
         "critical": "Critique",
-        "high": "Élevé",
+        "high": "Ã‰levÃ©",
         "elevated": "Accru",
-        "moderate": "Modéré",
+        "moderate": "ModÃ©rÃ©",
         "normal": "Normal",
         "low": "Faible"
       },
@@ -456,12 +445,12 @@
         "stable": "Stable"
       },
       "fallback": {
-        "instabilityIndex": "**Indice d'instabilité : {{score}}/100** ({{level}}, {{trend}})",
-        "protestsDetected": "{{count}} manifestations actives détectées",
-        "aircraftTracked": "{{count}} aéronefs militaires suivis",
+        "instabilityIndex": "**Indice d'instabilitÃ© : {{score}}/100** ({{level}}, {{trend}})",
+        "protestsDetected": "{{count}} manifestations actives dÃ©tectÃ©es",
+        "aircraftTracked": "{{count}} aÃ©ronefs militaires suivis",
         "vesselsTracked": "{{count}} navires militaires suivis",
         "internetOutages": "{{count}} pannes Internet",
-        "recentEarthquakes": "{{count}} séismes récents",
+        "recentEarthquakes": "{{count}} sÃ©ismes rÃ©cents",
         "stockIndex": "Indice boursier : {{value}}",
         "recentHeadlines": "**Derniers titres :**"
       }
@@ -469,9 +458,9 @@
   },
   "components": {
     "monitor": {
-      "placeholder": "Mots-clés (séparés par virgule)",
+      "placeholder": "Mots-clÃ©s (sÃ©parÃ©s par virgule)",
       "add": "+ Ajouter Moniteur",
-      "addKeywords": "Ajouter des mots-clés pour surveiller",
+      "addKeywords": "Ajouter des mots-clÃ©s pour surveiller",
       "noMatches": "Aucune correspondance dans {{count}} articles",
       "showingMatches": "Affichage de {{count}} sur {{total}} correspondances",
       "match": "corresp.",
@@ -483,27 +472,27 @@
         "all": "TOUS",
         "mideast": "MOYEN-ORIENT",
         "europe": "EUROPE",
-        "americas": "AMÉRIQUES",
+        "americas": "AMÃ‰RIQUES",
         "asia": "ASIE"
       }
     },
     "regulation": {
       "timeline": "Chronologie",
-      "deadlines": "Échéances",
-      "regulations": "Régulations",
+      "deadlines": "Ã‰chÃ©ances",
+      "regulations": "RÃ©gulations",
       "countries": "Pays",
-      "recentActions": "Actions Réglementaires Récentes (12 derniers mois)",
-      "upcomingDeadlines": "Prochaines Échéances de Conformité",
-      "activeRegulations": "Régulations Actives",
-      "proposedRegulations": "Régulations Proposées",
-      "globalLandscape": "Paysage Réglementaire Mondial",
-      "emptyActions": "Aucune action réglementaire récente",
-      "emptyDeadlines": "Aucune échéance à venir dans les 12 prochains mois",
-      "keyProvisions": "Dispositions Clés",
+      "recentActions": "Actions RÃ©glementaires RÃ©centes (12 derniers mois)",
+      "upcomingDeadlines": "Prochaines Ã‰chÃ©ances de ConformitÃ©",
+      "activeRegulations": "RÃ©gulations Actives",
+      "proposedRegulations": "RÃ©gulations ProposÃ©es",
+      "globalLandscape": "Paysage RÃ©glementaire Mondial",
+      "emptyActions": "Aucune action rÃ©glementaire rÃ©cente",
+      "emptyDeadlines": "Aucune Ã©chÃ©ance Ã  venir dans les 12 prochains mois",
+      "keyProvisions": "Dispositions ClÃ©s",
       "learnMore": "En savoir plus",
       "active": "Actif",
-      "proposed": "Proposée",
-      "updated": "Mis à jour",
+      "proposed": "ProposÃ©e",
+      "updated": "Mis Ã  jour",
       "dashboard": "AI Regulation Dashboard",
       "actionsCount": "{{count}} actions",
       "deadlinesCount": "{{count}} deadlines",
@@ -521,16 +510,16 @@
     },
     "economic": {
       "indicators": "Indicateurs",
-      "oil": "Pétrole",
+      "oil": "PÃ©trole",
       "gov": "Gouv",
-      "noData": "Aucune donnée économique",
-      "noOilData": "Données pétrolières non disponibles",
-      "noOilMetrics": "Aucune métrique pétrolière. Ajoutez EIA_API_KEY pour activer.",
-      "noSpending": "Aucun marché public récent",
-      "awards": "marchés",
-      "noIndicatorData": "Aucune donnée d'indicateur pour l'instant - FRED est peut-être en cours de chargement",
-      "noOilDataRetry": "Données pétrolières temporairement indisponibles - je vais réessayer",
-      "vsPreviousWeek": "par rapport à la semaine précédente",
+      "noData": "Aucune donnÃ©e Ã©conomique",
+      "noOilData": "DonnÃ©es pÃ©troliÃ¨res non disponibles",
+      "noOilMetrics": "Aucune mÃ©trique pÃ©troliÃ¨re. Ajoutez EIA_API_KEY pour activer.",
+      "noSpending": "Aucun marchÃ© public rÃ©cent",
+      "awards": "marchÃ©s",
+      "noIndicatorData": "Aucune donnÃ©e d'indicateur pour l'instant - FRED est peut-Ãªtre en cours de chargement",
+      "noOilDataRetry": "DonnÃ©es pÃ©troliÃ¨res temporairement indisponibles - je vais rÃ©essayer",
+      "vsPreviousWeek": "par rapport Ã  la semaine prÃ©cÃ©dente",
       "in": "dans",
       "centralBanks": "Central Banks",
       "noBisData": "BIS data temporarily unavailable - will retry",
@@ -547,61 +536,61 @@
       "restrictions": "Restrictions",
       "tariffs": "Droits de douane",
       "flows": "Flux commerciaux",
-      "barriers": "Barrières",
+      "barriers": "BarriÃ¨res",
       "noRestrictions": "Aucune restriction commerciale active",
-      "noTariffData": "Aucune donnée tarifaire disponible",
-      "noFlowData": "Aucune donnée de flux commercial disponible",
-      "noBarriers": "Aucune barrière commerciale signalée",
-      "apiKeyMissing": "Clé API OMC requise — ajoutez-la dans les Paramètres",
-      "upstreamUnavailable": "Données OMC temporairement indisponibles — affichage des données en cache",
-      "appliedRate": "Taux appliqué",
-      "boundRate": "Taux consolidé",
+      "noTariffData": "Aucune donnÃ©e tarifaire disponible",
+      "noFlowData": "Aucune donnÃ©e de flux commercial disponible",
+      "noBarriers": "Aucune barriÃ¨re commerciale signalÃ©e",
+      "apiKeyMissing": "ClÃ© API OMC requise â€” ajoutez-la dans les ParamÃ¨tres",
+      "upstreamUnavailable": "DonnÃ©es OMC temporairement indisponibles â€” affichage des donnÃ©es en cache",
+      "appliedRate": "Taux appliquÃ©",
+      "boundRate": "Taux consolidÃ©",
       "exports": "Exportations",
       "imports": "Importations",
       "yoyChange": "Variation annuelle",
-      "highTariff": "Élevé",
-      "moderateTariff": "Modéré",
+      "highTariff": "Ã‰levÃ©",
+      "moderateTariff": "ModÃ©rÃ©",
       "lowTariff": "Faible"
     },
     "gdelt": {
-      "empty": "Aucun article récent pour ce sujet"
+      "empty": "Aucun article rÃ©cent pour ce sujet"
     },
     "geoHubs": {
-      "tooltip": "<strong>Points Chauds Géopolitiques</strong><br>Affiche les régions avec le plus d'activité.<br><br><em>Types:</em><br>• 🏛️ Capitales<br>• ⚔️ Zones de Conflit<br>• ⚓ Stratégique<br>• 🏢 Organisations<br><br><em>Niveaux:</em><br>• <span style=\"color: #ff4444\">Élevé</span> — Breaking news ou score 70+<br>• <span style=\"color: #ff8844\">Élevé</span> — Score 40-69<br>• <span style=\"color: #888\">Faible</span> — Score < 40",
+      "tooltip": "<strong>Points Chauds GÃ©opolitiques</strong><br>Affiche les rÃ©gions avec le plus d'activitÃ©.<br><br><em>Types:</em><br>â€¢ ðŸ›ï¸ Capitales<br>â€¢ âš”ï¸ Zones de Conflit<br>â€¢ âš“ StratÃ©gique<br>â€¢ ðŸ¢ Organisations<br><br><em>Niveaux:</em><br>â€¢ <span style=\"color: #ff4444\">Ã‰levÃ©</span> â€” Breaking news ou score 70+<br>â€¢ <span style=\"color: #ff8844\">Ã‰levÃ©</span> â€” Score 40-69<br>â€¢ <span style=\"color: #888\">Faible</span> â€” Score < 40",
       "noActive": "Aucun point chaud actif",
       "story": "article",
       "stories": "articles",
-      "infoTooltip": "<strong>Hubs d'activité géopolitique</strong><br>Affiche les régions avec le plus d'activité d'actualité.<br><br><em>Types de hubs :</em><br>• 🏛️ Capitales — Capitales mondiales et centres gouvernementaux<br>• ⚔️ Zones de conflit — Zones de conflit actives<br>• ⚓ Stratégique — Points d'étranglement et clés régions<br>• 🏢 Organisations — ONU, OTAN, AIEA, etc.<br><br><em>Niveaux d'activité :</em><br>• <span style=\"color: {{highColor}}\">Élevé</span> — Dernières nouvelles ou score de 70+<br>• <span style=\"color: {{elevatedColor}}\">Élevé</span> — Score 40-69<br>• <span style=\"color: {{lowColor}}\">Faible</span> — Score inférieur à 40<br><br>Cliquez sur un hub pour zoomer sur son emplacement."
+      "infoTooltip": "<strong>Hubs d'activitÃ© gÃ©opolitique</strong><br>Affiche les rÃ©gions avec le plus d'activitÃ© d'actualitÃ©.<br><br><em>Types de hubsÂ :</em><br>â€¢ ðŸ›ï¸ Capitales â€” Capitales mondiales et centres gouvernementaux<br>â€¢ âš”ï¸ Zones de conflit â€” Zones de conflit actives<br>â€¢ âš“ StratÃ©gique â€” Points d'Ã©tranglement et clÃ©s rÃ©gions<br>â€¢ ðŸ¢ Organisations â€” ONU, OTAN, AIEA, etc.<br><br><em>Niveaux d'activitÃ©Â :</em><br>â€¢ <span style=\"color: {{highColor}}\">Ã‰levÃ©</span> â€” DerniÃ¨res nouvelles ou score de 70+<br>â€¢ <span style=\"color: {{elevatedColor}}\">Ã‰levÃ©</span> â€” Score 40-69<br>â€¢ <span style=\"color: {{lowColor}}\">Faible</span> â€” Score infÃ©rieur Ã  40<br><br>Cliquez sur un hub pour zoomer sur son emplacement."
     },
     "techHubs": {
-      "tooltip": "<strong>Activité Hubs Tech</strong><br>Affiche les hubs tech avec le plus d'activité.<br><br><em>Niveaux:</em><br>• <span style=\"color: #00ff88\">Élevé</span> — Breaking news ou score 50+<br>• <span style=\"color: #ffc800\">Élevé</span> — Score 20-49<br>• <span style=\"color: #888\">Faible</span> — Score < 20",
+      "tooltip": "<strong>ActivitÃ© Hubs Tech</strong><br>Affiche les hubs tech avec le plus d'activitÃ©.<br><br><em>Niveaux:</em><br>â€¢ <span style=\"color: #00ff88\">Ã‰levÃ©</span> â€” Breaking news ou score 50+<br>â€¢ <span style=\"color: #ffc800\">Ã‰levÃ©</span> â€” Score 20-49<br>â€¢ <span style=\"color: #888\">Faible</span> â€” Score < 20",
       "noActive": "Aucun hub tech actif",
-      "infoTooltip": "<strong>Activité du pôle technologique</strong><br>Affiche les pôles technologiques avec le plus d'activités d'actualité.<br><br><em>Niveaux d'activité :</em><br>• <span style=\"color: {{highColor}}\">Élevé</span> — Dernières nouvelles ou score de 50+<br>• <span style=\"color : {{elevatedColor}}\">Élevé</span> — Score 20-49<br>• <span style=\"color: {{lowColor}}\">Faible</span> — Score inférieur à 20<br><br>Cliquez sur un hub pour zoomer sur son emplacement."
+      "infoTooltip": "<strong>ActivitÃ© du pÃ´le technologique</strong><br>Affiche les pÃ´les technologiques avec le plus d'activitÃ©s d'actualitÃ©.<br><br><em>Niveaux d'activitÃ©Â :</em><br>â€¢ <span style=\"color: {{highColor}}\">Ã‰levÃ©</span> â€” DerniÃ¨res nouvelles ou score de 50+<br>â€¢ <span style=\"colorÂ : {{elevatedColor}}\">Ã‰levÃ©</span> â€” Score 20-49<br>â€¢ <span style=\"color: {{lowColor}}\">Faible</span> â€” Score infÃ©rieur Ã  20<br><br>Cliquez sur un hub pour zoomer sur son emplacement."
     },
     "predictions": {
-      "tooltip": "<strong>Marchés de Prédiction</strong><br>Marchés de prévision en argent réel:<br><ul><li>Les prix reflètent les probabilités de la foule</li><li>Volume élevé = signal plus fiable</li><li>Focus géopolitique et actualités</li></ul>Source: Polymarket",
-      "error": "Échec du chargement",
+      "tooltip": "<strong>MarchÃ©s de PrÃ©diction</strong><br>MarchÃ©s de prÃ©vision en argent rÃ©el:<br><ul><li>Les prix reflÃ¨tent les probabilitÃ©s de la foule</li><li>Volume Ã©levÃ© = signal plus fiable</li><li>Focus gÃ©opolitique et actualitÃ©s</li></ul>Source: Polymarket",
+      "error": "Ã‰chec du chargement",
       "yes": "Oui",
       "no": "Non",
       "vol": "Vol",
       "closes": "Ferme"
     },
     "stablecoins": {
-      "pegHealth": "Santé de l'ancrage",
+      "pegHealth": "SantÃ© de l'ancrage",
       "supplyVolume": "Offre et volume",
-      "unavailable": "Données stablecoins temporairement indisponibles",
+      "unavailable": "DonnÃ©es stablecoins temporairement indisponibles",
       "token": "Jeton",
       "mcap": "Cap. march.",
       "vol24h": "Vol 24h",
       "chg24h": "Var 24h"
     },
     "status": {
-      "dataFeeds": "Flux de données",
-      "apiStatus": "État des API",
+      "dataFeeds": "Flux de donnÃ©es",
+      "apiStatus": "Ã‰tat des API",
       "storage": "Stockage",
-      "systemStatus": "État du système",
-      "updatedJustNow": "Mis à jour à l'instant",
-      "updatedAt": "Mis à jour {{time}}",
+      "systemStatus": "Ã‰tat du systÃ¨me",
+      "updatedJustNow": "Mis Ã  jour Ã  l'instant",
+      "updatedAt": "Mis Ã  jour {{time}}",
       "storageUnavailable": "Infos stockage indisponibles"
     },
     "playback": {
@@ -612,28 +601,28 @@
     "pizzint": {
       "title": "Index des pizzas du Pentagone",
       "defcon": "DEFCON {{level}}",
-      "updated": "{{timeAgo}} mis à jour",
-      "tensionsTitle": "Tensions géopolitiques",
+      "updated": "{{timeAgo}} mis Ã  jour",
+      "tensionsTitle": "Tensions gÃ©opolitiques",
       "source": "Source:",
-      "statusClosed": "FERMÉ",
+      "statusClosed": "FERMÃ‰",
       "statusSpike": "POINTE",
       "statusHigh": "HAUT",
-      "statusElevated": "ÉLEVÉ",
+      "statusElevated": "Ã‰LEVÃ‰",
       "statusNominal": "NOMINAL",
       "statusQuiet": "CALME",
-      "justNow": "tout à l'heure",
+      "justNow": "tout Ã  l'heure",
       "minutesAgo": "il y a {{m}} min",
       "hoursAgo": "il y a {{h}} h",
       "defconLabels": {
-        "1": "PISTOLET ARMÉ - PRÉPARATION MAXIMALE",
-        "2": "RYTHME RAPIDE - FORCES ARMÉES PRÊTES",
-        "3": "MAISON RONDE - AUGMENTER LA PRÉPARATION DE LA FORCE",
-        "4": "DOUBLE PRISE - VEILLE À INTELLIGENCE AUGMENTÉE",
-        "5": "FADE OUT - PRÉPARATION LA PLUS FAIBLE"
+        "1": "PISTOLET ARMÃ‰ - PRÃ‰PARATION MAXIMALE",
+        "2": "RYTHME RAPIDE - FORCES ARMÃ‰ES PRÃŠTES",
+        "3": "MAISON RONDE - AUGMENTER LA PRÃ‰PARATION DE LA FORCE",
+        "4": "DOUBLE PRISE - VEILLE Ã€ INTELLIGENCE AUGMENTÃ‰E",
+        "5": "FADE OUT - PRÃ‰PARATION LA PLUS FAIBLE"
       }
     },
     "strategicPosture": {
-      "elapsed": "Écoulé : {{elapsed}} s",
+      "elapsed": "Ã‰coulÃ© : {{elapsed}} s",
       "clickToView": "Cliquer pour voir {{name}} sur la carte",
       "clickToViewMap": "Cliquer pour voir sur la carte",
       "refresh": "Actualiser",
@@ -645,34 +634,34 @@
         "transport": "Transport",
         "bombers": "Bombardiers",
         "drones": "Drones",
-        "aircraft": "Aéronefs",
+        "aircraft": "AÃ©ronefs",
         "carriers": "Porte-avions",
         "destroyers": "Destroyers",
-        "frigates": "Frégates",
+        "frigates": "FrÃ©gates",
         "submarines": "Sous-marins",
         "patrol": "Patrouilleurs",
         "auxiliary": "Auxiliaires",
         "navalVessels": "Navires de guerre"
       },
-      "infoTooltip": "<strong>Méthodologie</strong><p>Regroupe les avions militaires et les navires de guerre par théâtre.</p><ul><li><strong>Normal :</strong> Activité de base</li><li><strong>Élevé :</strong> Au-dessus du seuil (50+ avions)</li><li><strong>Critique :</strong> Forte concentration (plus de 100 avions)</li></ul><p><strong>Capable de frappe :</strong> Tankers + AWACS + Chasseurs présents en nombre suffisant pour des opérations soutenues.</p>",
-      "scanningTheaters": "Scan des théâtres",
-      "positions": "Positions des aéronefs",
+      "infoTooltip": "<strong>MÃ©thodologie</strong><p>Regroupe les avions militaires et les navires de guerre par thÃ©Ã¢tre.</p><ul><li><strong>NormalÂ :</strong> ActivitÃ© de base</li><li><strong>Ã‰levÃ©Â :</strong> Au-dessus du seuil (50+ avions)</li><li><strong>CritiqueÂ :</strong> Forte concentration (plus de 100 avions)</li></ul><p><strong>Capable de frappeÂ :</strong> Tankers + AWACS + Chasseurs prÃ©sents en nombre suffisant pour des opÃ©rations soutenues.</p>",
+      "scanningTheaters": "Scan des thÃ©Ã¢tres",
+      "positions": "Positions des aÃ©ronefs",
       "navalVesselsLoading": "Navires de guerre",
-      "theaterAnalysis": "Analyse des théâtres",
+      "theaterAnalysis": "Analyse des thÃ©Ã¢tres",
       "connectingStreams": "Connexion aux flux ADS-B & AIS en direct...",
-      "initialLoadNote": "Le chargement initial prend 30 à 60 secondes le temps que les données de suivi s'accumulent",
-      "acquiringData": "Acquisition des données",
-      "acquiringDesc": "Connexion au réseau ADS-B pour les données de vols militaires. Cela peut prendre 30 à 60 secondes au premier chargement.",
+      "initialLoadNote": "Le chargement initial prend 30 Ã  60 secondes le temps que les donnÃ©es de suivi s'accumulent",
+      "acquiringData": "Acquisition des donnÃ©es",
+      "acquiringDesc": "Connexion au rÃ©seau ADS-B pour les donnÃ©es de vols militaires. Cela peut prendre 30 Ã  60 secondes au premier chargement.",
       "openSkyAdsb": "OpenSky ADS-B",
       "aisVesselStream": "Flux AIS navires",
-      "retryNow": "Réessayer maintenant",
-      "feedRateLimited": "Flux limité",
-      "rateLimitedDesc": "L'API OpenSky a des limites de requêtes. Le panneau réessaiera automatiquement dans quelques minutes, ou vous pouvez réessayer maintenant.",
-      "rateLimitedTip": "Astuce : les heures de pointe (UTC 12:00-20:00) ont souvent des limites plus élevées.",
-      "tryAgain": "Réessayer",
+      "retryNow": "RÃ©essayer maintenant",
+      "feedRateLimited": "Flux limitÃ©",
+      "rateLimitedDesc": "L'API OpenSky a des limites de requÃªtes. Le panneau rÃ©essaiera automatiquement dans quelques minutes, ou vous pouvez rÃ©essayer maintenant.",
+      "rateLimitedTip": "Astuce : les heures de pointe (UTC 12:00-20:00) ont souvent des limites plus Ã©levÃ©es.",
+      "tryAgain": "RÃ©essayer",
       "badges": {
         "critical": "CRIT",
-        "elevated": "ÉLEV",
+        "elevated": "Ã‰LEV",
         "normal": "NORM"
       },
       "trendStable": "stable",
@@ -681,32 +670,32 @@
         "sea": "MER"
       },
       "strike": "FRAPPE",
-      "staleWarning": "Données en cache utilisées — flux en direct temporairement indisponible",
-      "updated": "Mis à jour :",
+      "staleWarning": "DonnÃ©es en cache utilisÃ©es â€” flux en direct temporairement indisponible",
+      "updated": "Mis Ã  jour :",
       "theaters": {
-        "iran-theater": "Théâtre iranien",
-        "taiwan-theater": "Détroit de Taïwan",
-        "baltic-theater": "Théâtre balte",
+        "iran-theater": "ThÃ©Ã¢tre iranien",
+        "taiwan-theater": "DÃ©troit de TaÃ¯wan",
+        "baltic-theater": "ThÃ©Ã¢tre balte",
         "blacksea-theater": "Mer Noire",
-        "korea-theater": "Péninsule coréenne",
-        "south-china-sea": "Mer de Chine méridionale",
-        "east-med-theater": "Méditerranée orientale",
-        "israel-gaza-theater": "Israël/Gaza",
-        "yemen-redsea-theater": "Yémen/Mer Rouge"
+        "korea-theater": "PÃ©ninsule corÃ©enne",
+        "south-china-sea": "Mer de Chine mÃ©ridionale",
+        "east-med-theater": "MÃ©diterranÃ©e orientale",
+        "israel-gaza-theater": "IsraÃ«l/Gaza",
+        "yemen-redsea-theater": "YÃ©men/Mer Rouge"
       }
     },
     "countryBrief": {
       "shareStory": "Partager l'article",
       "printPdf": "Imprimer / PDF",
-      "exportData": "Exporter les données",
+      "exportData": "Exporter les donnÃ©es",
       "sourceRef": "Source [{{n}}]"
     },
     "relatedAssets": {
-      "pipeline": "Oléoduc",
-      "cable": "Câble",
-      "datacenter": "Centre de données",
+      "pipeline": "OlÃ©oduc",
+      "cable": "CÃ¢ble",
+      "datacenter": "Centre de donnÃ©es",
       "base": "Base",
-      "nuclear": "Nucléaire"
+      "nuclear": "NuclÃ©aire"
     },
     "community": {
       "joinDiscussion": "Rejoindre la discussion",
@@ -722,73 +711,73 @@
     },
     "deckgl": {
       "zoomIn": "Zoomer",
-      "zoomOut": "Zoom arrière",
-      "resetView": "Réinitialiser la vue",
+      "zoomOut": "Zoom arriÃ¨re",
+      "resetView": "RÃ©initialiser la vue",
       "legend": {
-        "title": "LÉGENDE",
-        "startupHub": "Pôle Startup",
-        "techHQ": "Siège Tech",
-        "accelerator": "Accélérateur",
-        "cloudRegion": "Région Cloud",
-        "datacenter": "Centre de données",
+        "title": "LÃ‰GENDE",
+        "startupHub": "PÃ´le Startup",
+        "techHQ": "SiÃ¨ge Tech",
+        "accelerator": "AccÃ©lÃ©rateur",
+        "cloudRegion": "RÃ©gion Cloud",
+        "datacenter": "Centre de donnÃ©es",
         "stockExchange": "Bourse",
         "financialCenter": "Centre financier",
         "centralBank": "Banque centrale",
-        "commodityHub": "Centre de matières premières",
+        "commodityHub": "Centre de matiÃ¨res premiÃ¨res",
         "waterway": "Voie navigable",
-        "highAlert": "Alerte élevée",
-        "elevated": "Élevé",
+        "highAlert": "Alerte Ã©levÃ©e",
+        "elevated": "Ã‰levÃ©",
         "monitoring": "Surveillance",
         "base": "Base",
-        "nuclear": "Nucléaire"
+        "nuclear": "NuclÃ©aire"
       },
       "layerGuide": "Guide des calques",
       "layersTitle": "Couches",
       "timeAll": "Tout",
       "views": {
         "global": "Mondial",
-        "americas": "Amériques",
+        "americas": "AmÃ©riques",
         "mena": "MENA",
         "europe": "Europe",
         "asia": "Asie",
-        "latam": "Amérique latine",
+        "latam": "AmÃ©rique latine",
         "africa": "Afrique",
-        "oceania": "Océanie"
+        "oceania": "OcÃ©anie"
       },
       "layers": {
-        "startupHubs": "Pôles startups",
-        "techHQs": "Sièges tech",
-        "accelerators": "Accélérateurs",
-        "cloudRegions": "Régions cloud",
-        "aiDataCenters": "Centres de données IA",
-        "underseaCables": "Câbles sous-marins",
+        "startupHubs": "PÃ´les startups",
+        "techHQs": "SiÃ¨ges tech",
+        "accelerators": "AccÃ©lÃ©rateurs",
+        "cloudRegions": "RÃ©gions cloud",
+        "aiDataCenters": "Centres de donnÃ©es IA",
+        "underseaCables": "CÃ¢bles sous-marins",
         "internetOutages": "Pannes Internet",
         "cyberThreats": "Menaces cyber",
-        "techEvents": "Événements tech",
-        "naturalEvents": "Événements naturels",
+        "techEvents": "Ã‰vÃ©nements tech",
+        "naturalEvents": "Ã‰vÃ©nements naturels",
         "fires": "Incendies",
         "intelHotspots": "Points chauds renseignement",
         "conflictZones": "Zones de conflit",
         "militaryBases": "Bases militaires",
-        "nuclearSites": "Sites nucléaires",
+        "nuclearSites": "Sites nuclÃ©aires",
         "gammaIrradiators": "Irradiateurs gamma",
         "spaceports": "Cosmodromes",
-        "pipelines": "OLÉODUCS ET GAZODUCS",
-        "militaryActivity": "Activité militaire",
+        "pipelines": "OLÃ‰ODUCS ET GAZODUCS",
+        "militaryActivity": "ActivitÃ© militaire",
         "shipTraffic": "Trafic maritime",
         "flightDelays": "Retards de vols",
         "protests": "Manifestations",
-        "ucdpEvents": "Événements UCDP",
-        "displacementFlows": "Flux de déplacement",
+        "ucdpEvents": "Ã‰vÃ©nements UCDP",
+        "displacementFlows": "Flux de dÃ©placement",
         "climateAnomalies": "Anomalies climatiques",
-        "weatherAlerts": "Alertes météo",
-        "strategicWaterways": "Voies navigables stratégiques",
-        "economicCenters": "Centres économiques",
-        "criticalMinerals": "Minéraux critiques",
+        "weatherAlerts": "Alertes mÃ©tÃ©o",
+        "strategicWaterways": "Voies navigables stratÃ©giques",
+        "economicCenters": "Centres Ã©conomiques",
+        "criticalMinerals": "MinÃ©raux critiques",
         "stockExchanges": "Bourses",
         "financialCenters": "Centres financiers",
         "centralBanks": "Banques centrales",
-        "commodityHubs": "Centres de matières premières",
+        "commodityHubs": "Centres de matiÃ¨res premiÃ¨res",
         "gulfInvestments": "Investissements du CCG",
         "tradeRoutes": "Routes Commerciales",
         "gpsJamming": "GPS JAMMING",
@@ -800,25 +789,25 @@
         "vesselCluster": "Groupe de navires",
         "vessels": "navires",
         "flightCluster": "Groupe de vol",
-        "aircraft": "aéronef",
+        "aircraft": "aÃ©ronef",
         "protest": "Protestation",
         "protestsCount": "{{count}} protestations",
         "techHQsCount": "{{count}} QG techniques",
-        "techEventsCount": "{{count}} événements techniques",
-        "dataCentersCount": "{{count}} centres de données",
-        "underseaCable": "Câble sous-marin",
-        "pipeline": "Oléoduc",
+        "techEventsCount": "{{count}} Ã©vÃ©nements techniques",
+        "dataCentersCount": "{{count}} centres de donnÃ©es",
+        "underseaCable": "CÃ¢ble sous-marin",
+        "pipeline": "OlÃ©oduc",
         "conflictZone": "Zone de conflit",
-        "naturalEvent": "Événement naturel",
-        "financialCenter": "place financière",
+        "naturalEvent": "Ã‰vÃ©nement naturel",
+        "financialCenter": "place financiÃ¨re",
         "port": "Port",
         "disruption": "Perturbation",
         "advisory": "Consultatif",
-        "repairShip": "Navire de réparation",
+        "repairShip": "Navire de rÃ©paration",
         "internetOutage": "Panne Internet",
         "medium": "moyen",
         "news": "Nouvelles",
-        "undisclosed": "Non divulgué",
+        "undisclosed": "Non divulguÃ©",
         "stake": "miser"
       },
       "layerHelp": {
@@ -828,78 +817,78 @@
           "timeRecent": "1H/6H/24H",
           "timeExtended": "7J/30J/TOUS",
           "sanctions": "Sanctions",
-          "shipping": "Expédition"
+          "shipping": "ExpÃ©dition"
         },
         "sections": {
-          "techEcosystem": "Écosystème technologique",
+          "techEcosystem": "Ã‰cosystÃ¨me technologique",
           "infrastructure": "Infrastructure",
-          "naturalEconomic": "Naturel & Économique",
+          "naturalEconomic": "Naturel & Ã‰conomique",
           "financeCore": "Finances de base",
           "infrastructureRisk": "Infrastructures et risques",
           "macroContext": "Contexte macro",
-          "timeFilter": "Filtre temporel (en haut à droite)",
-          "geopolitical": "Géopolitique",
-          "militaryStrategic": "Militaire et Stratégique",
+          "timeFilter": "Filtre temporel (en haut Ã  droite)",
+          "geopolitical": "GÃ©opolitique",
+          "militaryStrategic": "Militaire et StratÃ©gique",
           "transport": "Transport",
-          "labels": "Étiquettes",
-          "overlays": "Superpositions et étiquettes"
+          "labels": "Ã‰tiquettes",
+          "overlays": "Superpositions et Ã©tiquettes"
         },
         "descriptions": {
-          "techStartupHubs": "Grands écosystèmes de startups (SF, NYC, Londres, etc.)",
-          "techCloudRegions": "Régions des centres de données AWS, Azure et GCP",
-          "techHQs": "Sièges de grandes entreprises technologiques",
+          "techStartupHubs": "Grands Ã©cosystÃ¨mes de startups (SF, NYC, Londres, etc.)",
+          "techCloudRegions": "RÃ©gions des centres de donnÃ©es AWS, Azure et GCP",
+          "techHQs": "SiÃ¨ges de grandes entreprises technologiques",
           "techAccelerators": "Y Combinator, Techstars, 500 emplacements de startups",
-          "infraCables": "Principaux câbles à fibres optiques sous-marins (backbone Internet)",
-          "infraDatacenters": "Clusters de calcul IA >=10 000 GPU",
+          "infraCables": "Principaux cÃ¢bles Ã  fibres optiques sous-marins (backbone Internet)",
+          "infraDatacenters": "Clusters de calcul IA >=10Â 000Â GPU",
           "infraOutages": "Pannes d'Internet et interruptions de service",
-          "naturalEventsTech": "Tremblements de terre, tempêtes, incendies (peuvent affecter les centres de données)",
+          "naturalEventsTech": "Tremblements de terre, tempÃªtes, incendies (peuvent affecter les centres de donnÃ©es)",
           "weatherAlerts": "Alertes de temps violent",
           "economicCenters": "Bourses et banques centrales",
           "countriesOverlay": "Superpositions de noms de pays",
-          "financeExchanges": "Principales bourses mondiales par niveau de marché",
-          "financeCenters": "Centres financiers mondiaux et régionaux",
-          "financeCentralBanks": "Institutions de politique monétaire dans le monde",
-          "financeCommodityHubs": "Bourses clés, ports et centres de raffinage",
-          "financeCables": "Principales routes de fibre sous-marine liées aux infrastructures de marché",
-          "financePipelines": "Les tracés des oléoducs et des gazoducs affectent les marchés de l’énergie",
-          "financeOutages": "Perturbations Internet pouvant impacter les opérations de marché",
-          "financeCyberThreats": "Événements de sécurité autour des infrastructures financières",
-          "macroWaterways": "Points d'étranglement stratégiques pour le transport de marchandises",
-          "weatherAlertsMarket": "Des événements météorologiques violents pertinents pour le marché",
+          "financeExchanges": "Principales bourses mondiales par niveau de marchÃ©",
+          "financeCenters": "Centres financiers mondiaux et rÃ©gionaux",
+          "financeCentralBanks": "Institutions de politique monÃ©taire dans le monde",
+          "financeCommodityHubs": "Bourses clÃ©s, ports et centres de raffinage",
+          "financeCables": "Principales routes de fibre sous-marine liÃ©es aux infrastructures de marchÃ©",
+          "financePipelines": "Les tracÃ©s des olÃ©oducs et des gazoducs affectent les marchÃ©s de lâ€™Ã©nergie",
+          "financeOutages": "Perturbations Internet pouvant impacter les opÃ©rations de marchÃ©",
+          "financeCyberThreats": "Ã‰vÃ©nements de sÃ©curitÃ© autour des infrastructures financiÃ¨res",
+          "macroWaterways": "Points d'Ã©tranglement stratÃ©giques pour le transport de marchandises",
+          "weatherAlertsMarket": "Des Ã©vÃ©nements mÃ©tÃ©orologiques violents pertinents pour le marchÃ©",
           "naturalEventsMacro": "Tremblements de terre, incendies, inondations et autres perturbations naturelles",
-          "timeRecent": "Filtrer les données temporelles selon les heures récentes",
-          "timeExtended": "Afficher les données de la semaine, du mois ou de toute la période écoulée",
-          "geoConflicts": "Zones de guerre actives (Ukraine, Gaza, etc.) avec frontières",
-          "geoHotspots": "Régions de tension – codées par couleur selon le niveau d'activité de l'actualité",
-          "geoSanctions": "Pays soumis à des sanctions économiques des États-Unis, de l’UE et de l’ONU",
-          "geoProtests": "Troubles civils, manifestations (filtrées dans le temps)",
-          "militaryBases": "Installations militaires des États-Unis/OTAN, de la Chine et de la Russie (150+)",
-          "militaryNuclear": "Centrales électriques, enrichissement, installations d'armement",
+          "timeRecent": "Filtrer les donnÃ©es temporelles selon les heures rÃ©centes",
+          "timeExtended": "Afficher les donnÃ©es de la semaine, du mois ou de toute la pÃ©riode Ã©coulÃ©e",
+          "geoConflicts": "Zones de guerre actives (Ukraine, Gaza, etc.) avec frontiÃ¨res",
+          "geoHotspots": "RÃ©gions de tensionÂ â€“Â codÃ©es par couleur selon le niveau d'activitÃ© de l'actualitÃ©",
+          "geoSanctions": "Pays soumis Ã  des sanctions Ã©conomiques des Ã‰tats-Unis, de lâ€™UE et de lâ€™ONU",
+          "geoProtests": "Troubles civils, manifestations (filtrÃ©es dans le temps)",
+          "militaryBases": "Installations militaires des Ã‰tats-Unis/OTAN, de la Chine et de la Russie (150+)",
+          "militaryNuclear": "Centrales Ã©lectriques, enrichissement, installations d'armement",
           "militaryIrradiators": "Installations d'irradiateurs gamma industriels",
           "militaryActivity": "Suivi en direct d'avions et de navires militaires",
-          "infraCablesFull": "Principaux câbles à fibres optiques sous-marins (20 routes dorsales)",
-          "infraPipelinesFull": "Oléoducs/gazoducs (Nord Stream, TAPI, etc.)",
-          "infraDatacentersFull": "Clusters de calcul IA >=10 000 GPU uniquement",
-          "transportShipping": "Navires, points d'étranglement, 61 ports stratégiques",
-          "transportDelays": "Retards à l'aéroport et arrêts au sol (FAA)",
-          "naturalEventsFull": "Tremblements de terre (USGS) + tempêtes, incendies, volcans, inondations (NASA EONET)",
-          "waterwaysLabels": "Étiquettes de points d'étranglement stratégiques",
-          "tradeRoutes": "Principales routes maritimes mondiales reliant les ports via des points de passage stratégiques",
-          "dayNight": "Terminateur solaire en temps réel montrant les zones de jour et de nuit"
+          "infraCablesFull": "Principaux cÃ¢bles Ã  fibres optiques sous-marins (20 routes dorsales)",
+          "infraPipelinesFull": "OlÃ©oducs/gazoducs (Nord Stream, TAPI, etc.)",
+          "infraDatacentersFull": "Clusters de calcul IA >=10Â 000Â GPU uniquement",
+          "transportShipping": "Navires, points d'Ã©tranglement, 61 ports stratÃ©giques",
+          "transportDelays": "Retards Ã  l'aÃ©roport et arrÃªts au sol (FAA)",
+          "naturalEventsFull": "Tremblements de terre (USGS) + tempÃªtes, incendies, volcans, inondations (NASA EONET)",
+          "waterwaysLabels": "Ã‰tiquettes de points d'Ã©tranglement stratÃ©giques",
+          "tradeRoutes": "Principales routes maritimes mondiales reliant les ports via des points de passage stratÃ©giques",
+          "dayNight": "Terminateur solaire en temps rÃ©el montrant les zones de jour et de nuit"
         },
         "notes": {
-          "timeAffects": "Affecte : tremblements de terre, conditions météorologiques, manifestations, pannes"
+          "timeAffects": "AffecteÂ : tremblements de terre, conditions mÃ©tÃ©orologiques, manifestations, pannes"
         }
       }
     },
     "cii": {
       "shareStory": "Partager l'article",
-      "noSignals": "Aucun signal d'instabilité détecté",
-      "infoTooltip": "<strong>Méthodologie</strong><ul><li><strong>U</strong>nrepos : troubles civils et manifestations</li><li><strong>C</strong>conflit : intensité du conflit armé</li><li><strong>S</strong>sécurité : vols/navires militaires au-dessus territoire</li><li><strong>I</strong>informations : vitesse des informations et corrélation des points focaux</li><li>Augmentation de la proximité des points d'accès (emplacements stratégiques)</li></ul><em>Les valeurs U:C:S:I affichent les scores des composants.</em> La détection du point focal corrèle les entités d'information avec les signaux cartographiques pour une notation précise."
+      "noSignals": "Aucun signal d'instabilitÃ© dÃ©tectÃ©",
+      "infoTooltip": "<strong>MÃ©thodologie</strong><ul><li><strong>U</strong>nreposÂ : troubles civils et manifestations</li><li><strong>C</strong>conflitÂ : intensitÃ© du conflit armÃ©</li><li><strong>S</strong>sÃ©curitÃ©Â : vols/navires militaires au-dessus territoire</li><li><strong>I</strong>informationsÂ : vitesse des informations et corrÃ©lation des points focaux</li><li>Augmentation de la proximitÃ© des points d'accÃ¨s (emplacements stratÃ©giques)</li></ul><em>Les valeurs U:C:S:I affichent les scores des composants.</em> La dÃ©tection du point focal corrÃ¨le les entitÃ©s d'information avec les signaux cartographiques pour une notation prÃ©cise."
     },
     "insights": {
-      "noStories": "Aucune info de dernière minute pour l'instant",
-      "infoTooltip": "<strong>Analyse basée sur l'IA</strong><br>• <strong>World Brief</strong> : résumé de l'IA (Groq/OpenRouter)<br>• <strong>Sentiment</strong> : analyse du ton de l'actualité<br>• <strong>Velocity</strong> : histoires rapides<br>• <strong>Focal Points</strong> : corrèle les entités d'information avec les signaux cartographiques (militaires, manifestations, pannes)<br><em>ordinateur de bureau uniquement • Optimisé par Llama 3.3 + détection de point focal</em>",
+      "noStories": "Aucune info de derniÃ¨re minute pour l'instant",
+      "infoTooltip": "<strong>Analyse basÃ©e sur l'IA</strong><br>â€¢ <strong>World Brief</strong>Â : rÃ©sumÃ© de l'IA (Groq/OpenRouter)<br>â€¢ <strong>Sentiment</strong>Â : analyse du ton de l'actualitÃ©<br>â€¢ <strong>Velocity</strong>Â : histoires rapides<br>â€¢ <strong>Focal Points</strong>Â : corrÃ¨le les entitÃ©s d'information avec les signaux cartographiques (militaires, manifestations, pannes)<br><em>ordinateur de bureau uniquement â€¢ OptimisÃ© par Llama 3.3 + dÃ©tection de point focal</em>",
       "step": "Step {{step}}/{{total}}",
       "waitingForData": "Waiting for news data...",
       "rankingStories": "Ranking important stories...",
@@ -915,67 +904,64 @@
       "badgeAnimDesc": "Animate panel count badges when new items arrive",
       "aiFlowTitle": "Settings",
       "aiFlowCloudLabel": "IA Cloud (Groq & OpenRouter)",
-      "aiFlowCloudDesc": "Envoyer les titres au cloud pour le résumé IA (recommandé)",
-      "aiFlowBrowserLabel": "Modèle local du navigateur",
-      "aiFlowBrowserDesc": "Exécuter l'IA localement dans votre navigateur",
-      "aiFlowBrowserWarn": "Environ 250 Mo de données seront téléchargés sur votre ordinateur",
-      "aiFlowOllamaCta": "Vous voulez une IA entièrement locale ?",
-      "aiFlowOllamaCtaDesc": "Téléchargez l'application de bureau pour le support Ollama",
-      "aiFlowDownloadDesktop": "Télécharger l'App Bureau →",
+      "aiFlowCloudDesc": "Envoyer les titres au cloud pour le rÃ©sumÃ© IA (recommandÃ©)",
+      "aiFlowBrowserLabel": "ModÃ¨le local du navigateur",
+      "aiFlowBrowserDesc": "ExÃ©cuter l'IA localement dans votre navigateur",
+      "aiFlowBrowserWarn": "Environ 250 Mo de donnÃ©es seront tÃ©lÃ©chargÃ©s sur votre ordinateur",
       "aiFlowStatusActive": "IA Cloud active",
-      "aiFlowStatusCloudAndBrowser": "IA Cloud + Modèle navigateur actifs",
-      "aiFlowStatusBrowserOnly": "Modèle navigateur uniquement",
-      "aiFlowStatusDisabled": "Aucun fournisseur IA activé",
+      "aiFlowStatusCloudAndBrowser": "IA Cloud + ModÃ¨le navigateur actifs",
+      "aiFlowStatusBrowserOnly": "ModÃ¨le navigateur uniquement",
+      "aiFlowStatusDisabled": "Aucun fournisseur IA activÃ©",
       "sectionIntelligence": "Renseignement",
-      "headlineMemoryLabel": "Mémoire des titres",
-      "headlineMemoryDesc": "Mémoriser les titres passés pour enrichir les synthèses pays avec un contexte historique",
-      "insightsDisabledTitle": "L'analyse IA est désactivée",
+      "headlineMemoryLabel": "MÃ©moire des titres",
+      "headlineMemoryDesc": "MÃ©moriser les titres passÃ©s pour enrichir les synthÃ¨ses pays avec un contexte historique",
+      "insightsDisabledTitle": "L'analyse IA est dÃ©sactivÃ©e",
       "insightsDisabledHint": "Enable providers via the settings gear in the map header"
     },
     "cascade": {
-      "noImpacts": "Aucun impact pays détecté",
+      "noImpacts": "Aucun impact pays dÃ©tectÃ©",
       "filters": {
-        "cables": "Câbles",
-        "pipelines": "Oléoducs",
+        "cables": "CÃ¢bles",
+        "pipelines": "OlÃ©oducs",
         "ports": "Ports",
-        "chokepoints": "Points d'étranglement"
+        "chokepoints": "Points d'Ã©tranglement"
       },
       "filterType": {
-        "cable": "câble",
-        "pipeline": "oléoduc",
+        "cable": "cÃ¢ble",
+        "pipeline": "olÃ©oduc",
         "port": "port",
-        "chokepoint": "point d'étranglement",
+        "chokepoint": "point d'Ã©tranglement",
         "country": "pays"
       },
-      "selectPrompt": "Sélectionnez {{type}}...",
+      "selectPrompt": "SÃ©lectionnez {{type}}...",
       "analyzeImpact": "Analyser l'impact",
       "impactLevels": {
         "critical": "critique",
-        "high": "élevé",
+        "high": "Ã©levÃ©",
         "medium": "moyen",
         "low": "faible"
       },
-      "capacityPercent": "Capacité {{percent}}%",
-      "noCountryImpacts": "Aucun impact pays détecté",
-      "alternativeRoutes": "Itinéraires alternatifs",
-      "countriesAffected": "Pays concernés ({{count}})",
+      "capacityPercent": "CapacitÃ© {{percent}}%",
+      "noCountryImpacts": "Aucun impact pays dÃ©tectÃ©",
+      "alternativeRoutes": "ItinÃ©raires alternatifs",
+      "countriesAffected": "Pays concernÃ©s ({{count}})",
       "links": "liens",
-      "selectInfrastructureHint": "Sélectionnez l’infrastructure pour analyser l’impact en cascade",
-      "infoTooltip": "<strong>Analyse en cascade</strong> Modélise les dépendances de l'infrastructure :<ul><li>Câbles sous-marins, pipelines, ports, points d'étranglement</li><li>Sélectionner l'infrastructure pour simuler une panne</li><li>Affiche les pays touchés et la perte de capacité</li><li>Identifie les itinéraires redondants</li></ul>Données provenant de sources TeleGeography et industrielles."
+      "selectInfrastructureHint": "SÃ©lectionnez lâ€™infrastructure pour analyser lâ€™impact en cascade",
+      "infoTooltip": "<strong>Analyse en cascade</strong> ModÃ©lise les dÃ©pendances de l'infrastructureÂ :<ul><li>CÃ¢bles sous-marins, pipelines, ports, points d'Ã©tranglement</li><li>SÃ©lectionner l'infrastructure pour simuler une panne</li><li>Affiche les pays touchÃ©s et la perte de capacitÃ©</li><li>Identifie les itinÃ©raires redondants</li></ul>DonnÃ©es provenant de sources TeleGeography et industrielles."
     },
     "strategicRisk": {
-      "noRisks": "Aucun risque significatif détecté",
-      "infoTooltip": "<strong>Méthodologie</strong> Score composite (0-100) mélange :<ul><li>50 % d'instabilité du pays (5 premiers pondérés)</li><li>30 % Zones de convergence géographique</li><li>20 % Incidents d'infrastructure</li></ul>Actualisation automatique toutes les 5 minutes.",
+      "noRisks": "Aucun risque significatif dÃ©tectÃ©",
+      "infoTooltip": "<strong>MÃ©thodologie</strong> Score composite (0-100) mÃ©langeÂ :<ul><li>50 % d'instabilitÃ© du pays (5 premiers pondÃ©rÃ©s)</li><li>30 % Zones de convergence gÃ©ographique</li><li>20 % Incidents d'infrastructure</li></ul>Actualisation automatique toutes les 5 minutes.",
       "levels": {
         "critical": "Critique",
-        "elevated": "Élevé",
-        "moderate": "Modéré",
+        "elevated": "Ã‰levÃ©",
+        "moderate": "ModÃ©rÃ©",
         "low": "Faible"
       },
       "trend": "Tendance",
       "trends": {
         "escalating": "En escalade",
-        "deEscalating": "En désescalade",
+        "deEscalating": "En dÃ©sescalade",
         "stable": "Stable"
       },
       "insufficientData": "Insufficient Data",
@@ -1003,8 +989,8 @@
       }
     },
     "techEvents": {
-      "loading": "Chargement des événements tech...",
-      "noEvents": "Aucun événement à afficher",
+      "loading": "Chargement des Ã©vÃ©nements tech...",
+      "noEvents": "Aucun Ã©vÃ©nement Ã  afficher",
       "showOnMap": "Voir sur la carte",
       "moreInfo": "Plus d'infos",
       "retry": "Retry",
@@ -1014,15 +1000,15 @@
       "all": "All",
       "conferencesCount": "{{count}} conferences",
       "onMap": "{{count}} on map",
-      "techmemeEvents": "Techmeme Events ↗",
+      "techmemeEvents": "Techmeme Events â†—",
       "today": "TODAY",
       "soon": "SOON"
     },
     "techReadiness": {
       "internetUsers": "Utilisateurs Internet",
       "mobileSubscriptions": "Abonnements mobiles",
-      "rdSpending": "Dépenses R&D",
-      "infoTooltip": "<strong>Global Tech Readiness</strong><br>Score composite (0-100) basé sur les données de la Banque mondiale :<br><br><strong>Metrics affichés :</strong><br>🌐 Utilisateurs Internet (% de la population)<br>📱 Abonnements mobiles (pour 100 personnes)<br>🔬 R&D Dépenses (% du PIB)<br><br><strong>Poids :</strong> R&D (35 %), Internet (30 %), Haut débit (20 %), Mobile (15 %)<br><br><em>— = Aucune donnée récente disponible</em><br><em>Source : Données ouvertes de la Banque mondiale (2019-2024)</em>",
+      "rdSpending": "DÃ©penses R&D",
+      "infoTooltip": "<strong>Global Tech Readiness</strong><br>Score composite (0-100) basÃ© sur les donnÃ©es de la Banque mondialeÂ :<br><br><strong>Metrics affichÃ©sÂ :</strong><br>ðŸŒ Utilisateurs Internet (% de la population)<br>ðŸ“± Abonnements mobiles (pour 100 personnes)<br>ðŸ”¬ R&D DÃ©penses (% du PIB)<br><br><strong>PoidsÂ :</strong> R&D (35 %), Internet (30 %), Haut dÃ©bit (20 %), Mobile (15 %)<br><br><em>â€” = Aucune donnÃ©e rÃ©cente disponible</em><br><em>Source : DonnÃ©es ouvertes de la Banque mondiale (2019-2024)</em>",
       "fetchingData": "Fetching World Bank Data",
       "internetUsersIndicator": "Internet Users",
       "mobileSubscriptionsIndicator": "Mobile Subscriptions",
@@ -1033,82 +1019,82 @@
       "updated": "Updated: {{date}}"
     },
     "populationExposure": {
-      "noData": "Aucune donnée d'exposition disponible",
-      "totalAffected": "Total concerné",
-      "affectedCount": "{{count}} concerné",
+      "noData": "Aucune donnÃ©e d'exposition disponible",
+      "totalAffected": "Total concernÃ©",
+      "affectedCount": "{{count}} concernÃ©",
       "radiusKm": "Rayon de {{km}}km",
-      "infoTooltip": "<strong>Estimations de l'exposition de la population</strong> Population estimée dans le rayon d'impact de l'événement. Basé sur les données de densité des pays WorldPop.<ul><li>Conflit : rayon de 50 km</li><li>Tremblement de terre : rayon de 100 km</li><li>Inondation : rayon de 100 km</li><li>Incendies de forêt : rayon de 30 km</li></ul>"
+      "infoTooltip": "<strong>Estimations de l'exposition de la population</strong> Population estimÃ©e dans le rayon d'impact de l'Ã©vÃ©nement. BasÃ© sur les donnÃ©es de densitÃ© des pays WorldPop.<ul><li>ConflitÂ : rayon de 50Â km</li><li>Tremblement de terreÂ : rayon de 100Â km</li><li>InondationÂ : rayon de 100Â km</li><li>Incendies de forÃªtÂ : rayon de 30Â km</li></ul>"
     },
     "satelliteFires": {
-      "noData": "Aucune donnée d'incendie disponible",
-      "region": "Région",
+      "noData": "Aucune donnÃ©e d'incendie disponible",
+      "region": "RÃ©gion",
       "fires": "Incendies",
       "high": "Haut",
       "total": "Total",
       "never": "jamais",
       "time": {
-        "justNow": "tout à l'heure",
+        "justNow": "tout Ã  l'heure",
         "minutesAgo": "il y a {{count}} min",
         "hoursAgo": "il y a {{count}} h"
       },
-      "infoTooltip": "Détections thermiques par satellite FIRMS VIIRS de la NASA dans les régions de conflit surveillées. Haute intensité = luminosité >360K et confiance >80 %."
+      "infoTooltip": "DÃ©tections thermiques par satellite FIRMS VIIRS de la NASA dans les rÃ©gions de conflit surveillÃ©es. Haute intensitÃ© = luminositÃ© >360K et confiance >80 %."
     },
     "ucdpEvents": {
-      "stateBased": "Étatique",
-      "nonState": "Non étatique",
-      "oneSided": "Unilatéral",
+      "stateBased": "Ã‰tatique",
+      "nonState": "Non Ã©tatique",
+      "oneSided": "UnilatÃ©ral",
       "country": "Pays",
-      "deaths": "Décès",
+      "deaths": "DÃ©cÃ¨s",
       "date": "Date",
       "actors": "Acteurs",
-      "deathsCount": "{{count}} décès",
-      "moreNotShown": "{{count}} événements supplémentaires non affichés",
-      "noEvents": "Aucun événement dans cette catégorie",
-      "infoTooltip": "<strong>Événements géoréférencés UCDP</strong> Données de conflit au niveau des événements de l'Université d'Uppsala.<ul><li><strong>États</strong> : gouvernement contre groupe rebelle</li><li><strong>Non étatique</strong> : groupe armé contre groupe armé</li><li><strong>Unilatéral</strong> : Violence contre les civils</li></ul>Décès indiqués comme meilleure estimation (fourchette basse-haute). Les doublons ACLED sont automatiquement filtrés."
+      "deathsCount": "{{count}} dÃ©cÃ¨s",
+      "moreNotShown": "{{count}} Ã©vÃ©nements supplÃ©mentaires non affichÃ©s",
+      "noEvents": "Aucun Ã©vÃ©nement dans cette catÃ©gorie",
+      "infoTooltip": "<strong>Ã‰vÃ©nements gÃ©orÃ©fÃ©rencÃ©s UCDP</strong> DonnÃ©es de conflit au niveau des Ã©vÃ©nements de l'UniversitÃ© d'Uppsala.<ul><li><strong>Ã‰tats</strong>Â : gouvernement contre groupe rebelle</li><li><strong>Non Ã©tatique</strong>Â : groupe armÃ© contre groupe armÃ©</li><li><strong>UnilatÃ©ral</strong>Â : Violence contre les civils</li></ul>DÃ©cÃ¨s indiquÃ©s comme meilleure estimation (fourchette basse-haute). Les doublons ACLED sont automatiquement filtrÃ©s."
     },
     "displacement": {
-      "noData": "Aucune donnée",
-      "refugees": "Réfugiés",
+      "noData": "Aucune donnÃ©e",
+      "refugees": "RÃ©fugiÃ©s",
       "asylumSeekers": "Demandeurs d'asile",
-      "idps": "personnes déplacées",
+      "idps": "personnes dÃ©placÃ©es",
       "total": "Total",
       "origins": "Origines",
-      "hosts": "Hôtes",
+      "hosts": "HÃ´tes",
       "badges": {
         "crisis": "CRISE",
         "high": "HAUT",
-        "elevated": "ÉLEVÉ"
+        "elevated": "Ã‰LEVÃ‰"
       },
       "country": "Pays",
       "status": "Statut",
       "count": "Compter",
-      "infoTooltip": "<strong>Données de déplacement du HCR</strong> Nombre mondial de réfugiés, de demandeurs d'asile et de personnes déplacées du HCR.<ul><li><strong>Origines</strong> : Pays où les gens fuient FROM</li><li><strong>Hôtes</strong> : Pays accueillant des réfugiés</li><li>Badges de crise : >1M | Élevé : > 500 000 déplacés</li></ul>Mises à jour des données chaque année. Licence CC BY 4.0."
+      "infoTooltip": "<strong>DonnÃ©es de dÃ©placement du HCR</strong> Nombre mondial de rÃ©fugiÃ©s, de demandeurs d'asile et de personnes dÃ©placÃ©es du HCR.<ul><li><strong>Origines</strong> : Pays oÃ¹ les gens fuient FROM</li><li><strong>HÃ´tes</strong> : Pays accueillant des rÃ©fugiÃ©s</li><li>Badges de crise : >1M | Ã‰levÃ©Â :Â > 500 000 dÃ©placÃ©s</li></ul>Mises Ã  jour des donnÃ©es chaque annÃ©e. Licence CC BY 4.0."
     },
     "climate": {
-      "noAnomalies": "Aucune anomalie significative détectée",
+      "noAnomalies": "Aucune anomalie significative dÃ©tectÃ©e",
       "zone": "Zone",
-      "temp": "Température",
+      "temp": "TempÃ©rature",
       "precip": "En particulier",
-      "severityLabel": "Gravité",
+      "severityLabel": "GravitÃ©",
       "severity": {
-        "extreme": "EXTRÊME",
-        "moderate": "MODÉRÉ",
+        "extreme": "EXTRÃŠME",
+        "moderate": "MODÃ‰RÃ‰",
         "normal": "NORMALE"
       },
-      "infoTooltip": "<strong>Moniteur des anomalies climatiques</strong> Écarts de température et de précipitations par rapport à la référence de 30 jours. Données d'Open-Meteo (réanalyse ERA5).<ul><li><strong>Extrême</strong> : >5 °C ou >80 mm/jour d'écart</li><li><strong>Modéré</strong> : >3 °C ou >40 mm/jour déviation</li></ul>Surveille 15 zones sujettes aux conflits/catastrophes."
+      "infoTooltip": "<strong>Moniteur des anomalies climatiques</strong> Ã‰carts de tempÃ©rature et de prÃ©cipitations par rapport Ã  la rÃ©fÃ©rence de 30 jours. DonnÃ©es d'Open-Meteo (rÃ©analyse ERA5).<ul><li><strong>ExtrÃªme</strong>Â : >5 Â°C ou >80 mm/jour d'Ã©cart</li><li><strong>ModÃ©rÃ©</strong>Â : >3 Â°C ou >40 mm/jour dÃ©viation</li></ul>Surveille 15 zones sujettes aux conflits/catastrophes."
     },
     "newsPanel": {
       "close": "Fermer",
-      "summarize": "Résumer ce panneau",
-      "generatingSummary": "Génération du résumé...",
+      "summarize": "RÃ©sumer ce panneau",
+      "generatingSummary": "GÃ©nÃ©ration du rÃ©sumÃ©...",
       "sources": "Sources {{count}}",
-      "relatedAssetsNear": "Actifs associés à proximité de {{location}}"
+      "relatedAssetsNear": "Actifs associÃ©s Ã  proximitÃ© de {{location}}"
     },
     "export": {
-      "exportData": "Exporter les données"
+      "exportData": "Exporter les donnÃ©es"
     },
     "etfFlows": {
-      "unavailable": "Données ETF temporairement indisponibles",
+      "unavailable": "DonnÃ©es ETF temporairement indisponibles",
       "netFlow": "Flux net",
       "estFlow": "Flux est.",
       "totalVol": "Vol. total",
@@ -1117,7 +1103,7 @@
       "netOutflow": "FLUX NET SORTANT",
       "table": {
         "ticker": "Ticker",
-        "issuer": "Émetteur",
+        "issuer": "Ã‰metteur",
         "estFlow": "Flux est.",
         "volume": "Volume",
         "change": "Variation"
@@ -1131,31 +1117,31 @@
       },
       "bullish": "{{count}}/{{total}} haussier",
       "signals": {
-        "liquidity": "Liquidité",
+        "liquidity": "LiquiditÃ©",
         "flow": "Flux",
-        "regime": "Régime",
+        "regime": "RÃ©gime",
         "btcTrend": "Tendance BTC",
         "hashRate": "Hash Rate",
         "mining": "Minage",
-        "fearGreed": "Peur &amp; Avidité"
+        "fearGreed": "Peur &amp; AviditÃ©"
       }
     },
     "runtimeConfig": {
-      "getApiKey": "Obtenir une clé API"
+      "getApiKey": "Obtenir une clÃ© API"
     },
     "intelligenceFindings": {
-      "badgeTitle": "Résultats du renseignement",
-      "title": "Résultats des renseignements",
-      "none": "Aucune découverte récente des services de renseignement",
+      "badgeTitle": "RÃ©sultats du renseignement",
+      "title": "RÃ©sultats des renseignements",
+      "none": "Aucune dÃ©couverte rÃ©cente des services de renseignement",
       "monitoring": "SURVEILLANCE",
-      "scanning": "Recherche de corrélations et d'anomalies...",
-      "reviewRecommended": "Résultats des renseignements {{count}} - examen recommandé",
-      "count": "{{count}} découverte de renseignements",
-      "detected": "{{count}} DÉTECTÉ",
+      "scanning": "Recherche de corrÃ©lations et d'anomalies...",
+      "reviewRecommended": "RÃ©sultats des renseignements {{count}} - examen recommandÃ©",
+      "count": "{{count}} dÃ©couverte de renseignements",
+      "detected": "{{count}} DÃ‰TECTÃ‰",
       "critical": "{{count}} CRITIQUE",
-      "highPriority": "{{count}} HAUTE PRIORITÉ",
-      "more": "+{{count}} plus de résultats",
-      "all": "Tous les résultats des renseignements ({{count}})",
+      "highPriority": "{{count}} HAUTE PRIORITÃ‰",
+      "more": "+{{count}} plus de rÃ©sultats",
+      "all": "Tous les rÃ©sultats des renseignements ({{count}})",
       "priority": {
         "critical": "CRITIQUE",
         "high": "HAUT",
@@ -1163,15 +1149,15 @@
         "low": "FAIBLE"
       },
       "insights": {
-        "criticalDestabilization": "Déstabilisation critique – attention immédiate",
-        "significantShift": "Changement important – surveiller de près",
-        "developingSituation": "Situation en évolution - piste d'escalade",
-        "convergence": "Plusieurs événements regroupés dans la région",
+        "criticalDestabilization": "DÃ©stabilisation critique â€“ attention immÃ©diate",
+        "significantShift": "Changement important â€“ surveiller de prÃ¨s",
+        "developingSituation": "Situation en Ã©volution - piste d'escalade",
+        "convergence": "Plusieurs Ã©vÃ©nements regroupÃ©s dans la rÃ©gion",
         "cascade": "Les perturbations des infrastructures se propagent",
         "review": "Examen pour la connaissance de la situation"
       },
       "time": {
-        "justNow": "tout à l'heure",
+        "justNow": "tout Ã  l'heure",
         "minutesAgo": "il y a {{count}} min",
         "hoursAgo": "il y a {{count}} h",
         "daysAgo": "il y a {{count}} j"
@@ -1179,13 +1165,13 @@
     },
     "countryTimeline": {
       "now": "maintenant",
-      "noEventsIn7Days": "Aucun événement en 7 jours"
+      "noEventsIn7Days": "Aucun Ã©vÃ©nement en 7 jours"
     },
     "gdeltIntel": {
-      "infoTooltip": "<strong>GDELT Intelligence</strong> Surveillance de l'actualité mondiale en temps réel :<ul><li>Catégories de sujets sélectionnés (conflits, cyber, etc.)</li><li>Articles traduits dans plus de 100 langues</li><li>Mises à jour toutes les 15 minutes</li></ul>Source : Projet GDELT (gdeltproject.org)"
+      "infoTooltip": "<strong>GDELT Intelligence</strong> Surveillance de l'actualitÃ© mondiale en temps rÃ©elÂ :<ul><li>CatÃ©gories de sujets sÃ©lectionnÃ©s (conflits, cyber, etc.)</li><li>Articles traduits dans plus de 100 langues</li><li>Mises Ã  jour toutes les 15 minutes</li></ul>SourceÂ : Projet GDELT (gdeltproject.org)"
     },
     "telegramIntel": {
-      "infoTooltip": "Signaux en temps réel provenant des canaux OSINT Telegram surveillés",
+      "infoTooltip": "Signaux en temps rÃ©el provenant des canaux OSINT Telegram surveillÃ©s",
       "loading": "Connexion au relais Telegram...",
       "empty": "Aucun message disponible",
       "disabled": "Relais Telegram inactif",
@@ -1198,8 +1184,8 @@
       "filterMiddleeast": "Moyen-Orient"
     },
     "investments": {
-      "infoTooltip": "Base de données des investissements directs étrangers de l'Arabie saoudite et des Émirats arabes unis dans les infrastructures critiques mondiales. Cliquez sur une ligne pour accéder à l'investissement sur la carte.",
-      "searchPlaceholder": "Search assets, countries, entities…",
+      "infoTooltip": "Base de donnÃ©es des investissements directs Ã©trangers de l'Arabie saoudite et des Ã‰mirats arabes unis dans les infrastructures critiques mondiales. Cliquez sur une ligne pour accÃ©der Ã  l'investissement sur la carte.",
+      "searchPlaceholder": "Search assets, countries, entitiesâ€¦",
       "allCountries": "All Countries",
       "saudiArabia": "Saudi Arabia",
       "uae": "UAE",
@@ -1235,7 +1221,7 @@
       }
     },
     "prediction": {
-      "infoTooltip": "<strong>Marchés de prévision</strong> Marchés de prévision en argent réel :<ul><li>Les prix reflètent les estimations de probabilité de foule</li><li>Volume plus élevé = signal plus fiable</li><li>Orientation géopolitique et événements actuels</li></ul>Source : Polymarket (polymarket.com)"
+      "infoTooltip": "<strong>MarchÃ©s de prÃ©vision</strong> MarchÃ©s de prÃ©vision en argent rÃ©elÂ :<ul><li>Les prix reflÃ¨tent les estimations de probabilitÃ© de foule</li><li>Volume plus Ã©levÃ© = signal plus fiable</li><li>Orientation gÃ©opolitique et Ã©vÃ©nements actuels</li></ul>SourceÂ : Polymarket (polymarket.com)"
     },
     "panel": {
       "showMethodologyInfo": "Show methodology info",
@@ -1253,7 +1239,7 @@
       "outage": "Outage",
       "backendUnavailable": "Desktop local backend unavailable. Falling back to cloud API.",
       "desktopReadiness": "Desktop readiness",
-      "acceptanceChecks": "Acceptance checks: {{ready}}/{{total}} ready · key-backed features {{available}}/{{featureTotal}}",
+      "acceptanceChecks": "Acceptance checks: {{ready}}/{{total}} ready Â· key-backed features {{available}}/{{featureTotal}}",
       "nonParityFallbacks": "Non-parity fallbacks ({{count}})",
       "categories": {
         "all": "All",
@@ -1294,54 +1280,54 @@
       "notLive": "{{name}} is not currently live",
       "cannotEmbed": "{{name}} cannot be embedded in this app (YouTube {{code}})",
       "openOnYouTube": "Open on YouTube",
-      "manage": "Gérer les chaînes",
-      "addChannel": "Ajouter une chaîne",
+      "manage": "GÃ©rer les chaÃ®nes",
+      "addChannel": "Ajouter une chaÃ®ne",
       "remove": "Supprimer",
       "youtubeHandle": "Handle YouTube (ex. @Channel)",
       "youtubeHandleOrUrl": "Identifiant ou URL YouTube",
       "displayName": "Nom d'affichage (optionnel)",
-      "openPanelSettings": "Paramètres d'affichage du panneau",
-      "channelSettings": "Paramètres de la chaîne",
+      "openPanelSettings": "ParamÃ¨tres d'affichage du panneau",
+      "channelSettings": "ParamÃ¨tres de la chaÃ®ne",
       "save": "Enregistrer",
       "cancel": "Annuler",
-      "confirmDelete": "Supprimer cette chaîne ?",
+      "confirmDelete": "Supprimer cette chaÃ®ne ?",
       "confirmTitle": "Confirmer",
-      "restoreDefaults": "Restaurer les chaînes par défaut",
-      "availableChannels": "Chaînes disponibles",
-      "customChannel": "Chaîne personnalisée",
-      "regionNorthAmerica": "Amérique du Nord",
+      "restoreDefaults": "Restaurer les chaÃ®nes par dÃ©faut",
+      "availableChannels": "ChaÃ®nes disponibles",
+      "customChannel": "ChaÃ®ne personnalisÃ©e",
+      "regionNorthAmerica": "AmÃ©rique du Nord",
       "regionEurope": "Europe",
-      "regionLatinAmerica": "Amérique latine",
+      "regionLatinAmerica": "AmÃ©rique latine",
       "regionAsia": "Asie",
       "regionMiddleEast": "Moyen-Orient",
       "regionAfrica": "Afrique",
-      "regionOceania": "Océanie"
+      "regionOceania": "OcÃ©anie"
     },
     "securityAdvisories": {
       "loading": "Chargement des avis de voyage...",
       "noMatching": "Aucun avis pour ce filtre",
       "critical": "Critique",
-      "health": "Santé",
+      "health": "SantÃ©",
       "sources": "US State Dept, AU DFAT, UK FCDO, NZ MFAT, CDC, ECDC, WHO, US Embassies",
       "refresh": "Actualiser",
       "levels": {
         "doNotTravel": "Ne pas voyager",
-        "reconsider": "Reconsidérer le voyage",
+        "reconsider": "ReconsidÃ©rer le voyage",
         "caution": "Prudence",
         "normal": "Normal",
         "info": "Info"
       },
       "time": {
-        "justNow": "à l'instant",
+        "justNow": "Ã  l'instant",
         "minutesAgo": "il y a {{count}} min",
         "hoursAgo": "il y a {{count}} h",
         "daysAgo": "il y a {{count}} j"
       },
-      "infoTooltip": "<strong>Avis de Sécurité</strong><br>Avis aux voyageurs et alertes de sécurité des agences gouvernementales."
+      "infoTooltip": "<strong>Avis de SÃ©curitÃ©</strong><br>Avis aux voyageurs et alertes de sÃ©curitÃ© des agences gouvernementales."
     },
     "orefSirens": {
       "checking": "Checking siren alerts...",
-      "noAlerts": "No active sirens — all clear",
+      "noAlerts": "No active sirens â€” all clear",
       "notConfigured": "Sirens service not configured",
       "activeSirens": "{{count}} active siren(s)",
       "area": "Area",
@@ -1352,31 +1338,31 @@
     }
   },
   "popups": {
-    "startDate": "DATE DÉBUT",
+    "startDate": "DATE DÃ‰BUT",
     "endDate": "DATE FIN",
     "magnitude": "Magnitude",
     "depth": "Profondeur",
-    "intensity": "Intensité",
+    "intensity": "IntensitÃ©",
     "type": "Type",
     "status": "Statut",
-    "severity": "Sévérité",
+    "severity": "SÃ©vÃ©ritÃ©",
     "location": "LIEU",
-    "coordinates": "Coordonnées",
+    "coordinates": "CoordonnÃ©es",
     "casualties": "VICTIMES",
-    "displaced": "DÉPLACÉS",
-    "belligerents": "BELLIGÉRANTS",
-    "keyDevelopments": "DÉVELOPPEMENTS CLÉS",
+    "displaced": "DÃ‰PLACÃ‰S",
+    "belligerents": "BELLIGÃ‰RANTS",
+    "keyDevelopments": "DÃ‰VELOPPEMENTS CLÃ‰S",
     "unknown": "Inconnu",
     "source": "Source",
     "target": "Cible",
-    "events": "Événements",
+    "events": "Ã‰vÃ©nements",
     "impact": "Impact",
-    "capacity": "Capacité",
+    "capacity": "CapacitÃ©",
     "alerts": "Alertes actives",
     "common": {
-      "start": "DÉBUT",
+      "start": "DÃ‰BUT",
       "end": "FIN",
-      "updated": "MIS À JOUR"
+      "updated": "MIS Ã€ JOUR"
     },
     "conflict": {
       "title": "ZONE DE CONFLIT"
@@ -1384,7 +1370,7 @@
     "earthquake": {
       "levels": {
         "major": "MAJEUR",
-        "moderate": "MODÉRÉ",
+        "moderate": "MODÃ‰RÃ‰",
         "minor": "MINEUR"
       }
     },
@@ -1396,35 +1382,35 @@
       }
     },
     "protest": {
-      "acledVerified": "ACLED (vérifié)",
+      "acledVerified": "ACLED (vÃ©rifiÃ©)",
       "gdelt": "GDELT",
-      "riots": "Émeutes",
-      "highSeverity": "Sévérité Élevée"
+      "riots": "Ã‰meutes",
+      "highSeverity": "SÃ©vÃ©ritÃ© Ã‰levÃ©e"
     },
     "gpsJamming": {
-      "title": "Interférence GPS/GNSS",
-      "interference": "Interférence",
-      "aircraftAffected": "Aéronefs affectés",
-      "aircraftNormal": "Aéronefs normaux",
+      "title": "InterfÃ©rence GPS/GNSS",
+      "interference": "InterfÃ©rence",
+      "aircraftAffected": "AÃ©ronefs affectÃ©s",
+      "aircraftNormal": "AÃ©ronefs normaux",
       "h3Hex": "H3 Hex"
     },
     "flight": {
-      "groundStop": "ARRÊT AU SOL",
+      "groundStop": "ARRÃŠT AU SOL",
       "groundDelay": "PROGRAMME RETARD SOL",
-      "departureDelay": "RETARDS DÉPART",
-      "arrivalDelay": "RETARDS ARRIVÉE",
-      "delaysReported": "RETARDS SIGNALÉS",
-      "closure": "FERMETURE D'AÉROPORT",
+      "departureDelay": "RETARDS DÃ‰PART",
+      "arrivalDelay": "RETARDS ARRIVÃ‰E",
+      "delaysReported": "RETARDS SIGNALÃ‰S",
+      "closure": "FERMETURE D'AÃ‰ROPORT",
       "delays": "RETARDS",
       "avgDelay": "RETARD MOYEN",
-      "cancelled": "ANNULÉ",
+      "cancelled": "ANNULÃ‰",
       "sources": {
         "faa": "FAA-ASWS",
-        "eurocontrol": "Eurocontrôle",
-        "computed": "Calculé"
+        "eurocontrol": "EurocontrÃ´le",
+        "computed": "CalculÃ©"
       },
       "regions": {
-        "americas": "Amériques",
+        "americas": "AmÃ©riques",
         "europe": "Europe",
         "apac": "Asie-Pacifique",
         "mena": "Moyen-Orient",
@@ -1432,19 +1418,19 @@
       }
     },
     "apt": {
-      "description": "Groupe de menace persistante avancée avec capacités étatiques. Connu pour ses cyberopérations sophistiquées ciblant les infrastructures critiques, le gouvernement et la défense."
+      "description": "Groupe de menace persistante avancÃ©e avec capacitÃ©s Ã©tatiques. Connu pour ses cyberopÃ©rations sophistiquÃ©es ciblant les infrastructures critiques, le gouvernement et la dÃ©fense."
     },
     "cyberThreat": {
       "title": "CYBER MENACE"
     },
     "nuclear": {
       "types": {
-        "plant": "CENTRALE ÉLECTRIQUE",
+        "plant": "CENTRALE Ã‰LECTRIQUE",
         "enrichment": "ENRICHISSEMENT",
         "weapons": "COMPLEXE MILITAIRE",
         "research": "RECHERCHE"
       },
-      "description": "Installation nucléaire sous surveillance. Importance stratégique pour la sécurité régionale et la non-prolifération."
+      "description": "Installation nuclÃ©aire sous surveillance. Importance stratÃ©gique pour la sÃ©curitÃ© rÃ©gionale et la non-prolifÃ©ration."
     },
     "economic": {
       "types": {
@@ -1452,60 +1438,60 @@
         "centralBank": "BANQUE CENTRALE",
         "financialHub": "CENTRE FINANCIER"
       },
-      "closed": "FERMÉ"
+      "closed": "FERMÃ‰"
     },
     "irradiator": {
       "subtitle": "Installation d'Irradiation Gamma Industrielle",
-      "description": "Installation d'irradiation industrielle utilisant des sources de Cobalt-60 ou Césium-137 pour la stérilisation, la conservation alimentaire ou le traitement de matériaux. Source: Base de données AIEA DIIF."
+      "description": "Installation d'irradiation industrielle utilisant des sources de Cobalt-60 ou CÃ©sium-137 pour la stÃ©rilisation, la conservation alimentaire ou le traitement de matÃ©riaux. Source: Base de donnÃ©es AIEA DIIF."
     },
     "pipeline": {
-      "title": "OLÉODUC",
+      "title": "OLÃ‰ODUC",
       "types": {
-        "oil": "OLÉODUC",
+        "oil": "OLÃ‰ODUC",
         "gas": "GAZODUC",
         "products": "PIPELINE PRODUITS"
       },
       "status": {
-        "operating": "OPÉRATIONNEL",
+        "operating": "OPÃ‰RATIONNEL",
         "construction": "EN CONSTRUCTION"
       },
       "description": "Infrastructure majeure de transport de {{type}}. {{status}}"
     },
     "pipelineStatusDesc": {
-      "operating": "Actuellement opérationnel et transporte des ressources.",
+      "operating": "Actuellement opÃ©rationnel et transporte des ressources.",
       "construction": "Actuellement en construction."
     },
     "cable": {
-      "fault": "DÉFAUT",
-      "degraded": "DÉGRADÉ",
+      "fault": "DÃ‰FAUT",
+      "degraded": "DÃ‰GRADÃ‰",
       "active": "ACTIF",
       "major": "MAJEUR",
-      "cable": "CÂBLE",
-      "subtitle": "Câble à Fibre Optique Sous-marin",
-      "type": "CÂBLE SOUS-MARIN",
-      "advisory": "AVIS DE DÉFAUT",
-      "repairDeployment": "DÉPLOIEMENT RÉPARATION",
+      "cable": "CÃ‚BLE",
+      "subtitle": "CÃ¢ble Ã  Fibre Optique Sous-marin",
+      "type": "CÃ‚BLE SOUS-MARIN",
+      "advisory": "AVIS DE DÃ‰FAUT",
+      "repairDeployment": "DÃ‰PLOIEMENT RÃ‰PARATION",
       "repairStatus": {
         "onStation": "En gare",
         "enRoute": "En route"
       },
       "health": {
-        "evidence": "PREUVES D'ÉTAT"
+        "evidence": "PREUVES D'Ã‰TAT"
       },
-      "description": "Câble de télécommunications sous-marin transportant le trafic Internet international. Ces câbles à fibres optiques constituent l'épine dorsale de la connectivité Internet mondiale, transmettant plus de 95 % des données intercontinentales."
+      "description": "CÃ¢ble de tÃ©lÃ©communications sous-marin transportant le trafic Internet international. Ces cÃ¢bles Ã  fibres optiques constituent l'Ã©pine dorsale de la connectivitÃ© Internet mondiale, transmettant plus de 95 % des donnÃ©es intercontinentales."
     },
     "repairShip": {
-      "note": "Le suivi du navire de réparation indique un déploiement actif vers le site du défaut.",
-      "badge": "NAVIRE DE RÉPARATION",
-      "description": "Le suivi des navires de réparation indique un déploiement actif à l'appui de la restauration des câbles sous-marins.",
+      "note": "Le suivi du navire de rÃ©paration indique un dÃ©ploiement actif vers le site du dÃ©faut.",
+      "badge": "NAVIRE DE RÃ‰PARATION",
+      "description": "Le suivi des navires de rÃ©paration indique un dÃ©ploiement actif Ã  l'appui de la restauration des cÃ¢bles sous-marins.",
       "status": {
         "onStation": "EN GARE",
         "enRoute": "EN ROUTE"
       }
     },
-    "strategic": "STRATÉGIQUE",
-    "verified": "VÉRIFIÉ",
-    "sampledList": "Liste partielle de {{count}} événements.",
+    "strategic": "STRATÃ‰GIQUE",
+    "verified": "VÃ‰RIFIÃ‰",
+    "sampledList": "Liste partielle de {{count}} Ã©vÃ©nements.",
     "reason": "RAISON",
     "threat": "MENACE",
     "aka": "Aussi connu sous",
@@ -1519,75 +1505,75 @@
     "gamma": "GAMMA",
     "city": "VILLE",
     "length": "LONGUEUR",
-    "operator": "OPÉRATEUR",
+    "operator": "OPÃ‰RATEUR",
     "countries": "PAYS",
     "waypoints": "POINTS DE PASSAGE",
-    "repairEta": "ETA RÉPARATION",
+    "repairEta": "ETA RÃ‰PARATION",
     "timeUnits": {
       "m": "m",
       "h": "h",
       "d": "j"
     },
     "hotspot": {
-      "escalation": "ÉVALUATION ESCALADE",
+      "escalation": "Ã‰VALUATION ESCALADE",
       "baseline": "Base",
       "score": "Score",
       "trend": "Tendance",
       "components": {
         "news": "Actus",
         "cii": "CII",
-        "geo": "Géo",
+        "geo": "GÃ©o",
         "military": "Militaire"
       },
       "levels": {
         "stable": "STABLE",
         "watch": "SURVEILLANCE",
-        "elevated": "ÉLEVÉ",
+        "elevated": "Ã‰LEVÃ‰",
         "high": "HAUT",
         "critical": "CRITIQUE"
       }
     },
     "buttons": {
       "track": "Suivre",
-      "details": "Détails"
+      "details": "DÃ©tails"
     },
     "historicalContext": "CONTEXTE HISTORIQUE",
-    "lastMajorEvent": "Dernier Événement Majeur",
-    "precedents": "Précédents",
-    "cyclicalPattern": "Modèle Cyclique",
+    "lastMajorEvent": "Dernier Ã‰vÃ©nement Majeur",
+    "precedents": "PrÃ©cÃ©dents",
+    "cyclicalPattern": "ModÃ¨le Cyclique",
     "whyItMatters": "POURQUOI C'EST IMPORTANT",
-    "keyEntities": "ENTITÉS CLÉS",
-    "relatedHeadlines": "TITRES LIÉS",
+    "keyEntities": "ENTITÃ‰S CLÃ‰S",
+    "relatedHeadlines": "TITRES LIÃ‰S",
     "liveIntel": "Renseignement en Direct",
     "loadingNews": "Chargement actus mondiales...",
-    "noCoverage": "Aucune couverture récente",
+    "noCoverage": "Aucune couverture rÃ©cente",
     "time": "Heure",
     "area": "Zone",
     "expires": "Expire",
-    "aisGapSpike": "PIC ÉCART AIS",
+    "aisGapSpike": "PIC Ã‰CART AIS",
     "chokepointCongestion": "CONGESTION GOULET",
     "darkening": "ASSOMBRISSEMENT",
-    "density": "DENSITÉ",
-    "darkShips": "NAVIRES FANTÔMES",
+    "density": "DENSITÃ‰",
+    "darkShips": "NAVIRES FANTÃ”MES",
     "vesselCount": "NOMBRE NAVIRES",
-    "window": "FENÊTRE",
-    "region": "RÉGION",
-    "fatalities": "DÉCÈS",
+    "window": "FENÃŠTRE",
+    "region": "RÃ‰GION",
+    "fatalities": "DÃ‰CÃˆS",
     "actors": "ACTEURS",
-    "near": "Près de",
-    "moreEvents": "autres événements",
+    "near": "PrÃ¨s de",
+    "moreEvents": "autres Ã©vÃ©nements",
     "monitoring": "Surveillance",
     "viewUSGS": "Voir sur USGS",
-    "expired": "Expiré",
+    "expired": "ExpirÃ©",
     "timeAgo": {
       "s": "il y a {{count}} s",
       "m": "il y a {{count}} min",
       "h": "il y a {{count}} h",
       "d": "il y a {{count}} j"
     },
-    "updated": "Mis à jour",
+    "updated": "Mis Ã  jour",
     "cableAdvisory": {
-      "reported": "RAPPORTÉ",
+      "reported": "RAPPORTÃ‰",
       "impact": "IMPACT",
       "eta": "ETA"
     },
@@ -1598,45 +1584,45 @@
         "partial": "PERTURBATION PARTIELLE",
         "disruption": "PERTURBATION"
       },
-      "reported": "RAPPORTÉ",
-      "categories": "CATÉGORIES",
+      "reported": "RAPPORTÃ‰",
+      "categories": "CATÃ‰GORIES",
       "readReport": "Lire le rapport complet"
     },
     "datacenter": {
       "status": {
-        "existing": "OPÉRATIONNEL",
-        "planned": "PRÉVU",
-        "decommissioned": "DÉCLASSÉ",
+        "existing": "OPÃ‰RATIONNEL",
+        "planned": "PRÃ‰VU",
+        "decommissioned": "DÃ‰CLASSÃ‰",
         "unknown": "INCONNU"
       },
       "gpuChipCount": "COMPTE GPU/PUCE",
       "chipType": "TYPE DE PUCE",
       "power": "POUVOIR",
       "sector": "SECTEUR",
-      "attribution": "Données : clusters GPU Epoch AI",
+      "attribution": "DonnÃ©esÂ : clusters GPU Epoch AI",
       "chips": "puces",
       "cluster": {
-        "title": "{{count}} Centres de données",
+        "title": "{{count}} Centres de donnÃ©es",
         "totalChips": "TOTAL DES PUCES",
         "totalPower": "PUISSANCE TOTALE",
-        "operational": "OPÉRATIONNEL",
-        "planned": "PRÉVU",
-        "moreDataCenters": "+ {{count}} centres de données supplémentaires",
-        "sampledSites": "Affichage d'une liste échantillonnée de {{count}} sites."
+        "operational": "OPÃ‰RATIONNEL",
+        "planned": "PRÃ‰VU",
+        "moreDataCenters": "+ {{count}} centres de donnÃ©es supplÃ©mentaires",
+        "sampledSites": "Affichage d'une liste Ã©chantillonnÃ©e de {{count}} sites."
       }
     },
     "startupHub": {
       "tiers": {
-        "mega": "MÉGA HUB",
-        "major": "PÔLE MAJEUR",
-        "emerging": "ÉMERGENT",
+        "mega": "MÃ‰GA HUB",
+        "major": "PÃ”LE MAJEUR",
+        "emerging": "Ã‰MERGENT",
         "hub": "MOYEU"
       },
       "unicorns": "LICORNES"
     },
     "cloudRegion": {
       "provider": "FOURNISSEUR",
-      "availabilityZones": "ZONES DE DISPONIBILITÉ"
+      "availabilityZones": "ZONES DE DISPONIBILITÃ‰"
     },
     "techHQ": {
       "types": {
@@ -1645,17 +1631,17 @@
         "public": "PUBLIQUE",
         "tech": "TECHNOLOGIE"
       },
-      "marketCap": "CAP. MARCHÉE",
-      "employees": "EMPLOYÉS"
+      "marketCap": "CAP. MARCHÃ‰E",
+      "employees": "EMPLOYÃ‰S"
     },
     "accelerator": {
       "types": {
-        "accelerator": "ACCÉLÉRATEUR",
+        "accelerator": "ACCÃ‰LÃ‰RATEUR",
         "incubator": "INCUBATEUR",
-        "studio": "STUDIO DE DÉMARRAGE"
+        "studio": "STUDIO DE DÃ‰MARRAGE"
       },
-      "founded": "FONDÉ",
-      "notableAlumni": "Anciens élèves notables"
+      "founded": "FONDÃ‰",
+      "notableAlumni": "Anciens Ã©lÃ¨ves notables"
     },
     "techEvent": {
       "days": {
@@ -1671,25 +1657,25 @@
       "bigTechCount": "{{count}} Grande technologie",
       "unicornsCount": "{{count}} Licornes",
       "publicCount": "{{count}} Publique",
-      "sampled": "Affichage d'une liste échantillonnée de {{count}} entreprises."
+      "sampled": "Affichage d'une liste Ã©chantillonnÃ©e de {{count}} entreprises."
     },
     "techEventCluster": {
-      "eventsCount": "{{count}} ÉVÉNEMENTS",
-      "upcomingWithin2Weeks": "{{count}} à venir dans 2 semaines",
-      "sampled": "Affichage d'une liste échantillonnée d'événements {{count}}."
+      "eventsCount": "{{count}} Ã‰VÃ‰NEMENTS",
+      "upcomingWithin2Weeks": "{{count}} Ã  venir dans 2Â semaines",
+      "sampled": "Affichage d'une liste Ã©chantillonnÃ©e d'Ã©vÃ©nements {{count}}."
     },
     "militaryFlight": {
       "types": {
         "fighter": "Combattant",
         "bomber": "Bombardier",
         "transport": "Transport",
-        "tanker": "Pétrolier",
+        "tanker": "PÃ©trolier",
         "awacs": "AWACS/AEW",
         "reconnaissance": "Reconnaissance",
-        "helicopter": "Hélicoptère",
+        "helicopter": "HÃ©licoptÃ¨re",
         "drone": "Drone/Drone",
         "patrol": "Patrouille",
-        "specialOps": "Opérations spéciales",
+        "specialOps": "OpÃ©rations spÃ©ciales",
         "vip": "Transports VIP"
       },
       "altitude": "ALTITUDE",
@@ -1698,10 +1684,10 @@
       "heading": "TITRE",
       "hexCode": "CODE HEXICAL",
       "squawk": "CRI",
-      "attribution": "Source : Réseau OpenSky"
+      "attribution": "Source : RÃ©seau OpenSky"
     },
     "militaryVessel": {
-      "aisDark": "AIS FONCÉ",
+      "aisDark": "AIS FONCÃ‰",
       "vessel": "Navire",
       "speed": "VITESSE",
       "heading": "TITRE",
@@ -1712,45 +1698,45 @@
       "deploymentStatus": "STATUS",
       "usniIntel": "USNI Intel",
       "usniSource": "Source: USNI News Fleet Tracker",
-      "approximatePosition": "Position approximate — based on USNI weekly report, not real-time AIS.",
-      "darkDescription": "⚠ Le navire est devenu sombre - signal AIS perdu. Peut indiquer des opérations sensibles."
+      "approximatePosition": "Position approximate â€” based on USNI weekly report, not real-time AIS.",
+      "darkDescription": "âš  Le navire est devenu sombre - signal AIS perdu. Peut indiquer des opÃ©rations sensibles."
     },
     "militaryCluster": {
       "flightActivity": {
         "exercise": "Exercice militaire",
-        "patrol": "Activité de patrouille",
-        "transport": "Opérations de transport",
-        "unknown": "Activité militaire"
+        "patrol": "ActivitÃ© de patrouille",
+        "transport": "OpÃ©rations de transport",
+        "unknown": "ActivitÃ© militaire"
       },
-      "moreAircraft": "+{{count}} avions supplémentaires",
-      "aircraftCount": "{{count}} AÉRONEF",
-      "aircraft": "AÉRONEF",
-      "activity": "ACTIVITÉ",
+      "moreAircraft": "+{{count}} avions supplÃ©mentaires",
+      "aircraftCount": "{{count}} AÃ‰RONEF",
+      "aircraft": "AÃ‰RONEF",
+      "activity": "ACTIVITÃ‰",
       "primary": "PRIMAIRE",
       "trackedAircraft": "AVIONS SUIVANTS",
       "vesselActivity": {
         "exercise": "Exercice naval",
-        "deployment": "Déploiement naval",
-        "patrol": "Activité de patrouille",
+        "deployment": "DÃ©ploiement naval",
+        "patrol": "ActivitÃ© de patrouille",
         "transit": "Transit de la flotte",
-        "unknown": "Activité navale"
+        "unknown": "ActivitÃ© navale"
       },
-      "moreVessels": "+{{count}} navires supplémentaires",
+      "moreVessels": "+{{count}} navires supplÃ©mentaires",
       "vesselsCount": "{{count}} NAVIRES",
       "vessels": "NAVIRES",
       "trackedVessels": "NAVIRES SUIVANTS"
     },
     "naturalEvent": {
-      "closed": "FERMÉ",
+      "closed": "FERMÃ‰",
       "active": "ACTIF",
-      "reported": "RAPPORTÉ",
+      "reported": "RAPPORTÃ‰",
       "viewOnSource": "Afficher le {{source}}",
-      "attribution": "Données : NASA EONET"
+      "attribution": "DonnÃ©esÂ :Â NASA EONET"
     },
     "port": {
       "types": {
-        "container": "RÉCIPIENT",
-        "oil": "TERMINAL PÉTROLIER",
+        "container": "RÃ‰CIPIENT",
+        "oil": "TERMINAL PÃ‰TROLIER",
         "lng": "TERMINAL GNL",
         "naval": "PORT NAVAL",
         "mixed": "MIXTE",
@@ -1764,23 +1750,23 @@
         "construction": "CONSTRUCTION",
         "inactive": "INACTIF"
       },
-      "launchActivity": "ACTIVITÉ DE LANCEMENT",
-      "description": "Installation de lancement spatial stratégique. La cadence de lancement et les capacités d’accès à l’orbite sont des indicateurs géopolitiques clés."
+      "launchActivity": "ACTIVITÃ‰ DE LANCEMENT",
+      "description": "Installation de lancement spatial stratÃ©gique. La cadence de lancement et les capacitÃ©s dâ€™accÃ¨s Ã  lâ€™orbite sont des indicateurs gÃ©opolitiques clÃ©s."
     },
     "mineral": {
       "status": {
         "producing": "PRODUCTION",
-        "development": "DÉVELOPPEMENT",
+        "development": "DÃ‰VELOPPEMENT",
         "exploration": "EXPLORATION"
       },
       "projectSubtitle": "PROJET {{mineral}}"
     },
     "stockExchange": {
-      "marketCap": "CAP. MARCHÉE"
+      "marketCap": "CAP. MARCHÃ‰E"
     },
     "financialCenter": {
-      "gfciRank": "Rang du disjoncteur différentiel",
-      "specialties": "SPÉCIALITÉS"
+      "gfciRank": "Rang du disjoncteur diffÃ©rentiel",
+      "specialties": "SPÃ‰CIALITÃ‰S"
     },
     "centralBank": {
       "currency": "DEVISE"
@@ -1789,207 +1775,207 @@
       "commodities": "PRODUITS"
     },
     "iranEvent": {
-      "relatedEvents": "Événements liés"
+      "relatedEvents": "Ã‰vÃ©nements liÃ©s"
     },
     "hotspotSubtexts": {
       "conflict_zone": "Zone de conflit",
       "dprk_watch": "Montre RPDC",
       "egypt_gis": "Egypte/SIG",
-      "energy_space": "Énergie/Espace",
+      "energy_space": "Ã‰nergie/Espace",
       "financial_hub": "Centre financier",
       "gchq_mi6": "GCHQ/MI6",
       "greenland_intel": "Renseignements sur le Groenland",
-      "haiti_crisis": "Crise en Haïti",
-      "irgc_activity": "Activité du CGRI",
-      "insurgency_coups": "Insurrection/Coups d'État",
+      "haiti_crisis": "Crise en HaÃ¯ti",
+      "irgc_activity": "ActivitÃ© du CGRI",
+      "insurgency_coups": "Insurrection/Coups d'Ã‰tat",
       "iraq_pmf": "Irak/FMP",
-      "kremlin_activity": "Activité du Kremlin",
+      "kremlin_activity": "ActivitÃ© du Kremlin",
       "lebanon_hezbollah": "Liban/Hezbollah",
       "mossad_idf": "Mossad/FDI",
       "nato_hq": "QG de l'OTAN",
-      "pla_mss_activity": "Activité PLA/MSS",
+      "pla_mss_activity": "ActivitÃ© PLA/MSS",
       "pentagon_pizza_index": "Index des pizzas du Pentagone",
       "piracy_conflict": "Piratage/conflit",
       "qatar_al_udeid": "Qatar/Al Udeid",
       "saudi_gip_mbs": "GIP/MBS saoudiens",
-      "strait_watch": "Surveillance du détroit",
+      "strait_watch": "Surveillance du dÃ©troit",
       "syria_crisis": "Crise syrienne",
       "tech_ai_hub": "Centre technologique/IA",
       "turkey_mit": "Turquie/MIT",
       "uae_ecsr": "EAU/CEDS",
       "venezuela_crisis": "Crise au Venezuela",
-      "yemen_houthis": "Yémen/Houtis"
+      "yemen_houthis": "YÃ©men/Houtis"
     }
   },
   "signals": {
     "context": {
       "prediction_leads_news": {
-        "whyItMatters": "Les marchés prédictifs intègrent souvent l'information avant qu'elle ne devienne une actualité — les traders peuvent avoir un accès anticipé aux développements.",
-        "actionableInsight": "Surveiller les breaking news dans les 1 à 6 heures qui pourraient expliquer le mouvement de marché.",
-        "confidenceNote": "Confiance plus élevée si plusieurs marchés prédictifs évoluent dans la même direction."
+        "whyItMatters": "Les marchÃ©s prÃ©dictifs intÃ¨grent souvent l'information avant qu'elle ne devienne une actualitÃ© â€” les traders peuvent avoir un accÃ¨s anticipÃ© aux dÃ©veloppements.",
+        "actionableInsight": "Surveiller les breaking news dans les 1 Ã  6 heures qui pourraient expliquer le mouvement de marchÃ©.",
+        "confidenceNote": "Confiance plus Ã©levÃ©e si plusieurs marchÃ©s prÃ©dictifs Ã©voluent dans la mÃªme direction."
       },
       "news_leads_markets": {
-        "whyItMatters": "Les actualités émergent plus rapidement que les marchés ne réagissent — opportunité potentielle de mauvaise évaluation.",
-        "actionableInsight": "Surveiller le rattrapage du marché à mesure que les algorithmes et traders digèrent l'information.",
-        "confidenceNote": "Signal plus fort si les actualités proviennent d'agences de presse de premier rang."
+        "whyItMatters": "Les actualitÃ©s Ã©mergent plus rapidement que les marchÃ©s ne rÃ©agissent â€” opportunitÃ© potentielle de mauvaise Ã©valuation.",
+        "actionableInsight": "Surveiller le rattrapage du marchÃ© Ã  mesure que les algorithmes et traders digÃ¨rent l'information.",
+        "confidenceNote": "Signal plus fort si les actualitÃ©s proviennent d'agences de presse de premier rang."
       },
       "silent_divergence": {
-        "whyItMatters": "Le marché évolue significativement sans catalyseur identifiable — possible information privilégiée, trading algorithmique ou développement non rapporté.",
-        "actionableInsight": "Investiguer les sources de données alternatives ; les actualités pourraient émerger plus tard pour expliquer le mouvement.",
-        "confidenceNote": "Confiance plus faible car la cause est inconnue — traiter comme alerte précoce, pas comme renseignement confirmé."
+        "whyItMatters": "Le marchÃ© Ã©volue significativement sans catalyseur identifiable â€” possible information privilÃ©giÃ©e, trading algorithmique ou dÃ©veloppement non rapportÃ©.",
+        "actionableInsight": "Investiguer les sources de donnÃ©es alternatives ; les actualitÃ©s pourraient Ã©merger plus tard pour expliquer le mouvement.",
+        "confidenceNote": "Confiance plus faible car la cause est inconnue â€” traiter comme alerte prÃ©coce, pas comme renseignement confirmÃ©."
       },
       "velocity_spike": {
-        "whyItMatters": "Un sujet accélère à travers de multiples sources — indique une importance croissante et un potentiel impact sur les marchés/politiques.",
-        "actionableInsight": "Ce sujet nécessite une attention immédiate ; attendez-vous à des déclarations officielles ou des réactions de marché.",
-        "confidenceNote": "Confiance plus élevée avec davantage de sources ; vérifier si des sources de premier rang y figurent."
+        "whyItMatters": "Un sujet accÃ©lÃ¨re Ã  travers de multiples sources â€” indique une importance croissante et un potentiel impact sur les marchÃ©s/politiques.",
+        "actionableInsight": "Ce sujet nÃ©cessite une attention immÃ©diate ; attendez-vous Ã  des dÃ©clarations officielles ou des rÃ©actions de marchÃ©.",
+        "confidenceNote": "Confiance plus Ã©levÃ©e avec davantage de sources ; vÃ©rifier si des sources de premier rang y figurent."
       },
       "keyword_spike": {
-        "whyItMatters": "Un terme apparaît à une fréquence significativement plus élevée que sa ligne de base à travers plusieurs sources, indiquant un sujet en développement.",
-        "actionableInsight": "Examiner les titres associés et le résumé IA, puis corréler avec l'instabilité pays et les mouvements de marché.",
-        "confidenceNote": "La confiance augmente avec un multiplicateur de base plus fort et une plus grande diversité de sources."
+        "whyItMatters": "Un terme apparaÃ®t Ã  une frÃ©quence significativement plus Ã©levÃ©e que sa ligne de base Ã  travers plusieurs sources, indiquant un sujet en dÃ©veloppement.",
+        "actionableInsight": "Examiner les titres associÃ©s et le rÃ©sumÃ© IA, puis corrÃ©ler avec l'instabilitÃ© pays et les mouvements de marchÃ©.",
+        "confidenceNote": "La confiance augmente avec un multiplicateur de base plus fort et une plus grande diversitÃ© de sources."
       },
       "convergence": {
-        "whyItMatters": "Plusieurs types de sources indépendants confirment le même événement — la validation croisée augmente la probabilité d'exactitude.",
-        "actionableInsight": "Traiter comme renseignement de haute confiance ; la triangulation réduit le risque de faux positifs.",
-        "confidenceNote": "Très haute confiance lorsque les sources presse + gouvernement + renseignement s'alignent."
+        "whyItMatters": "Plusieurs types de sources indÃ©pendants confirment le mÃªme Ã©vÃ©nement â€” la validation croisÃ©e augmente la probabilitÃ© d'exactitude.",
+        "actionableInsight": "Traiter comme renseignement de haute confiance ; la triangulation rÃ©duit le risque de faux positifs.",
+        "confidenceNote": "TrÃ¨s haute confiance lorsque les sources presse + gouvernement + renseignement s'alignent."
       },
       "triangulation": {
-        "whyItMatters": "Le « triangle d'autorité » (agences de presse, sources gouvernementales, spécialistes du renseignement) sont alignés — c'est le standard de référence pour la confirmation des breaking news.",
-        "actionableInsight": "Il s'agit de renseignement actionnable ; attendez-vous à des réactions marché/politiques imminentes.",
-        "confidenceNote": "Signal de plus haute confiance dans le système — plusieurs sources faisant autorité convergent."
+        "whyItMatters": "Le Â« triangle d'autoritÃ© Â» (agences de presse, sources gouvernementales, spÃ©cialistes du renseignement) sont alignÃ©s â€” c'est le standard de rÃ©fÃ©rence pour la confirmation des breaking news.",
+        "actionableInsight": "Il s'agit de renseignement actionnable ; attendez-vous Ã  des rÃ©actions marchÃ©/politiques imminentes.",
+        "confidenceNote": "Signal de plus haute confiance dans le systÃ¨me â€” plusieurs sources faisant autoritÃ© convergent."
       },
       "flow_drop": {
-        "whyItMatters": "Perturbation détectée du flux physique de matières premières — les contraintes d'approvisionnement précèdent souvent les pics de prix.",
-        "actionableInsight": "Surveiller les prix des matières premières énergétiques ; évaluer l'exposition de la chaîne d'approvisionnement.",
-        "confidenceNote": "La confiance dépend de la durée de la perturbation et de la disponibilité d'approvisionnements alternatifs."
+        "whyItMatters": "Perturbation dÃ©tectÃ©e du flux physique de matiÃ¨res premiÃ¨res â€” les contraintes d'approvisionnement prÃ©cÃ¨dent souvent les pics de prix.",
+        "actionableInsight": "Surveiller les prix des matiÃ¨res premiÃ¨res Ã©nergÃ©tiques ; Ã©valuer l'exposition de la chaÃ®ne d'approvisionnement.",
+        "confidenceNote": "La confiance dÃ©pend de la durÃ©e de la perturbation et de la disponibilitÃ© d'approvisionnements alternatifs."
       },
       "flow_price_divergence": {
-        "whyItMatters": "Les perturbations d'approvisionnement ne sont pas encore reflétées dans les prix des matières premières — avantage informationnel potentiel.",
-        "actionableInsight": "Soit les marchés sont lents à réagir, soit la perturbation est moins importante que rapporté.",
-        "confidenceNote": "Confiance moyenne — les marchés peuvent disposer de meilleures informations que les reportages."
+        "whyItMatters": "Les perturbations d'approvisionnement ne sont pas encore reflÃ©tÃ©es dans les prix des matiÃ¨res premiÃ¨res â€” avantage informationnel potentiel.",
+        "actionableInsight": "Soit les marchÃ©s sont lents Ã  rÃ©agir, soit la perturbation est moins importante que rapportÃ©.",
+        "confidenceNote": "Confiance moyenne â€” les marchÃ©s peuvent disposer de meilleures informations que les reportages."
       },
       "geo_convergence": {
-        "whyItMatters": "Plusieurs événements d'actualité se concentrent autour d'un même lieu géographique — escalade potentielle ou activité coordonnée.",
-        "actionableInsight": "Augmenter la priorité de surveillance pour cette région ; corréler avec les données satellite/AIS si disponibles.",
-        "confidenceNote": "Confiance plus élevée si les événements couvrent plusieurs types de sources et périodes."
+        "whyItMatters": "Plusieurs Ã©vÃ©nements d'actualitÃ© se concentrent autour d'un mÃªme lieu gÃ©ographique â€” escalade potentielle ou activitÃ© coordonnÃ©e.",
+        "actionableInsight": "Augmenter la prioritÃ© de surveillance pour cette rÃ©gion ; corrÃ©ler avec les donnÃ©es satellite/AIS si disponibles.",
+        "confidenceNote": "Confiance plus Ã©levÃ©e si les Ã©vÃ©nements couvrent plusieurs types de sources et pÃ©riodes."
       },
       "explained_market_move": {
-        "whyItMatters": "Le mouvement de marché a un catalyseur identifié — pas de mystère, l'action des prix reflète une information connue.",
-        "actionableInsight": "Comprendre le narratif qui motive le mouvement ; évaluer si la réaction est proportionnelle.",
-        "confidenceNote": "Haute confiance — actualités et action des prix sont corrélées."
+        "whyItMatters": "Le mouvement de marchÃ© a un catalyseur identifiÃ© â€” pas de mystÃ¨re, l'action des prix reflÃ¨te une information connue.",
+        "actionableInsight": "Comprendre le narratif qui motive le mouvement ; Ã©valuer si la rÃ©action est proportionnelle.",
+        "confidenceNote": "Haute confiance â€” actualitÃ©s et action des prix sont corrÃ©lÃ©es."
       },
       "hotspot_escalation": {
-        "whyItMatters": "Un point chaud géopolitique montre une escalade significative basée sur l'activité médiatique, l'instabilité pays, la convergence géographique et la présence militaire.",
-        "actionableInsight": "Augmenter la priorité de surveillance ; évaluer les impacts en aval sur les infrastructures, marchés et stabilité régionale.",
-        "confidenceNote": "Confiance pondérée par plusieurs sources de données — actualités (35%), instabilité pays (25%), convergence géo (25%), activité militaire (15%)."
+        "whyItMatters": "Un point chaud gÃ©opolitique montre une escalade significative basÃ©e sur l'activitÃ© mÃ©diatique, l'instabilitÃ© pays, la convergence gÃ©ographique et la prÃ©sence militaire.",
+        "actionableInsight": "Augmenter la prioritÃ© de surveillance ; Ã©valuer les impacts en aval sur les infrastructures, marchÃ©s et stabilitÃ© rÃ©gionale.",
+        "confidenceNote": "Confiance pondÃ©rÃ©e par plusieurs sources de donnÃ©es â€” actualitÃ©s (35%), instabilitÃ© pays (25%), convergence gÃ©o (25%), activitÃ© militaire (15%)."
       },
       "sector_cascade": {
-        "whyItMatters": "Le mouvement de marché se propage à travers les secteurs liés — indique une réaction systémique à un événement catalyseur.",
-        "actionableInsight": "Identifier le catalyseur principal ; évaluer l'exposition à travers les actifs corrélés.",
-        "confidenceNote": "Confiance plus élevée lorsque plusieurs secteurs évoluent avec une vélocité et direction similaires."
+        "whyItMatters": "Le mouvement de marchÃ© se propage Ã  travers les secteurs liÃ©s â€” indique une rÃ©action systÃ©mique Ã  un Ã©vÃ©nement catalyseur.",
+        "actionableInsight": "Identifier le catalyseur principal ; Ã©valuer l'exposition Ã  travers les actifs corrÃ©lÃ©s.",
+        "confidenceNote": "Confiance plus Ã©levÃ©e lorsque plusieurs secteurs Ã©voluent avec une vÃ©locitÃ© et direction similaires."
       },
       "military_surge": {
-        "whyItMatters": "L'activité de transport militaire est significativement au-dessus de la ligne de base — indique un potentiel déploiement, opération humanitaire ou projection de force.",
-        "actionableInsight": "Corréler avec les actualités régionales ; évaluer l'activité des bases à proximité et les mouvements navals.",
-        "confidenceNote": "Confiance plus élevée avec une activité soutenue sur plusieurs heures et des types d'aéronefs variés."
+        "whyItMatters": "L'activitÃ© de transport militaire est significativement au-dessus de la ligne de base â€” indique un potentiel dÃ©ploiement, opÃ©ration humanitaire ou projection de force.",
+        "actionableInsight": "CorrÃ©ler avec les actualitÃ©s rÃ©gionales ; Ã©valuer l'activitÃ© des bases Ã  proximitÃ© et les mouvements navals.",
+        "confidenceNote": "Confiance plus Ã©levÃ©e avec une activitÃ© soutenue sur plusieurs heures et des types d'aÃ©ronefs variÃ©s."
       },
       "fallback": {
-        "whyItMatters": "Signal détecté.",
-        "actionableInsight": "Surveiller les développements.",
+        "whyItMatters": "Signal dÃ©tectÃ©.",
+        "actionableInsight": "Surveiller les dÃ©veloppements.",
         "confidenceNote": "Confiance standard."
       }
     }
   },
   "alerts": {
-    "instabilityRising": "Instabilité en hausse : {{country}}",
-    "instabilityFalling": "Instabilité en baisse : {{country}}",
-    "indexRose": "L'indice d'instabilité est passé de {{from}} à {{to}} ({{change}}). Facteur : {{driver}}",
-    "indexFell": "L'indice d'instabilité est passé de {{from}} à {{to}} ({{change}}). Facteur : {{driver}}",
-    "geoAlert": "Alerte géographique : {{location}}",
+    "instabilityRising": "InstabilitÃ© en hausse : {{country}}",
+    "instabilityFalling": "InstabilitÃ© en baisse : {{country}}",
+    "indexRose": "L'indice d'instabilitÃ© est passÃ© de {{from}} Ã  {{to}} ({{change}}). Facteur : {{driver}}",
+    "indexFell": "L'indice d'instabilitÃ© est passÃ© de {{from}} Ã  {{to}} ({{change}}). Facteur : {{driver}}",
+    "geoAlert": "Alerte gÃ©ographique : {{location}}",
     "cascadeAlert": "Alerte cascade d'infrastructure",
     "infraAlert": "Alerte infrastructure : {{name}}",
-    "countriesAffected": "{{count}} pays affectés, impact le plus élevé : {{impact}}",
+    "countriesAffected": "{{count}} pays affectÃ©s, impact le plus Ã©levÃ© : {{impact}}",
     "alert": "Alerte : {{location}}",
-    "multipleRegions": "Régions multiples",
-    "trending": "\"{{term}}\" en tendance — {{count}} mentions en {{hours}}h",
-    "eventsDetected": "{{count}} événements détectés dans la région ({{lat}}°, {{lon}}°)"
+    "multipleRegions": "RÃ©gions multiples",
+    "trending": "\"{{term}}\" en tendance â€” {{count}} mentions en {{hours}}h",
+    "eventsDetected": "{{count}} Ã©vÃ©nements dÃ©tectÃ©s dans la rÃ©gion ({{lat}}Â°, {{lon}}Â°)"
   },
   "intel": {
     "topics": {
       "military": {
-        "name": "Activité militaire",
-        "description": "Exercices militaires, déploiements et opérations"
+        "name": "ActivitÃ© militaire",
+        "description": "Exercices militaires, dÃ©ploiements et opÃ©rations"
       },
       "cyber": {
         "name": "Menaces cyber",
-        "description": "Cyberattaques, rançongiciels et menaces numériques"
+        "description": "Cyberattaques, ranÃ§ongiciels et menaces numÃ©riques"
       },
       "nuclear": {
-        "name": "Nucléaire",
-        "description": "Programmes nucléaires, inspections AIEA, prolifération"
+        "name": "NuclÃ©aire",
+        "description": "Programmes nuclÃ©aires, inspections AIEA, prolifÃ©ration"
       },
       "sanctions": {
         "name": "Sanctions",
-        "description": "Sanctions économiques et restrictions commerciales"
+        "description": "Sanctions Ã©conomiques et restrictions commerciales"
       },
       "intelligence": {
         "name": "Renseignement",
-        "description": "Espionnage, opérations de renseignement, surveillance"
+        "description": "Espionnage, opÃ©rations de renseignement, surveillance"
       },
       "maritime": {
-        "name": "Sécurité maritime",
-        "description": "Opérations navales, points d'étranglement maritimes, voies maritimes"
+        "name": "SÃ©curitÃ© maritime",
+        "description": "OpÃ©rations navales, points d'Ã©tranglement maritimes, voies maritimes"
       }
     }
   },
   "common": {
     "loading": "Chargement...",
     "error": "Erreur",
-    "noData": "Aucune donnée disponible",
-    "updated": "Mis à jour à l'instant",
+    "noData": "Aucune donnÃ©e disponible",
+    "updated": "Mis Ã  jour Ã  l'instant",
     "ago": "il y a {{time}}",
     "retrying": "Nouvelle tentative...",
-    "failedToLoad": "Échec du chargement des données",
-    "noDataShort": "Aucune donnée",
-    "upstreamUnavailable": "API source indisponible — nouvelle tentative automatique",
-    "loadingUcdpEvents": "Chargement des événements UCDP",
+    "failedToLoad": "Ã‰chec du chargement des donnÃ©es",
+    "noDataShort": "Aucune donnÃ©e",
+    "upstreamUnavailable": "API source indisponible â€” nouvelle tentative automatique",
+    "loadingUcdpEvents": "Chargement des Ã©vÃ©nements UCDP",
     "loadingStablecoins": "Chargement des stablecoins...",
-    "scanningThermalData": "Analyse des données thermiques",
+    "scanningThermalData": "Analyse des donnÃ©es thermiques",
     "calculatingExposure": "Calcul de l'exposition",
     "computingSignals": "Calcul des signaux...",
-    "loadingEtfData": "Chargement des données ETF...",
-    "loadingDisplacement": "Chargement des données de déplacement",
-    "loadingClimateData": "Chargement des données climatiques",
-    "failedTechReadiness": "Échec du chargement des données tech readiness",
-    "failedRiskOverview": "Échec du calcul du panorama des risques",
-    "failedPredictions": "Échec du chargement des prédictions",
-    "failedCII": "Échec du calcul du CII",
-    "failedDependencyGraph": "Échec de la construction du graphe de dépendances",
-    "failedIntelFeed": "Échec du chargement du flux de renseignement",
-    "failedMarketData": "Échec du chargement des données de marché",
-    "failedSectorData": "Échec du chargement des données sectorielles",
-    "failedCommodities": "Échec du chargement des matières premières",
-    "failedCryptoData": "Échec du chargement des données crypto",
-    "failedClusterNews": "Échec du regroupement des actualités",
-    "noNewsAvailable": "Aucune actualité disponible",
-    "noActiveTechHubs": "Aucun pôle tech actif",
-    "noActiveGeoHubs": "Aucun pôle géopolitique actif",
-    "allSourcesDisabled": "Toutes les sources désactivées",
-    "allIntelSourcesDisabled": "Toutes les sources Intel désactivées",
-    "noEventsInCategory": "Aucun événement dans cette catégorie",
+    "loadingEtfData": "Chargement des donnÃ©es ETF...",
+    "loadingDisplacement": "Chargement des donnÃ©es de dÃ©placement",
+    "loadingClimateData": "Chargement des donnÃ©es climatiques",
+    "failedTechReadiness": "Ã‰chec du chargement des donnÃ©es tech readiness",
+    "failedRiskOverview": "Ã‰chec du calcul du panorama des risques",
+    "failedPredictions": "Ã‰chec du chargement des prÃ©dictions",
+    "failedCII": "Ã‰chec du calcul du CII",
+    "failedDependencyGraph": "Ã‰chec de la construction du graphe de dÃ©pendances",
+    "failedIntelFeed": "Ã‰chec du chargement du flux de renseignement",
+    "failedMarketData": "Ã‰chec du chargement des donnÃ©es de marchÃ©",
+    "failedSectorData": "Ã‰chec du chargement des donnÃ©es sectorielles",
+    "failedCommodities": "Ã‰chec du chargement des matiÃ¨res premiÃ¨res",
+    "failedCryptoData": "Ã‰chec du chargement des donnÃ©es crypto",
+    "failedClusterNews": "Ã‰chec du regroupement des actualitÃ©s",
+    "noNewsAvailable": "Aucune actualitÃ© disponible",
+    "noActiveTechHubs": "Aucun pÃ´le tech actif",
+    "noActiveGeoHubs": "Aucun pÃ´le gÃ©opolitique actif",
+    "allSourcesDisabled": "Toutes les sources dÃ©sactivÃ©es",
+    "allIntelSourcesDisabled": "Toutes les sources Intel dÃ©sactivÃ©es",
+    "noEventsInCategory": "Aucun Ã©vÃ©nement dans cette catÃ©gorie",
     "exportCsv": "Exporter CSV",
     "exportJson": "Exporter JSON",
-    "exportData": "Exporter les données",
+    "exportData": "Exporter les donnÃ©es",
     "unrest": "Troubles",
     "conflict": "Conflit",
-    "security": "Sécurité",
+    "security": "SÃ©curitÃ©",
     "information": "Information",
     "shareStory": "Partager le sujet",
     "exportImage": "Exporter l'image",
     "exportPdf": "Exporter PDF",
-    "selectAll": "Sélectionner tout",
-    "selectNone": "Sélectionnez Aucun",
-    "noDataAvailable": "Aucune donnée disponible",
+    "selectAll": "SÃ©lectionner tout",
+    "selectNone": "SÃ©lectionnez Aucun",
+    "noDataAvailable": "Aucune donnÃ©e disponible",
     "new": "NOUVEAU",
     "live": "EN DIRECT",
     "cached": "EN CACHE",

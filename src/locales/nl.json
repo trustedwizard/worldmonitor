@@ -1,4 +1,4 @@
-{
+﻿{
   "panels": {
     "liveNews": "Live nieuws",
     "markets": "Markten",
@@ -37,7 +37,7 @@
     "thinktanks": "Denktanks",
     "africa": "Afrika",
     "latam": "Latijns-Amerika",
-    "asia": "Azië-Pacific",
+    "asia": "AziÃ«-Pacific",
     "energy": "Energie en hulpbronnen",
     "etfFlows": "BTC ETF-tracker",
     "economic": "Economische indicatoren",
@@ -70,7 +70,7 @@
   "modals": {
     "search": {
       "placeholder": "Zoeken of commando typen...",
-      "hint": "Zoeken • Landen • Lagen • Panelen • Navigatie • Instellingen",
+      "hint": "Zoeken â€¢ Landen â€¢ Lagen â€¢ Panelen â€¢ Navigatie â€¢ Instellingen",
       "recent": "Recente zoekopdrachten",
       "empty": "Zoek gegevens of voer opdrachten uit",
       "noResults": "No results found",
@@ -100,9 +100,9 @@
         "accelerator": "Gaspedaal"
       },
       "placeholderTech": "Zoeken of commando typen...",
-      "hintTech": "Zoeken • Bedrijven • AI Labs • Lagen • Navigatie • Instellingen",
+      "hintTech": "Zoeken â€¢ Bedrijven â€¢ AI Labs â€¢ Lagen â€¢ Navigatie â€¢ Instellingen",
       "placeholderFinance": "Zoeken of commando typen...",
-      "hintFinance": "Zoeken • Beurzen • Markten • Lagen • Navigatie • Instellingen"
+      "hintFinance": "Zoeken â€¢ Beurzen â€¢ Markten â€¢ Lagen â€¢ Navigatie â€¢ Instellingen"
     },
     "signal": {
       "source": "Source",
@@ -144,21 +144,10 @@
     },
     "mobileWarning": {
       "title": "Desktop Experience Recommended",
-      "description": "Je bekijkt een vereenvoudigde mobiele versie gericht op de MENA-regio met essentiële lagen ingeschakeld.",
+      "description": "Je bekijkt een vereenvoudigde mobiele versie gericht op de MENA-regio met essentiÃ«le lagen ingeschakeld.",
       "tip": "Tip: Gebruik de weergaveknoppen (GLOBAL/US/MENA) om van regio te wisselen. Tik op markeringen om details te zien.",
       "dontShowAgain": "Niet meer laten zien",
       "gotIt": "Ik heb het"
-    },
-    "downloadBanner": {
-      "title": "Bureaublad beschikbaar",
-      "description": "Native prestaties, veilige lokale sleutelopslag, offline kaarttegels.",
-      "macSilicon": "macOS (Apple Silicon)",
-      "macIntel": "macOS (Intel)",
-      "windows": "Windows (.exe)",
-      "linux": "Linux (.AppImage)",
-      "dismiss": "Afwijzen",
-      "showAllPlatforms": "Toon alle platforms",
-      "showLess": "Laat minder zien"
     },
     "runtimeConfig": {
       "title": "Desktopconfiguratie",
@@ -176,7 +165,7 @@
       },
       "status": {
         "ready": "Klaar",
-        "staged": "Geënsceneerd",
+        "staged": "GeÃ«nsceneerd",
         "needsKeys": "Heeft sleutels nodig",
         "invalid": "Ongeldig",
         "missing": "Ontbreekt",
@@ -185,7 +174,7 @@
       },
       "placeholder": {
         "setSecret": "Geheim instellen",
-        "staged": "Geënsceneerd (opslaan met OK)"
+        "staged": "GeÃ«nsceneerd (opslaan met OK)"
       },
       "help": {
         "URLHAUS_AUTH_KEY": "Gebruikt voor de URLhaus- en ThreatFox-API's.",
@@ -193,8 +182,8 @@
         "ABUSEIPDB_API_KEY": "Optionele verrijkingsbron voor reputatie van kwaadaardige IP-adressen.",
         "FINNHUB_API_KEY": "Realtime aandelenkoersen en marktgegevens.",
         "NASA_FIRMS_API_KEY": "Brandinformatiesysteem voor Resourcebeheer.",
-        "OLLAMA_API_URL": "e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio) — OpenAI-compatible endpoint.",
-        "OLLAMA_MODEL": "e.g. llama3.1:8b — model tag to use for summarization."
+        "OLLAMA_API_URL": "e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio) â€” OpenAI-compatible endpoint.",
+        "OLLAMA_MODEL": "e.g. llama3.1:8b â€” model tag to use for summarization."
       }
     },
     "countryIntel": {
@@ -342,7 +331,7 @@
         "mideast": "MIDDEN-OOSTEN",
         "europe": "EUROPA",
         "americas": "AMERIKA",
-        "asia": "AZIË"
+        "asia": "AZIÃ‹"
       }
     },
     "playback": {
@@ -357,9 +346,9 @@
         "europe": "Europa",
         "latam": "Latijns-Amerika",
         "mena": "MENA",
-        "asia": "Azië",
+        "asia": "AziÃ«",
         "africa": "Afrika",
-        "oceania": "Oceanië"
+        "oceania": "OceaniÃ«"
       },
       "zoomIn": "Inzoomen",
       "zoomOut": "Uitzoomen",
@@ -414,7 +403,7 @@
         "economicCenters": "Economische Centra",
         "criticalMinerals": "Kritieke mineralen",
         "stockExchanges": "Beurzen",
-        "financialCenters": "Financiële centra",
+        "financialCenters": "FinanciÃ«le centra",
         "centralBanks": "Centrale banken",
         "commodityHubs": "Grondstoffenhubs",
         "gulfInvestments": "GCC-investeringen",
@@ -464,7 +453,7 @@
           "techEcosystem": "Tech ecosysteem",
           "infrastructure": "Infrastructuur",
           "naturalEconomic": "Natuurlijk en economisch",
-          "financeCore": "Financiële kern",
+          "financeCore": "FinanciÃ«le kern",
           "infrastructureRisk": "Infrastructuur en risico",
           "macroContext": "Macrocontext",
           "timeFilter": "Tijdfilter (rechtsboven)",
@@ -487,25 +476,25 @@
           "economicCenters": "Beurzen en centrale banken",
           "countriesOverlay": "Overlays met landnamen",
           "financeExchanges": "Belangrijke mondiale beurzen per marktniveau",
-          "financeCenters": "Mondiale en regionale financiële hubs",
+          "financeCenters": "Mondiale en regionale financiÃ«le hubs",
           "financeCentralBanks": "Monetaire beleidsinstellingen wereldwijd",
           "financeCommodityHubs": "Belangrijke uitwisselingen, havens en raffinagehubs",
           "financeCables": "Grote onderzeese glasvezelroutes die verbonden zijn met de marktinfrastructuur",
           "financePipelines": "Routes van olie-/gaspijpleidingen die van invloed zijn op de energiemarkten",
-          "financeOutages": "Internetverstoringen die de marktactiviteiten kunnen beïnvloeden",
-          "financeCyberThreats": "Beveiligingsgebeurtenissen rond financiële infrastructuur",
+          "financeOutages": "Internetverstoringen die de marktactiviteiten kunnen beÃ¯nvloeden",
+          "financeCyberThreats": "Beveiligingsgebeurtenissen rond financiÃ«le infrastructuur",
           "macroWaterways": "Strategische knelpunten voor de goederenscheepvaart",
           "weatherAlertsMarket": "Zware weersomstandigheden met marktrelevantie",
           "naturalEventsMacro": "Aardbevingen, branden, overstromingen en andere natuurlijke verstoringen",
           "timeRecent": "Filter op tijd gebaseerde gegevens naar recente uren",
           "timeExtended": "Toon gegevens van de afgelopen week, maand of altijd",
-          "geoConflicts": "Actieve oorlogsgebieden (Oekraïne, Gaza, etc.) met grenzen",
+          "geoConflicts": "Actieve oorlogsgebieden (OekraÃ¯ne, Gaza, etc.) met grenzen",
           "geoHotspots": "Spanningsgebieden - kleurgecodeerd op basis van nieuwsactiviteitsniveau",
           "geoSanctions": "Landen die onderworpen zijn aan economische sancties van de VS, de EU en de VN",
           "geoProtests": "Burgerlijke onrust, demonstraties (tijdgefilterd)",
           "militaryBases": "Militaire installaties VS/NAVO, China, Rusland (150+)",
           "militaryNuclear": "Energiecentrales, verrijking, wapenfaciliteiten",
-          "militaryIrradiators": "Industriële gammabestralingsinstallaties",
+          "militaryIrradiators": "IndustriÃ«le gammabestralingsinstallaties",
           "militaryActivity": "Live volgen van militaire vliegtuigen en schepen",
           "infraCablesFull": "Grote onderzeese glasvezelkabels (20 backbone-routes)",
           "infraPipelinesFull": "Olie-/gaspijpleidingen (Nord Stream, TAPI, enz.)",
@@ -518,7 +507,7 @@
           "dayNight": "Realtime zonneterminator met dag- en nachtzones"
         },
         "notes": {
-          "timeAffects": "Beïnvloedt: aardbevingen, weer, protesten, stroomstoringen"
+          "timeAffects": "BeÃ¯nvloedt: aardbevingen, weer, protesten, stroomstoringen"
         }
       }
     },
@@ -533,7 +522,7 @@
         "moderate": "MATIG",
         "normal": "NORMAAL"
       },
-      "infoTooltip": "<strong>Klimaatafwijkingsmonitor</strong> Temperatuur- en neerslagafwijkingen ten opzichte van de basislijn van 30 dagen. Gegevens uit Open-Meteo (heranalyse van ERA5).<ul><li><strong>Extreem</strong>: afwijking van >5°C of >80 mm/dag</li><li><strong>Gemiddeld</strong>: afwijking van >3°C of >40 mm/dag</li></ul>Bewaakt 15 conflict-/rampgevoelige zones."
+      "infoTooltip": "<strong>Klimaatafwijkingsmonitor</strong> Temperatuur- en neerslagafwijkingen ten opzichte van de basislijn van 30 dagen. Gegevens uit Open-Meteo (heranalyse van ERA5).<ul><li><strong>Extreem</strong>: afwijking van >5Â°C of >80 mm/dag</li><li><strong>Gemiddeld</strong>: afwijking van >3Â°C of >40 mm/dag</li></ul>Bewaakt 15 conflict-/rampgevoelige zones."
     },
     "newsPanel": {
       "close": "Dichtbij",
@@ -623,7 +612,7 @@
         "carriers": "Vervoerders",
         "destroyers": "Vernietigers",
         "frigates": "Fregatten",
-        "submarines": "Onderzeeërs",
+        "submarines": "OnderzeeÃ«rs",
         "patrol": "Patrouille",
         "auxiliary": "Extra",
         "navalVessels": "Marineschepen"
@@ -657,7 +646,7 @@
         "sea": "SEA"
       },
       "strike": "STRIKE",
-      "staleWarning": "Gebruik van gecachte gegevens — live feed tijdelijk niet beschikbaar",
+      "staleWarning": "Gebruik van gecachte gegevens â€” live feed tijdelijk niet beschikbaar",
       "updated": "Bijgewerkt:",
       "theaters": {
         "iran-theater": "Iran-theater",
@@ -667,7 +656,7 @@
         "korea-theater": "Koreaans schiereiland",
         "south-china-sea": "Zuid-Chinese Zee",
         "east-med-theater": "Oostelijk Middellandse Zee",
-        "israel-gaza-theater": "Israël/Gaza",
+        "israel-gaza-theater": "IsraÃ«l/Gaza",
         "yemen-redsea-theater": "Jemen/Rode Zee"
       }
     },
@@ -683,7 +672,7 @@
       "all": "All",
       "conferencesCount": "{{count}} conferences",
       "onMap": "{{count}} on map",
-      "techmemeEvents": "Techmeme Events ↗",
+      "techmemeEvents": "Techmeme Events â†—",
       "today": "TODAY",
       "soon": "SOON"
     },
@@ -691,7 +680,7 @@
       "internetUsers": "Internetgebruikers",
       "mobileSubscriptions": "Mobiele abonnementen",
       "rdSpending": "R&D-uitgaven",
-      "infoTooltip": "<strong>Global Tech Readiness</strong><br>Samengestelde score (0-100) gebaseerd op gegevens van de Wereldbank:<br><br><strong>Getoonde statistieken:</strong><br>🌐 Internetgebruikers (% van de bevolking)<br>📱 Mobiele abonnementen (per 100 personen)<br>🔬 R&D Uitgaven (% van het bbp)<br><br><strong>Gewichten:</strong> R&D (35%), internet (30%), breedband (20%), mobiel (15%)<br><br><em>— = Geen recente gegevens beschikbaar</em><br><em>Bron: Open Data van de Wereldbank (2019-2024)</em>",
+      "infoTooltip": "<strong>Global Tech Readiness</strong><br>Samengestelde score (0-100) gebaseerd op gegevens van de Wereldbank:<br><br><strong>Getoonde statistieken:</strong><br>ðŸŒ Internetgebruikers (% van de bevolking)<br>ðŸ“± Mobiele abonnementen (per 100 personen)<br>ðŸ”¬ R&D Uitgaven (% van het bbp)<br><br><strong>Gewichten:</strong> R&D (35%), internet (30%), breedband (20%), mobiel (15%)<br><br><em>â€” = Geen recente gegevens beschikbaar</em><br><em>Bron: Open Data van de Wereldbank (2019-2024)</em>",
       "fetchingData": "Fetching World Bank Data",
       "internetUsersIndicator": "Internet Users",
       "mobileSubscriptionsIndicator": "Mobile Subscriptions",
@@ -729,7 +718,7 @@
       "countriesAffected": "Betrokken landen ({{count}})",
       "links": "koppelingen",
       "selectInfrastructureHint": "Selecteer infrastructuur om de cascade-impact te analyseren",
-      "infoTooltip": "<strong>Cascadeanalyse</strong> Modelleert afhankelijkheden van de infrastructuur:<ul><li>Onderzeese kabels, pijpleidingen, havens, knelpunten</li><li>Selecteer infrastructuur om storingen te simuleren</li><li>Toont getroffen landen en capaciteitsverlies</li><li>Identificeert overtollige routes</li></ul>Gegevens uit TeleGeography en industriële bronnen.",
+      "infoTooltip": "<strong>Cascadeanalyse</strong> Modelleert afhankelijkheden van de infrastructuur:<ul><li>Onderzeese kabels, pijpleidingen, havens, knelpunten</li><li>Selecteer infrastructuur om storingen te simuleren</li><li>Toont getroffen landen en capaciteitsverlies</li><li>Identificeert overtollige routes</li></ul>Gegevens uit TeleGeography en industriÃ«le bronnen.",
       "noImpacts": "Geen landeneffecten gedetecteerd"
     },
     "intelligenceFindings": {
@@ -753,7 +742,7 @@
       },
       "insights": {
         "criticalDestabilization": "Kritische destabilisatie - onmiddellijke aandacht",
-        "significantShift": "Aanzienlijke verschuiving – nauwlettend in de gaten houden",
+        "significantShift": "Aanzienlijke verschuiving â€“ nauwlettend in de gaten houden",
         "developingSituation": "Situatie ontwikkelen - spoor voor escalatie",
         "convergence": "Meerdere evenementen clusteren in de regio",
         "cascade": "Verstoring van de infrastructuur verspreidt zich",
@@ -794,13 +783,13 @@
       "restrictions": "Beperkingen",
       "tariffs": "Tarieven",
       "flows": "Handelsstromen",
-      "barriers": "Handelsbarrières",
+      "barriers": "HandelsbarriÃ¨res",
       "noRestrictions": "Geen actieve handelsbeperkingen",
       "noTariffData": "Geen tariefgegevens beschikbaar",
       "noFlowData": "Geen handelsstroomgegevens beschikbaar",
-      "noBarriers": "Geen handelsbarrières gemeld",
-      "apiKeyMissing": "WTO API-sleutel vereist — voeg deze toe in Instellingen",
-      "upstreamUnavailable": "WTO-gegevens tijdelijk niet beschikbaar — gecachete gegevens worden weergegeven",
+      "noBarriers": "Geen handelsbarriÃ¨res gemeld",
+      "apiKeyMissing": "WTO API-sleutel vereist â€” voeg deze toe in Instellingen",
+      "upstreamUnavailable": "WTO-gegevens tijdelijk niet beschikbaar â€” gecachete gegevens worden weergegeven",
       "appliedRate": "Toegepast Tarief",
       "boundRate": "Gebonden Tarief",
       "exports": "Export",
@@ -859,7 +848,7 @@
       "noSignals": "Geen instabiliteitssignalen gedetecteerd"
     },
     "gdeltIntel": {
-      "infoTooltip": "<strong>GDELT Intelligence</strong> Realtime monitoring van mondiaal nieuws:<ul><li>Samengestelde onderwerpcategorieën (conflicten, cyber, etc.)</li><li>Artikelen uit meer dan 100 talen vertaald</li><li>Updates elke 15 minuten</li></ul>Bron: GDELT Project (gdeltproject.org)"
+      "infoTooltip": "<strong>GDELT Intelligence</strong> Realtime monitoring van mondiaal nieuws:<ul><li>Samengestelde onderwerpcategorieÃ«n (conflicten, cyber, etc.)</li><li>Artikelen uit meer dan 100 talen vertaald</li><li>Updates elke 15 minuten</li></ul>Bron: GDELT Project (gdeltproject.org)"
     },
     "telegramIntel": {
       "infoTooltip": "Realtime signalen van gemonitorde Telegram OSINT-kanalen",
@@ -875,8 +864,8 @@
       "filterMiddleeast": "Midden-Oosten"
     },
     "investments": {
-      "infoTooltip": "Database van directe buitenlandse investeringen van Saoedi-Arabië en de VAE in mondiale kritieke infrastructuur. Klik op een rij om naar de investering op de kaart te vliegen.",
-      "searchPlaceholder": "Search assets, countries, entities…",
+      "infoTooltip": "Database van directe buitenlandse investeringen van Saoedi-ArabiÃ« en de VAE in mondiale kritieke infrastructuur. Klik op een rij om naar de investering op de kaart te vliegen.",
+      "searchPlaceholder": "Search assets, countries, entitiesâ€¦",
       "allCountries": "All Countries",
       "saudiArabia": "Saudi Arabia",
       "uae": "UAE",
@@ -967,7 +956,7 @@
       }
     },
     "insights": {
-      "infoTooltip": "<strong>AI-aangedreven analyse</strong><br>• <strong>World Brief</strong>: AI-samenvatting (Groq/OpenRouter)<br>• <strong>Sentiment</strong>: analyse van nieuwstoon<br>• <strong>Velocity</strong>: snel bewegende verhalen<br>• <strong>Focal Punten</strong>: correleert nieuwsentiteiten met kaartsignalen (militair, protesten, storingen)<br><em>Alleen desktop • Mogelijk gemaakt door Llama 3.3 + Focal Point-detectie</em>",
+      "infoTooltip": "<strong>AI-aangedreven analyse</strong><br>â€¢ <strong>World Brief</strong>: AI-samenvatting (Groq/OpenRouter)<br>â€¢ <strong>Sentiment</strong>: analyse van nieuwstoon<br>â€¢ <strong>Velocity</strong>: snel bewegende verhalen<br>â€¢ <strong>Focal Punten</strong>: correleert nieuwsentiteiten met kaartsignalen (militair, protesten, storingen)<br><em>Alleen desktop â€¢ Mogelijk gemaakt door Llama 3.3 + Focal Point-detectie</em>",
       "noStories": "Nog geen breaking of multi-source verhalen",
       "step": "Step {{step}}/{{total}}",
       "waitingForData": "Waiting for news data...",
@@ -988,9 +977,6 @@
       "aiFlowBrowserLabel": "Lokaal browsermodel",
       "aiFlowBrowserDesc": "AI lokaal in uw browser uitvoeren",
       "aiFlowBrowserWarn": "Er wordt ongeveer 250 MB aan gegevens naar uw computer gedownload",
-      "aiFlowOllamaCta": "Wilt u volledig lokale AI?",
-      "aiFlowOllamaCtaDesc": "Download de desktop-app voor Ollama-ondersteuning",
-      "aiFlowDownloadDesktop": "Desktop-app downloaden →",
       "aiFlowStatusActive": "Cloud AI actief",
       "aiFlowStatusCloudAndBrowser": "Cloud AI + Browsermodel actief",
       "aiFlowStatusBrowserOnly": "Alleen browsermodel",
@@ -1002,15 +988,15 @@
       "insightsDisabledHint": "Enable providers via the settings gear in the map header"
     },
     "techHubs": {
-      "infoTooltip": "<strong>Tech Hub-activiteit</strong><br>Toont tech-hubs met de meeste nieuwsactiviteit.<br><br><em>Activiteitsniveaus:</em><br>• <span style=\"color: {{highColor}}\">Hoog</span> — Breaking news of 50+ score<br>• <span style=\"color: {{elevatedColor}}\">Verhoogd</span> — Score 20-49<br>• <span style=\"color: {{lowColor}}\">Laag</span> — Score lager dan 20<br><br>Klik op een hub om naar de locatie ervan te zoomen.",
-      "tooltip": "<strong>Tech Hub-activiteit</strong><br>Toont tech-hubs met de meeste nieuwsactiviteit.<br><br><em>Niveaus:</em><br>• <span style=\"color: #00ff88\">Hoog</span> — Actueel nieuws of score 50+<br>• <span style=\"color: #ffc800\">Verhoogd</span> — Score 20-49<br>• <span style=\"color: #888\">Laag</span> — Score onder 20<br><br>Klik op een hub om naar de locatie te zoomen.",
+      "infoTooltip": "<strong>Tech Hub-activiteit</strong><br>Toont tech-hubs met de meeste nieuwsactiviteit.<br><br><em>Activiteitsniveaus:</em><br>â€¢ <span style=\"color: {{highColor}}\">Hoog</span> â€” Breaking news of 50+ score<br>â€¢ <span style=\"color: {{elevatedColor}}\">Verhoogd</span> â€” Score 20-49<br>â€¢ <span style=\"color: {{lowColor}}\">Laag</span> â€” Score lager dan 20<br><br>Klik op een hub om naar de locatie ervan te zoomen.",
+      "tooltip": "<strong>Tech Hub-activiteit</strong><br>Toont tech-hubs met de meeste nieuwsactiviteit.<br><br><em>Niveaus:</em><br>â€¢ <span style=\"color: #00ff88\">Hoog</span> â€” Actueel nieuws of score 50+<br>â€¢ <span style=\"color: #ffc800\">Verhoogd</span> â€” Score 20-49<br>â€¢ <span style=\"color: #888\">Laag</span> â€” Score onder 20<br><br>Klik op een hub om naar de locatie te zoomen.",
       "noActive": "Geen actieve tech-hubs"
     },
     "geoHubs": {
-      "infoTooltip": "<strong>Geopolitieke activiteitenhubs</strong><br>Toont regio's met de meeste nieuwsactiviteit.<br><br><em>Hubtypes:</em><br>• 🏛️ Hoofdsteden — Hoofdsteden van de wereld en regeringscentra<br>• ⚔️ Conflictzones — Actieve conflictgebieden<br>• ⚓ Strategisch — Knelpunten en belangrijke regio's<br>• 🏢 Organisaties — VN, NAVO, IAEA, etc.<br><br><em>Activiteitsniveaus:</em><br>• <span style=\"color: {{highColor}}\">Hoog</span> — Actueel nieuws of score van 70+<br>• <span style=\"color: {{elevatedColor}}\">Verhoogd</span> — Score 40-69<br>• <span style=\"color: {{lowColor}}\">Laag</span> — Score lager dan 40<br><br>Klik op een hub om naar de locatie ervan te zoomen.",
+      "infoTooltip": "<strong>Geopolitieke activiteitenhubs</strong><br>Toont regio's met de meeste nieuwsactiviteit.<br><br><em>Hubtypes:</em><br>â€¢ ðŸ›ï¸ Hoofdsteden â€” Hoofdsteden van de wereld en regeringscentra<br>â€¢ âš”ï¸ Conflictzones â€” Actieve conflictgebieden<br>â€¢ âš“ Strategisch â€” Knelpunten en belangrijke regio's<br>â€¢ ðŸ¢ Organisaties â€” VN, NAVO, IAEA, etc.<br><br><em>Activiteitsniveaus:</em><br>â€¢ <span style=\"color: {{highColor}}\">Hoog</span> â€” Actueel nieuws of score van 70+<br>â€¢ <span style=\"color: {{elevatedColor}}\">Verhoogd</span> â€” Score 40-69<br>â€¢ <span style=\"color: {{lowColor}}\">Laag</span> â€” Score lager dan 40<br><br>Klik op een hub om naar de locatie ervan te zoomen.",
       "story": "verhaal",
       "stories": "verhalen",
-      "tooltip": "<strong>Geopolitieke activiteitenhubs</strong><br>Toont regio's met de meeste nieuwsactiviteit.<br><br><em>Typen:</em><br>• 🏛️ Hoofdsteden — Hoofdsteden en regeringscentra<br>• ⚔️ Conflictzones — Actieve conflictgebieden<br>• ⚓ Strategisch — Knelpunten en belangrijke regio's<br>• 🏢 Organisaties — VN, NAVO, IAEA, etc.<br><br><em>Niveaus:</em><br>• <span style=\"color: #ff4444\">Hoog</span> — Actueel nieuws of score 70+<br>• <span style=\"color: #ff8844\">Verhoogd</span> — Score 40-69<br>• <span style=\"color: #888\">Laag</span> — Score onder 40<br><br>Klik op een hub om naar de locatie te zoomen.",
+      "tooltip": "<strong>Geopolitieke activiteitenhubs</strong><br>Toont regio's met de meeste nieuwsactiviteit.<br><br><em>Typen:</em><br>â€¢ ðŸ›ï¸ Hoofdsteden â€” Hoofdsteden en regeringscentra<br>â€¢ âš”ï¸ Conflictzones â€” Actieve conflictgebieden<br>â€¢ âš“ Strategisch â€” Knelpunten en belangrijke regio's<br>â€¢ ðŸ¢ Organisaties â€” VN, NAVO, IAEA, etc.<br><br><em>Niveaus:</em><br>â€¢ <span style=\"color: #ff4444\">Hoog</span> â€” Actueel nieuws of score 70+<br>â€¢ <span style=\"color: #ff8844\">Verhoogd</span> â€” Score 40-69<br>â€¢ <span style=\"color: #888\">Laag</span> â€” Score onder 40<br><br>Klik op een hub om naar de locatie te zoomen.",
       "noActive": "Geen actieve geopolitieke hubs"
     },
     "predictions": {
@@ -1111,7 +1097,7 @@
       "outage": "Outage",
       "backendUnavailable": "Desktop local backend unavailable. Falling back to cloud API.",
       "desktopReadiness": "Desktop readiness",
-      "acceptanceChecks": "Acceptance checks: {{ready}}/{{total}} ready · key-backed features {{available}}/{{featureTotal}}",
+      "acceptanceChecks": "Acceptance checks: {{ready}}/{{total}} ready Â· key-backed features {{available}}/{{featureTotal}}",
       "nonParityFallbacks": "Non-parity fallbacks ({{count}})",
       "categories": {
         "all": "All",
@@ -1170,10 +1156,10 @@
       "regionNorthAmerica": "Noord-Amerika",
       "regionEurope": "Europa",
       "regionLatinAmerica": "Latijns-Amerika",
-      "regionAsia": "Azië",
+      "regionAsia": "AziÃ«",
       "regionMiddleEast": "Midden-Oosten",
       "regionAfrica": "Afrika",
-      "regionOceania": "Oceanië"
+      "regionOceania": "OceaniÃ«"
     },
     "securityAdvisories": {
       "loading": "Reisadviezen laden...",
@@ -1199,7 +1185,7 @@
     },
     "orefSirens": {
       "checking": "Checking siren alerts...",
-      "noAlerts": "No active sirens — all clear",
+      "noAlerts": "No active sirens â€” all clear",
       "notConfigured": "Sirens service not configured",
       "activeSirens": "{{count}} active siren(s)",
       "area": "Area",
@@ -1219,7 +1205,7 @@
     "status": "STATUS",
     "severity": "Ernst",
     "location": "LOCATIE",
-    "coordinates": "COÖRDINATEN",
+    "coordinates": "COÃ–RDINATEN",
     "casualties": "SLACHTOFFERS",
     "displaced": "ONTHEEMDEN",
     "belligerents": "STRIJDENDE PARTIJEN",
@@ -1284,7 +1270,7 @@
       "regions": {
         "americas": "Amerika",
         "europe": "Europa",
-        "apac": "Azië-Pacific",
+        "apac": "AziÃ«-Pacific",
         "mena": "Midden-Oosten",
         "africa": "Afrika"
       }
@@ -1313,8 +1299,8 @@
       "closed": "GESLOTEN"
     },
     "irradiator": {
-      "subtitle": "Industriële gammabestralingsfaciliteit",
-      "description": "Industriële bestralingsfaciliteit met Cobalt-60 of Cesium-137 voor sterilisatie van medische apparatuur, voedselconservering of materiaalverwerking. Bron: IAEA DIIF-database."
+      "subtitle": "IndustriÃ«le gammabestralingsfaciliteit",
+      "description": "IndustriÃ«le bestralingsfaciliteit met Cobalt-60 of Cesium-137 voor sterilisatie van medische apparatuur, voedselconservering of materiaalverwerking. Bron: IAEA DIIF-database."
     },
     "pipeline": {
       "title": "PIJPLEIDING",
@@ -1457,7 +1443,7 @@
         "disruption": "ONTREGELING"
       },
       "reported": "GEMELD",
-      "categories": "CATEGORIEËN",
+      "categories": "CATEGORIEÃ‹N",
       "readReport": "Lees het volledige rapport"
     },
     "datacenter": {
@@ -1570,8 +1556,8 @@
       "deploymentStatus": "STATUS",
       "usniIntel": "USNI Intel",
       "usniSource": "Source: USNI News Fleet Tracker",
-      "approximatePosition": "Position approximate — based on USNI weekly report, not real-time AIS.",
-      "darkDescription": "⚠ Het schip is donker geworden - AIS-signaal verloren. Kan duiden op gevoelige operaties."
+      "approximatePosition": "Position approximate â€” based on USNI weekly report, not real-time AIS.",
+      "darkDescription": "âš  Het schip is donker geworden - AIS-signaal verloren. Kan duiden op gevoelige operaties."
     },
     "militaryCluster": {
       "flightActivity": {
@@ -1651,10 +1637,10 @@
       "dprk_watch": "Noord-Korea Kijk",
       "egypt_gis": "Egypte/GIS",
       "energy_space": "Energie/ruimte",
-      "financial_hub": "Financiële hub",
+      "financial_hub": "FinanciÃ«le hub",
       "gchq_mi6": "GCHQ/MI6",
       "greenland_intel": "Groenlandse informatie",
-      "haiti_crisis": "Haïti-crisis",
+      "haiti_crisis": "HaÃ¯ti-crisis",
       "irgc_activity": "IRGC-activiteit",
       "insurgency_coups": "Opstand/staatsgrepen",
       "iraq_pmf": "Irak/PMF",
@@ -1668,7 +1654,7 @@
       "qatar_al_udeid": "Qatar/Al Udeid",
       "saudi_gip_mbs": "Saoedische GIP/MBS",
       "strait_watch": "Straat horloge",
-      "syria_crisis": "Syrië-crisis",
+      "syria_crisis": "SyriÃ«-crisis",
       "tech_ai_hub": "Technologie/AI-hub",
       "turkey_mit": "Turkije/MIT",
       "uae_ecsr": "VAE/ECSR",
@@ -1767,7 +1753,7 @@
     "alert": "Alarm: {{location}}",
     "multipleRegions": "Meerdere regio's",
     "trending": "\"{{term}}\" trending - {{count}} vermeldingen in {{hours}}u",
-    "eventsDetected": "{{count}} gebeurtenissen gedetecteerd in regio ({{lat}}°, {{lon}}°)"
+    "eventsDetected": "{{count}} gebeurtenissen gedetecteerd in regio ({{lat}}Â°, {{lon}}Â°)"
   },
   "intel": {
     "topics": {
@@ -1805,7 +1791,7 @@
     "failedToLoad": "Laden van gegevens mislukt",
     "noDataShort": "Geen gegevens",
     "noDataAvailable": "Geen gegevens beschikbaar",
-    "upstreamUnavailable": "Upstream-API niet beschikbaar — automatisch opnieuw proberen",
+    "upstreamUnavailable": "Upstream-API niet beschikbaar â€” automatisch opnieuw proberen",
     "loadingUcdpEvents": "UCDP-gebeurtenissen laden",
     "loadingStablecoins": "Stablecoins laden...",
     "scanningThermalData": "Thermische gegevens scannen",
@@ -1881,7 +1867,7 @@
     "sourceRegionMiddleEast": "Midden-Oosten",
     "sourceRegionAfrica": "Afrika",
     "sourceRegionLatAm": "Latijns-Amerika",
-    "sourceRegionAsiaPacific": "Azië-Pacific",
+    "sourceRegionAsiaPacific": "AziÃ«-Pacific",
     "sourceRegionEurope": "Europa",
     "sourceRegionTopical": "Thematisch",
     "sourceRegionIntel": "Inlichtingen",
@@ -1905,7 +1891,7 @@
     "panelCatCore": "Kern",
     "panelCatIntelligence": "Inlichtingen",
     "panelCatRegionalNews": "Regionaal Nieuws",
-    "panelCatMarketsFinance": "Markten & Financiën",
+    "panelCatMarketsFinance": "Markten & FinanciÃ«n",
     "panelCatTopical": "Actueel",
     "panelCatDataTracking": "Data & Tracking",
     "panelCatTechAi": "Tech & AI",
@@ -1929,7 +1915,7 @@
     "locating": "Regio lokaliseren...",
     "limitedCoverage": "Beperkte dekking",
     "instabilityIndex": "Instabiliteitsindex",
-    "notTracked": "Niet bijgehouden — {{country}} staat niet in de CII tier-1-lijst",
+    "notTracked": "Niet bijgehouden â€” {{country}} staat niet in de CII tier-1-lijst",
     "intelBrief": "Inlichtingenoverzicht",
     "generatingBrief": "Inlichtingenoverzicht genereren...",
     "topNews": "Topnieuws",
@@ -1938,7 +1924,7 @@
     "predictionMarkets": "Voorspellingsmarkten",
     "loadingMarkets": "Voorspellingsmarkten laden...",
     "infrastructure": "Blootstelling aan infrastructuur",
-    "briefUnavailable": "AI-overzicht niet beschikbaar — configureer GROQ_API_KEY in Instellingen.",
+    "briefUnavailable": "AI-overzicht niet beschikbaar â€” configureer GROQ_API_KEY in Instellingen.",
     "cached": "In cache",
     "fresh": "Vers",
     "noMarkets": "Geen voorspellingsmarkten gevonden",

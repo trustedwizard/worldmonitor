@@ -48,6 +48,7 @@ export interface LiveChannel {
   id: string;
   name: string;
   handle: string; // YouTube channel handle (e.g., @bloomberg)
+  externalUrl?: string; // Direct channel link (non-live source)
   fallbackVideoId?: string; // Fallback if no live stream detected
   videoId?: string; // Dynamically fetched live video ID
   isLive?: boolean;
@@ -66,6 +67,7 @@ const FULL_LIVE_CHANNELS: LiveChannel[] = [
   { id: 'france24', name: 'France24', handle: '@France24_en', fallbackVideoId: 'Ap-UM1O9RBU' },
   { id: 'alarabiya', name: 'AlArabiya', handle: '@AlArabiya', fallbackVideoId: 'n7eQejkXbnM', useFallbackOnly: true },
   { id: 'aljazeera', name: 'AlJazeera', handle: '@AlJazeeraEnglish', fallbackVideoId: 'gCNeDWCI0vo', useFallbackOnly: true },
+  { id: 'neuralnewscast', name: 'NeuralNewscast', handle: '@NeuralNewscast', externalUrl: 'https://www.youtube.com/@NeuralNewscast' },
 ];
 
 // Tech variant: Tech & business channels
@@ -235,6 +237,14 @@ export function loadChannelsFromStorage(): LiveChannel[] {
   for (const id of order) {
     const ch = channelMap.get(id);
     if (ch) result.push(ch);
+  }
+  // Auto-append newly introduced default channels for the active variant
+  // when users have an older saved channel order in localStorage.
+  for (const def of DEFAULT_LIVE_CHANNELS) {
+    if (!result.some((c) => c.id === def.id)) {
+      const ch = channelMap.get(def.id);
+      if (ch) result.push(ch);
+    }
   }
   return result;
 }
@@ -629,6 +639,10 @@ export class LiveNewsPanel extends Panel {
         return;
       }
       e.preventDefault();
+      if (channel.externalUrl) {
+        window.open(channel.externalUrl, '_blank', 'noopener,noreferrer');
+        return;
+      }
       this.switchChannel(channel);
     });
     return btn;

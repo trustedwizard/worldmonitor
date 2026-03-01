@@ -1,4 +1,4 @@
-{
+﻿{
   "app": {
     "title": "World Monitor",
     "description": "Yapay Zeka Destekli Kuresel Durum Takibi"
@@ -8,7 +8,7 @@
     "locating": "Bolge tespit ediliyor...",
     "limitedCoverage": "Sinirli kapsam",
     "instabilityIndex": "Istikrarsizlik Endeksi",
-    "notTracked": "Takip edilmiyor — {{country}} CII seviye-1 listesinde degil",
+    "notTracked": "Takip edilmiyor â€” {{country}} CII seviye-1 listesinde degil",
     "intelBrief": "Istihbarat Brifingi",
     "generatingBrief": "Istihbarat brifingi hazirlaniyor...",
     "topNews": "Son Haberler",
@@ -17,7 +17,7 @@
     "predictionMarkets": "Tahmin Piyasalari",
     "loadingMarkets": "Tahmin piyasalari yukleniyor...",
     "infrastructure": "Altyapi Maruziyeti",
-    "briefUnavailable": "Yapay zeka brifingi kullanilamaz — Ayarlar'dan GROQ_API_KEY yapilandiriniz.",
+    "briefUnavailable": "Yapay zeka brifingi kullanilamaz â€” Ayarlar'dan GROQ_API_KEY yapilandiriniz.",
     "cached": "Onbellekten",
     "fresh": "Guncel",
     "noMarkets": "Tahmin piyasasi bulunamadi",
@@ -91,21 +91,21 @@
     "sourcesEnabled": "{{enabled}}/{{total}} aktif",
     "finance": "FINANS",
     "toggleTheme": "Koyu/acik tema degistir",
-    "panelDisplayCaption": "Gösterge panelinde hangi panellerin gösterileceğini seçin",
+    "panelDisplayCaption": "GÃ¶sterge panelinde hangi panellerin gÃ¶sterileceÄŸini seÃ§in",
     "tabGeneral": "Genel",
     "tabPanels": "Paneller",
     "tabSources": "Kaynaklar",
     "languageLabel": "Dil",
-    "sourceRegionAll": "Tümü",
-    "sourceRegionWorldwide": "Dünya",
+    "sourceRegionAll": "TÃ¼mÃ¼",
+    "sourceRegionWorldwide": "DÃ¼nya",
     "sourceRegionUS": "ABD",
-    "sourceRegionMiddleEast": "Orta Doğu",
+    "sourceRegionMiddleEast": "Orta DoÄŸu",
     "sourceRegionAfrica": "Afrika",
     "sourceRegionLatAm": "Latin Amerika",
     "sourceRegionAsiaPacific": "Asya-Pasifik",
     "sourceRegionEurope": "Avrupa",
     "sourceRegionTopical": "Tematik",
-    "sourceRegionIntel": "İstihbarat",
+    "sourceRegionIntel": "Ä°stihbarat",
     "sourceRegionTechNews": "Tech News",
     "sourceRegionAiMl": "AI & ML",
     "sourceRegionStartupsVc": "Startups & VC",
@@ -121,25 +121,25 @@
     "sourceRegionCentralBanks": "Central Banks & Economy",
     "sourceRegionDeals": "Deals & Corporate",
     "sourceRegionFinRegulation": "Financial Regulation",
-    "sourceRegionGulfMena": "Körfez & MENA",
+    "sourceRegionGulfMena": "KÃ¶rfez & MENA",
     "filterPanels": "Panelleri filtrele...",
     "panelCatCore": "Temel",
-    "panelCatIntelligence": "İstihbarat",
-    "panelCatRegionalNews": "Bölgesel Haberler",
+    "panelCatIntelligence": "Ä°stihbarat",
+    "panelCatRegionalNews": "BÃ¶lgesel Haberler",
     "panelCatMarketsFinance": "Piyasalar & Finans",
-    "panelCatTopical": "Güncel",
+    "panelCatTopical": "GÃ¼ncel",
     "panelCatDataTracking": "Veri & Takip",
     "panelCatTechAi": "Teknoloji & YZ",
-    "panelCatStartupsVc": "Girişimler & GS",
-    "panelCatSecurityPolicy": "Güvenlik & Politika",
+    "panelCatStartupsVc": "GiriÅŸimler & GS",
+    "panelCatSecurityPolicy": "GÃ¼venlik & Politika",
     "panelCatMarkets": "Piyasalar",
-    "panelCatFixedIncomeFx": "Sabit Getiri & Döviz",
+    "panelCatFixedIncomeFx": "Sabit Getiri & DÃ¶viz",
     "panelCatCommodities": "Emtialar",
     "panelCatCryptoDigital": "Kripto & Dijital",
-    "panelCatCentralBanks": "Merkez Bankaları & Ekonomi",
-    "panelCatDeals": "Anlaşmalar & Kurumsal",
-    "panelCatGulfMena": "Körfez & MENA",
-    "panelCatTradePolicy": "Ticaret Politikası"
+    "panelCatCentralBanks": "Merkez BankalarÄ± & Ekonomi",
+    "panelCatDeals": "AnlaÅŸmalar & Kurumsal",
+    "panelCatGulfMena": "KÃ¶rfez & MENA",
+    "panelCatTradePolicy": "Ticaret PolitikasÄ±"
   },
   "panels": {
     "liveNews": "Canli Haberler",
@@ -168,7 +168,7 @@
     "polymarket": "Tahminler",
     "commodities": "Emtialar",
     "economic": "Ekonomik Gostergeler",
-    "tradePolicy": "Ticaret Politikası",
+    "tradePolicy": "Ticaret PolitikasÄ±",
     "finance": "Finansal",
     "tech": "Teknoloji",
     "crypto": "Kripto",
@@ -205,20 +205,20 @@
     "gccInvestments": "GCC Yatirimlari",
     "geoHubs": "Jeopolitik Merkezler",
     "liveWebcams": "Canli Web Kameralari",
-    "securityAdvisories": "Güvenlik Uyarıları",
+    "securityAdvisories": "GÃ¼venlik UyarÄ±larÄ±",
     "orefSirens": "Israel Sirens",
-    "telegramIntel": "Telegram İstihbarat"
+    "telegramIntel": "Telegram Ä°stihbarat"
   },
   "modals": {
     "search": {
       "placeholder": "Ara veya komut yaz...",
-      "hint": "Arama • Ülkeler • Katmanlar • Paneller • Gezinme • Ayarlar",
+      "hint": "Arama â€¢ Ãœlkeler â€¢ Katmanlar â€¢ Paneller â€¢ Gezinme â€¢ Ayarlar",
       "placeholderTech": "Ara veya komut yaz...",
-      "hintTech": "Arama • Şirketler • Yapay Zeka Lab. • Katmanlar • Gezinme • Ayarlar",
+      "hintTech": "Arama â€¢ Åžirketler â€¢ Yapay Zeka Lab. â€¢ Katmanlar â€¢ Gezinme â€¢ Ayarlar",
       "placeholderFinance": "Ara veya komut yaz...",
-      "hintFinance": "Arama • Borsalar • Piyasalar • Katmanlar • Gezinme • Ayarlar",
+      "hintFinance": "Arama â€¢ Borsalar â€¢ Piyasalar â€¢ Katmanlar â€¢ Gezinme â€¢ Ayarlar",
       "recent": "Son Aramalar",
-      "empty": "Veri ara veya komut çalıştır",
+      "empty": "Veri ara veya komut Ã§alÄ±ÅŸtÄ±r",
       "noResults": "Sonuc bulunamadi",
       "navigate": "gezin",
       "select": "sec",
@@ -305,17 +305,6 @@
       "dontShowAgain": "Bir daha gosterme",
       "gotIt": "Anladim"
     },
-    "downloadBanner": {
-      "title": "Masaustu Uygulamasi Mevcut",
-      "description": "Yerel performans, guvenli anahtar depolama, cevrimdisi harita deseni.",
-      "macSilicon": "macOS (Apple Silicon)",
-      "macIntel": "macOS (Intel)",
-      "windows": "Windows (.exe)",
-      "linux": "Linux (.AppImage)",
-      "showAllPlatforms": "Tum platformlari goster",
-      "showLess": "Daha az goster",
-      "dismiss": "Kapat"
-    },
     "runtimeConfig": {
       "title": "Masaustu Yapilandirmasi",
       "alertTitle": {
@@ -349,8 +338,8 @@
         "ABUSEIPDB_API_KEY": "Kotu amacli IP itibar bilgisi icin opsiyonel zenginlestirme kaynagi.",
         "FINNHUB_API_KEY": "Anlik hisse senedi fiyatlari ve piyasa verileri.",
         "NASA_FIRMS_API_KEY": "Kaynak Yonetimi icin Yangin Bilgi Sistemi.",
-        "OLLAMA_API_URL": "e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio) — OpenAI-compatible endpoint.",
-        "OLLAMA_MODEL": "e.g. llama3.1:8b — model tag to use for summarization."
+        "OLLAMA_API_URL": "e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio) â€” OpenAI-compatible endpoint.",
+        "OLLAMA_MODEL": "e.g. llama3.1:8b â€” model tag to use for summarization."
       }
     },
     "settingsWindow": {
@@ -391,14 +380,14 @@
       "fresh": "Guncel",
       "noMarkets": "Tahmin piyasasi bulunamadi",
       "predictionMarkets": "Tahmin Piyasalari",
-      "unavailable": "Yapay zeka brifingi kullanilamaz — Ayarlar'dan GROQ_API_KEY yapilandiriniz."
+      "unavailable": "Yapay zeka brifingi kullanilamaz â€” Ayarlar'dan GROQ_API_KEY yapilandiriniz."
     },
     "countryBrief": {
       "identifying": "Ulke belirleniyor...",
       "locating": "Bolge tespit ediliyor...",
       "limitedCoverage": "Sinirli kapsam",
       "instabilityIndex": "Istikrarsizlik Endeksi",
-      "notTracked": "Takip edilmiyor — {{country}} CII seviye-1 listesinde degil",
+      "notTracked": "Takip edilmiyor â€” {{country}} CII seviye-1 listesinde degil",
       "intelBrief": "Istihbarat Brifingi",
       "generatingBrief": "Istihbarat brifingi hazirlaniyor...",
       "topNews": "Son Haberler",
@@ -407,7 +396,7 @@
       "predictionMarkets": "Tahmin Piyasalari",
       "loadingMarkets": "Tahmin piyasalari yukleniyor...",
       "infrastructure": "Altyapi Maruziyeti",
-      "briefUnavailable": "Yapay zeka brifingi kullanilamaz — Ayarlar'dan GROQ_API_KEY yapilandiriniz.",
+      "briefUnavailable": "Yapay zeka brifingi kullanilamaz â€” Ayarlar'dan GROQ_API_KEY yapilandiriniz.",
       "cached": "Onbellekten",
       "fresh": "Guncel",
       "noMarkets": "Tahmin piyasasi bulunamadi",
@@ -544,39 +533,39 @@
       "hold": "hold"
     },
     "tradePolicy": {
-      "restrictions": "Kısıtlamalar",
-      "tariffs": "Gümrük Tarifeleri",
-      "flows": "Ticaret Akışları",
+      "restrictions": "KÄ±sÄ±tlamalar",
+      "tariffs": "GÃ¼mrÃ¼k Tarifeleri",
+      "flows": "Ticaret AkÄ±ÅŸlarÄ±",
       "barriers": "Engeller",
-      "noRestrictions": "Aktif ticaret kısıtlaması yok",
-      "noTariffData": "Tarife verisi mevcut değil",
-      "noFlowData": "Ticaret akışı verisi mevcut değil",
+      "noRestrictions": "Aktif ticaret kÄ±sÄ±tlamasÄ± yok",
+      "noTariffData": "Tarife verisi mevcut deÄŸil",
+      "noFlowData": "Ticaret akÄ±ÅŸÄ± verisi mevcut deÄŸil",
       "noBarriers": "Ticaret engeli bildirilmedi",
-      "apiKeyMissing": "WTO API anahtarı gerekli — Ayarlar'dan ekleyin",
-      "upstreamUnavailable": "WTO verileri geçici olarak kullanılamıyor — önbellek verileri gösteriliyor",
+      "apiKeyMissing": "WTO API anahtarÄ± gerekli â€” Ayarlar'dan ekleyin",
+      "upstreamUnavailable": "WTO verileri geÃ§ici olarak kullanÄ±lamÄ±yor â€” Ã¶nbellek verileri gÃ¶steriliyor",
       "appliedRate": "Uygulanan Oran",
-      "boundRate": "Bağlı Oran",
-      "exports": "İhracat",
-      "imports": "İthalat",
-      "yoyChange": "Yıllık Değişim",
-      "highTariff": "Yüksek",
+      "boundRate": "BaÄŸlÄ± Oran",
+      "exports": "Ä°hracat",
+      "imports": "Ä°thalat",
+      "yoyChange": "YÄ±llÄ±k DeÄŸiÅŸim",
+      "highTariff": "YÃ¼ksek",
       "moderateTariff": "Orta",
-      "lowTariff": "Düşük"
+      "lowTariff": "DÃ¼ÅŸÃ¼k"
     },
     "gdelt": {
       "empty": "Bu konu icin son makale yok"
     },
     "geoHubs": {
-      "tooltip": "<strong>Jeopolitik Faaliyet Merkezleri</strong><br>En fazla haber aktivitesine sahip bolgeleri gosterir.<br><br><em>Merkez turleri:</em><br>• 🏛️ Baskentler — Dunya baskentleri ve hukumet merkezleri<br>• ⚔️ Catisma Bolgeleri — Aktif catisma alanlari<br>• ⚓ Stratejik — Darbogazlar ve kilit bolgeler<br>• 🏢 Kuruluslar — BM, NATO, IAEA vb.<br><br><em>Faaliyet seviyeleri:</em><br>• <span style=\"color: #ff4444\">Yuksek</span> — Son dakika haberleri veya 70+ puan<br>• <span style=\"color: #ff8844\">Artmis</span> — 40-69 puan<br>• <span style=\"color: #888\">Dusuk</span> — 40'in altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin.",
+      "tooltip": "<strong>Jeopolitik Faaliyet Merkezleri</strong><br>En fazla haber aktivitesine sahip bolgeleri gosterir.<br><br><em>Merkez turleri:</em><br>â€¢ ðŸ›ï¸ Baskentler â€” Dunya baskentleri ve hukumet merkezleri<br>â€¢ âš”ï¸ Catisma Bolgeleri â€” Aktif catisma alanlari<br>â€¢ âš“ Stratejik â€” Darbogazlar ve kilit bolgeler<br>â€¢ ðŸ¢ Kuruluslar â€” BM, NATO, IAEA vb.<br><br><em>Faaliyet seviyeleri:</em><br>â€¢ <span style=\"color: #ff4444\">Yuksek</span> â€” Son dakika haberleri veya 70+ puan<br>â€¢ <span style=\"color: #ff8844\">Artmis</span> â€” 40-69 puan<br>â€¢ <span style=\"color: #888\">Dusuk</span> â€” 40'in altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin.",
       "noActive": "Aktif jeopolitik merkez yok",
       "story": "haber",
       "stories": "haber",
-      "infoTooltip": "<strong>Jeopolitik Faaliyet Merkezleri</strong><br>En fazla haber aktivitesine sahip bolgeleri gosterir.<br><br><em>Merkez turleri:</em><br>• 🏛️ Baskentler — Dunya baskentleri ve hukumet merkezleri<br>• ⚔️ Catisma Bolgeleri — Aktif catisma alanlari<br>• ⚓ Stratejik — Darbogazlar ve kilit bolgeler<br>• 🏢 Kuruluslar — BM, NATO, IAEA vb.<br><br><em>Faaliyet seviyeleri:</em><br>• <span style=\"color: {{highColor}}\">Yuksek</span> — Son dakika haberleri veya 70+ puan<br>• <span style=\"color: {{elevatedColor}}\">Artmis</span> — 40-69 puan<br>• <span style=\"color: {{lowColor}}\">Dusuk</span> — 40'in altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin."
+      "infoTooltip": "<strong>Jeopolitik Faaliyet Merkezleri</strong><br>En fazla haber aktivitesine sahip bolgeleri gosterir.<br><br><em>Merkez turleri:</em><br>â€¢ ðŸ›ï¸ Baskentler â€” Dunya baskentleri ve hukumet merkezleri<br>â€¢ âš”ï¸ Catisma Bolgeleri â€” Aktif catisma alanlari<br>â€¢ âš“ Stratejik â€” Darbogazlar ve kilit bolgeler<br>â€¢ ðŸ¢ Kuruluslar â€” BM, NATO, IAEA vb.<br><br><em>Faaliyet seviyeleri:</em><br>â€¢ <span style=\"color: {{highColor}}\">Yuksek</span> â€” Son dakika haberleri veya 70+ puan<br>â€¢ <span style=\"color: {{elevatedColor}}\">Artmis</span> â€” 40-69 puan<br>â€¢ <span style=\"color: {{lowColor}}\">Dusuk</span> â€” 40'in altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin."
     },
     "techHubs": {
-      "tooltip": "<strong>Teknoloji Merkezi Aktivitesi</strong><br>En fazla haber aktivitesine sahip teknoloji merkezlerini gosterir.<br><br><em>Faaliyet seviyeleri:</em><br>• <span style=\"color: #00ff88\">Yuksek</span> — Son dakika haberleri veya 50+ puan<br>• <span style=\"color: #ffc800\">Artmis</span> — 20-49 puan<br>• <span style=\"color: #888\">Dusuk</span> — 20'nin altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin.",
+      "tooltip": "<strong>Teknoloji Merkezi Aktivitesi</strong><br>En fazla haber aktivitesine sahip teknoloji merkezlerini gosterir.<br><br><em>Faaliyet seviyeleri:</em><br>â€¢ <span style=\"color: #00ff88\">Yuksek</span> â€” Son dakika haberleri veya 50+ puan<br>â€¢ <span style=\"color: #ffc800\">Artmis</span> â€” 20-49 puan<br>â€¢ <span style=\"color: #888\">Dusuk</span> â€” 20'nin altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin.",
       "noActive": "Aktif teknoloji merkezi yok",
-      "infoTooltip": "<strong>Teknoloji Merkezi Aktivitesi</strong><br>En fazla haber aktivitesine sahip teknoloji merkezlerini gosterir.<br><br><em>Faaliyet seviyeleri:</em><br>• <span style=\"color: {{highColor}}\">Yuksek</span> — Son dakika haberleri veya 50+ puan<br>• <span style=\"color: {{elevatedColor}}\">Artmis</span> — 20-49 puan<br>• <span style=\"color: {{lowColor}}\">Dusuk</span> — 20'nin altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin."
+      "infoTooltip": "<strong>Teknoloji Merkezi Aktivitesi</strong><br>En fazla haber aktivitesine sahip teknoloji merkezlerini gosterir.<br><br><em>Faaliyet seviyeleri:</em><br>â€¢ <span style=\"color: {{highColor}}\">Yuksek</span> â€” Son dakika haberleri veya 50+ puan<br>â€¢ <span style=\"color: {{elevatedColor}}\">Artmis</span> â€” 20-49 puan<br>â€¢ <span style=\"color: {{lowColor}}\">Dusuk</span> â€” 20'nin altinda puan<br><br>Konumuna yaklasmak icin bir merkeze tiklayin."
     },
     "predictions": {
       "tooltip": "<strong>Tahmin Piyasalari</strong><br>Gercek parali tahmin piyasalari:<br><ul><li>Fiyatlar kalabalik olasilik tahminlerini yansitir</li><li>Yuksek hacim = daha guvenilir sinyal</li><li>Jeopolitik ve guncel olaylara odakli</li></ul>Kaynak: Polymarket (polymarket.com)",
@@ -584,7 +573,7 @@
       "yes": "Evet",
       "no": "Hayir",
       "vol": "Hacim",
-      "closes": "Kapanış"
+      "closes": "KapanÄ±ÅŸ"
     },
     "stablecoins": {
       "pegHealth": "Parite Sagligi",
@@ -684,15 +673,15 @@
       "staleWarning": "Onbellek verileri kullaniliyor - canli akis gecici olarak kullanilamiyor",
       "updated": "Guncelleme:",
       "theaters": {
-        "iran-theater": "İran Tiyatrosu",
-        "taiwan-theater": "Tayvan Boğazı",
-        "baltic-theater": "Baltık Tiyatrosu",
+        "iran-theater": "Ä°ran Tiyatrosu",
+        "taiwan-theater": "Tayvan BoÄŸazÄ±",
+        "baltic-theater": "BaltÄ±k Tiyatrosu",
         "blacksea-theater": "Karadeniz",
-        "korea-theater": "Kore Yarımadası",
-        "south-china-sea": "Güney Çin Denizi",
-        "east-med-theater": "Doğu Akdeniz",
-        "israel-gaza-theater": "İsrail/Gazze",
-        "yemen-redsea-theater": "Yemen/Kızıldeniz"
+        "korea-theater": "Kore YarÄ±madasÄ±",
+        "south-china-sea": "GÃ¼ney Ã‡in Denizi",
+        "east-med-theater": "DoÄŸu Akdeniz",
+        "israel-gaza-theater": "Ä°srail/Gazze",
+        "yemen-redsea-theater": "Yemen/KÄ±zÄ±ldeniz"
       }
     },
     "countryBrief": {
@@ -790,9 +779,9 @@
         "centralBanks": "Merkez Bankalari",
         "commodityHubs": "Emtia Merkezleri",
         "gulfInvestments": "GCC Yatirimlari",
-        "tradeRoutes": "Ticaret Rotaları",
+        "tradeRoutes": "Ticaret RotalarÄ±",
         "gpsJamming": "GPS JAMMING",
-        "dayNight": "Gündüz/Gece"
+        "dayNight": "GÃ¼ndÃ¼z/Gece"
       },
       "tooltip": {
         "earthquake": "Deprem",
@@ -884,8 +873,8 @@
           "transportDelays": "Havaalani gecikmeleri ve yer durdurmalari (FAA)",
           "naturalEventsFull": "Depremler (USGS) + firtinalar, yanginlar, yanardaglar, seller (NASA EONET)",
           "waterwaysLabels": "Stratejik darbogaz etiketleri",
-          "tradeRoutes": "Limanları stratejik darboğazlar üzerinden bağlayan başlıca küresel deniz yolları",
-          "dayNight": "Gündüz ve gece bölgelerini gösteren gerçek zamanlı güneş terminatörü"
+          "tradeRoutes": "LimanlarÄ± stratejik darboÄŸazlar Ã¼zerinden baÄŸlayan baÅŸlÄ±ca kÃ¼resel deniz yollarÄ±",
+          "dayNight": "GÃ¼ndÃ¼z ve gece bÃ¶lgelerini gÃ¶steren gerÃ§ek zamanlÄ± gÃ¼neÅŸ terminatÃ¶rÃ¼"
         },
         "notes": {
           "timeAffects": "Etkiler: Depremler, Hava Durumu, Protestolar, Kesintiler"
@@ -899,7 +888,7 @@
     },
     "insights": {
       "noStories": "Henuz son dakika veya coklu kaynak haberi yok",
-      "infoTooltip": "<strong>Yapay Zeka Destekli Analiz</strong><br>• <strong>Dunya Brifingi</strong>: Yapay zeka ozeti (Groq/OpenRouter)<br>• <strong>Duygu Analizi</strong>: Haber ton analizi<br>• <strong>Hiz</strong>: Hizla gelisen haberler<br>• <strong>Odak Noktalari</strong>: Haber varliklarini harita sinyalleriyle iliskilendirir (askeri, protestolar, kesintiler)<br><em>Yalnizca masaustu - Llama 3.3 + Odak Noktasi Tespiti tarafindan desteklenmektedir</em>",
+      "infoTooltip": "<strong>Yapay Zeka Destekli Analiz</strong><br>â€¢ <strong>Dunya Brifingi</strong>: Yapay zeka ozeti (Groq/OpenRouter)<br>â€¢ <strong>Duygu Analizi</strong>: Haber ton analizi<br>â€¢ <strong>Hiz</strong>: Hizla gelisen haberler<br>â€¢ <strong>Odak Noktalari</strong>: Haber varliklarini harita sinyalleriyle iliskilendirir (askeri, protestolar, kesintiler)<br><em>Yalnizca masaustu - Llama 3.3 + Odak Noktasi Tespiti tarafindan desteklenmektedir</em>",
       "step": "Step {{step}}/{{total}}",
       "waitingForData": "Waiting for news data...",
       "rankingStories": "Ranking important stories...",
@@ -919,16 +908,13 @@
       "aiFlowBrowserLabel": "Tarayici Yerel Modeli",
       "aiFlowBrowserDesc": "AI'yi tarayicinizda yerel olarak calistirin",
       "aiFlowBrowserWarn": "Bilgisayariniza yaklasik 250 MB veri indirilecektir",
-      "aiFlowOllamaCta": "Tamamen yerel AI mi istiyorsunuz?",
-      "aiFlowOllamaCtaDesc": "Ollama destegi icin masaustu uygulamasini indirin",
-      "aiFlowDownloadDesktop": "Masaustu Uygulamasini Indir →",
       "aiFlowStatusActive": "Bulut AI aktif",
       "aiFlowStatusCloudAndBrowser": "Bulut AI + Tarayici modeli aktif",
       "aiFlowStatusBrowserOnly": "Yalnizca tarayici modeli",
       "aiFlowStatusDisabled": "Etkinlestirilmis AI saglayici yok",
-      "sectionIntelligence": "İstihbarat",
-      "headlineMemoryLabel": "Başlık hafızası",
-      "headlineMemoryDesc": "Ülke raporlarını tarihsel bağlamla zenginleştirmek için geçmiş başlıkları hatırla",
+      "sectionIntelligence": "Ä°stihbarat",
+      "headlineMemoryLabel": "BaÅŸlÄ±k hafÄ±zasÄ±",
+      "headlineMemoryDesc": "Ãœlke raporlarÄ±nÄ± tarihsel baÄŸlamla zenginleÅŸtirmek iÃ§in geÃ§miÅŸ baÅŸlÄ±klarÄ± hatÄ±rla",
       "insightsDisabledTitle": "AI analizi devre disi",
       "insightsDisabledHint": "Enable providers via the settings gear in the map header"
     },
@@ -1014,7 +1000,7 @@
       "all": "All",
       "conferencesCount": "{{count}} conferences",
       "onMap": "{{count}} on map",
-      "techmemeEvents": "Techmeme Events ↗",
+      "techmemeEvents": "Techmeme Events â†—",
       "today": "TODAY",
       "soon": "SOON"
     },
@@ -1022,7 +1008,7 @@
       "internetUsers": "Internet Kullanicilari",
       "mobileSubscriptions": "Mobil Abonelikler",
       "rdSpending": "Ar-Ge Harcamasi",
-      "infoTooltip": "<strong>Kuresel Teknoloji Hazirligi</strong><br>Dunya Bankasi verilerine dayali bilesik puan (0-100):<br><br><strong>Gosterilen metrikler:</strong><br>🌐 Internet Kullanicilari (nufusun %'si)<br>📱 Mobil Abonelikler (100 kisi basina)<br>🔬 Ar-Ge Harcamasi (GSYiH'nin %'si)<br><br><strong>Agirliklar:</strong> Ar-Ge (%35), Internet (%30), Genis Bant (%20), Mobil (%15)<br><br><em>— = Son veri mevcut degil</em><br><em>Kaynak: Dunya Bankasi Acik Veri (2019-2024)</em>",
+      "infoTooltip": "<strong>Kuresel Teknoloji Hazirligi</strong><br>Dunya Bankasi verilerine dayali bilesik puan (0-100):<br><br><strong>Gosterilen metrikler:</strong><br>ðŸŒ Internet Kullanicilari (nufusun %'si)<br>ðŸ“± Mobil Abonelikler (100 kisi basina)<br>ðŸ”¬ Ar-Ge Harcamasi (GSYiH'nin %'si)<br><br><strong>Agirliklar:</strong> Ar-Ge (%35), Internet (%30), Genis Bant (%20), Mobil (%15)<br><br><em>â€” = Son veri mevcut degil</em><br><em>Kaynak: Dunya Bankasi Acik Veri (2019-2024)</em>",
       "fetchingData": "Fetching World Bank Data",
       "internetUsersIndicator": "Internet Users",
       "mobileSubscriptionsIndicator": "Mobile Subscriptions",
@@ -1152,21 +1138,21 @@
       "infoTooltip": "<strong>GDELT Istihbarati</strong> Gercek zamanli kuresel haber izleme:<ul><li>Secilmis konu kategorileri (catismalar, siber vb.)</li><li>100+ dilden cevrilen makaleler</li><li>Her 15 dakikada guncelleme</li></ul>Kaynak: GDELT Project (gdeltproject.org)"
     },
     "telegramIntel": {
-      "infoTooltip": "İzlenen Telegram OSINT kanallarından gerçek zamanlı sinyaller",
-      "loading": "Telegram aktarıcısına bağlanılıyor...",
+      "infoTooltip": "Ä°zlenen Telegram OSINT kanallarÄ±ndan gerÃ§ek zamanlÄ± sinyaller",
+      "loading": "Telegram aktarÄ±cÄ±sÄ±na baÄŸlanÄ±lÄ±yor...",
       "empty": "Mevcut mesaj yok",
-      "disabled": "Telegram aktarıcısı etkin değil",
-      "filterAll": "Tümü",
+      "disabled": "Telegram aktarÄ±cÄ±sÄ± etkin deÄŸil",
+      "filterAll": "TÃ¼mÃ¼",
       "filterBreaking": "Son Dakika",
-      "filterConflict": "Çatışma",
-      "filterAlerts": "Uyarılar",
+      "filterConflict": "Ã‡atÄ±ÅŸma",
+      "filterAlerts": "UyarÄ±lar",
       "filterOsint": "OSINT",
       "filterPolitics": "Siyaset",
-      "filterMiddleeast": "Orta Doğu"
+      "filterMiddleeast": "Orta DoÄŸu"
     },
     "investments": {
       "infoTooltip": "Suudi Arabistan ve BAE'nin kuresel kritik altyapilara dogrudan yabanci yatirimlari veritabani. Yatirimi haritada gormek icin bir satira tiklayin.",
-      "searchPlaceholder": "Search assets, countries, entities…",
+      "searchPlaceholder": "Search assets, countries, entitiesâ€¦",
       "allCountries": "All Countries",
       "saudiArabia": "Saudi Arabia",
       "uae": "UAE",
@@ -1253,7 +1239,7 @@
       "outage": "Outage",
       "backendUnavailable": "Desktop local backend unavailable. Falling back to cloud API.",
       "desktopReadiness": "Desktop readiness",
-      "acceptanceChecks": "Acceptance checks: {{ready}}/{{total}} ready · key-backed features {{available}}/{{featureTotal}}",
+      "acceptanceChecks": "Acceptance checks: {{ready}}/{{total}} ready Â· key-backed features {{available}}/{{featureTotal}}",
       "nonParityFallbacks": "Non-parity fallbacks ({{count}})",
       "categories": {
         "all": "All",
@@ -1294,54 +1280,54 @@
       "notLive": "{{name}} is not currently live",
       "cannotEmbed": "{{name}} cannot be embedded in this app (YouTube {{code}})",
       "openOnYouTube": "Open on YouTube",
-      "manage": "Kanalları yönet",
+      "manage": "KanallarÄ± yÃ¶net",
       "addChannel": "Kanal ekle",
-      "remove": "Kaldır",
-      "youtubeHandle": "YouTube tanıtıcı (örn. @Channel)",
-      "youtubeHandleOrUrl": "YouTube tanıtıcısı veya URL",
-      "displayName": "Görünen ad (isteğe bağlı)",
-      "openPanelSettings": "Panel görüntü ayarları",
-      "channelSettings": "Kanal ayarları",
+      "remove": "KaldÄ±r",
+      "youtubeHandle": "YouTube tanÄ±tÄ±cÄ± (Ã¶rn. @Channel)",
+      "youtubeHandleOrUrl": "YouTube tanÄ±tÄ±cÄ±sÄ± veya URL",
+      "displayName": "GÃ¶rÃ¼nen ad (isteÄŸe baÄŸlÄ±)",
+      "openPanelSettings": "Panel gÃ¶rÃ¼ntÃ¼ ayarlarÄ±",
+      "channelSettings": "Kanal ayarlarÄ±",
       "save": "Kaydet",
-      "cancel": "İptal",
+      "cancel": "Ä°ptal",
       "confirmDelete": "Bu kanal silinsin mi?",
       "confirmTitle": "Onayla",
-      "restoreDefaults": "Varsayılan kanalları geri yükle",
+      "restoreDefaults": "VarsayÄ±lan kanallarÄ± geri yÃ¼kle",
       "availableChannels": "Mevcut kanallar",
-      "customChannel": "Özel kanal",
+      "customChannel": "Ã–zel kanal",
       "regionNorthAmerica": "Kuzey Amerika",
       "regionEurope": "Avrupa",
       "regionLatinAmerica": "Latin Amerika",
       "regionAsia": "Asya",
-      "regionMiddleEast": "Orta Doğu",
+      "regionMiddleEast": "Orta DoÄŸu",
       "regionAfrica": "Afrika",
       "regionOceania": "Okyanusya"
     },
     "securityAdvisories": {
-      "loading": "Seyahat uyarıları yükleniyor...",
-      "noMatching": "Bu filtre için uyarı yok",
+      "loading": "Seyahat uyarÄ±larÄ± yÃ¼kleniyor...",
+      "noMatching": "Bu filtre iÃ§in uyarÄ± yok",
       "critical": "Kritik",
-      "health": "Sağlık",
+      "health": "SaÄŸlÄ±k",
       "sources": "US State Dept, AU DFAT, UK FCDO, NZ MFAT, CDC, ECDC, WHO, US Embassies",
       "refresh": "Yenile",
       "levels": {
         "doNotTravel": "Seyahat etmeyin",
-        "reconsider": "Seyahati yeniden düşünün",
+        "reconsider": "Seyahati yeniden dÃ¼ÅŸÃ¼nÃ¼n",
         "caution": "Dikkat",
         "normal": "Normal",
         "info": "Bilgi"
       },
       "time": {
-        "justNow": "şimdi",
-        "minutesAgo": "{{count}} dk önce",
-        "hoursAgo": "{{count}} sa önce",
-        "daysAgo": "{{count}} gün önce"
+        "justNow": "ÅŸimdi",
+        "minutesAgo": "{{count}} dk Ã¶nce",
+        "hoursAgo": "{{count}} sa Ã¶nce",
+        "daysAgo": "{{count}} gÃ¼n Ã¶nce"
       },
-      "infoTooltip": "<strong>Güvenlik Uyarıları</strong><br>Hükümet kurumlarından seyahat uyarıları ve güvenlik bildirimleri."
+      "infoTooltip": "<strong>GÃ¼venlik UyarÄ±larÄ±</strong><br>HÃ¼kÃ¼met kurumlarÄ±ndan seyahat uyarÄ±larÄ± ve gÃ¼venlik bildirimleri."
     },
     "orefSirens": {
       "checking": "Checking siren alerts...",
-      "noAlerts": "No active sirens — all clear",
+      "noAlerts": "No active sirens â€” all clear",
       "notConfigured": "Sirens service not configured",
       "activeSirens": "{{count}} active siren(s)",
       "area": "Area",
@@ -1405,8 +1391,8 @@
     "gpsJamming": {
       "title": "GPS/GNSS Paraziti",
       "interference": "Parazit",
-      "aircraftAffected": "Etkilenen Uçaklar",
-      "aircraftNormal": "Normal Uçaklar",
+      "aircraftAffected": "Etkilenen UÃ§aklar",
+      "aircraftNormal": "Normal UÃ§aklar",
       "h3Hex": "H3 Hex"
     },
     "flight": {
@@ -1491,9 +1477,9 @@
         "enRoute": "Yolda"
       },
       "health": {
-        "evidence": "SAĞLIK KANITI"
+        "evidence": "SAÄžLIK KANITI"
       },
-      "description": "Uluslararasi internet trafigi tasiyan denizalti telekomünikasyon kablosu. Bu fiber optik kablolar kuresel internet baglantisinin omurgasini olusturur ve kitalar arasi verilerin %95'inden fazlasini tasir."
+      "description": "Uluslararasi internet trafigi tasiyan denizalti telekomÃ¼nikasyon kablosu. Bu fiber optik kablolar kuresel internet baglantisinin omurgasini olusturur ve kitalar arasi verilerin %95'inden fazlasini tasir."
     },
     "repairShip": {
       "note": "Onarim gemisi takibi, ariza bolgesine dogru aktif konuslandirmayi gostermektedir.",
@@ -1712,7 +1698,7 @@
       "deploymentStatus": "STATUS",
       "usniIntel": "USNI Intel",
       "usniSource": "Source: USNI News Fleet Tracker",
-      "approximatePosition": "Position approximate — based on USNI weekly report, not real-time AIS.",
+      "approximatePosition": "Position approximate â€” based on USNI weekly report, not real-time AIS.",
       "darkDescription": "Gemi karanliga gecti - AIS sinyali kayboldu. Hassas operasyonlara isaret edebilir."
     },
     "militaryCluster": {
@@ -1821,22 +1807,22 @@
   "signals": {
     "context": {
       "prediction_leads_news": {
-        "whyItMatters": "Tahmin piyasalari genellikle bilgiyi haber olmadan once fiyatlar — yatirimcilar gelismelere erken erisime sahip olabilir.",
+        "whyItMatters": "Tahmin piyasalari genellikle bilgiyi haber olmadan once fiyatlar â€” yatirimcilar gelismelere erken erisime sahip olabilir.",
         "actionableInsight": "Onumuzdeki 1-6 saat icinde piyasa hareketini aciklayabilecek son dakika haberlerini izleyin.",
         "confidenceNote": "Birden fazla tahmin piyasasi ayni yonde hareket ediyorsa guvenilirlik artar."
       },
       "news_leads_markets": {
-        "whyItMatters": "Haberler piyasalarin tepki verebileceginden daha hizli gelisiyor — potansiyel yanlis fiyatlama firsati.",
+        "whyItMatters": "Haberler piyasalarin tepki verebileceginden daha hizli gelisiyor â€” potansiyel yanlis fiyatlama firsati.",
         "actionableInsight": "Algoritmalar ve yatirimcilar haberleri sindirdikce piyasanin yakalamasini izleyin.",
         "confidenceNote": "Haber Seviye 1 ajanslarindansa daha guclu sinyal."
       },
       "silent_divergence": {
-        "whyItMatters": "Piyasa tanimlanabilir haber katalizoru olmadan onemli olcude hareket ediyor — olasi iceriden bilgi, algoritmik ticaret veya raporlanmamis gelisme.",
+        "whyItMatters": "Piyasa tanimlanabilir haber katalizoru olmadan onemli olcude hareket ediyor â€” olasi iceriden bilgi, algoritmik ticaret veya raporlanmamis gelisme.",
         "actionableInsight": "Alternatif veri kaynaklarini arastirin; hareketi aciklayan haberler sonradan ortaya cikabilir.",
-        "confidenceNote": "Neden bilinmedigi icin dusuk guvenilirlik — dogrulanmis istihbarat degil erken uyari olarak degerlendirin."
+        "confidenceNote": "Neden bilinmedigi icin dusuk guvenilirlik â€” dogrulanmis istihbarat degil erken uyari olarak degerlendirin."
       },
       "velocity_spike": {
-        "whyItMatters": "Bir haber birden fazla kaynakta hizlaniyor — artan onem ve piyasa/politika etkisi potansiyelini gosterir.",
+        "whyItMatters": "Bir haber birden fazla kaynakta hizlaniyor â€” artan onem ve piyasa/politika etkisi potansiyelini gosterir.",
         "actionableInsight": "Bu konu acil dikkat gerektirir; resmi aciklamalar veya piyasa tepkileri bekleyin.",
         "confidenceNote": "Daha fazla kaynakla guvenilirlik artar; Seviye 1 kaynaklarin aralarinda olup olmadigini kontrol edin."
       },
@@ -1846,47 +1832,47 @@
         "confidenceNote": "Daha guclu temel deger carpani ve daha genis kaynak cesitliligiyle guvenilirlik artar."
       },
       "convergence": {
-        "whyItMatters": "Birden fazla bagimsiz kaynak turu ayni olayi dogruluyor — capraz dogrulama dogruluk olasiiligini artirir.",
+        "whyItMatters": "Birden fazla bagimsiz kaynak turu ayni olayi dogruluyor â€” capraz dogrulama dogruluk olasiiligini artirir.",
         "actionableInsight": "Bunu yuksek guvenilirlikli istihbarat olarak degerlendirin; ucgenleme yanlis pozitif riskini azaltir.",
         "confidenceNote": "Ajans + hukumet + istihbarat kaynaklari uyumluysa cok yuksek guvenilirlik."
       },
       "triangulation": {
-        "whyItMatters": "\"Otorite ucgeni\" (ajanslar, hukumet kaynaklari, istihbarat uzmanlari) uyumlu — bu, son dakika haber dogrulama icin altin standarttir.",
+        "whyItMatters": "\"Otorite ucgeni\" (ajanslar, hukumet kaynaklari, istihbarat uzmanlari) uyumlu â€” bu, son dakika haber dogrulama icin altin standarttir.",
         "actionableInsight": "Bu eyleme donusturulebilir istihbarattir; piyasa/politika tepkileri yakin zamanda beklenmektedir.",
-        "confidenceNote": "Sistemdeki en yuksek guvenilirlik sinyali — birden fazla yetkili kaynak hemfikir."
+        "confidenceNote": "Sistemdeki en yuksek guvenilirlik sinyali â€” birden fazla yetkili kaynak hemfikir."
       },
       "flow_drop": {
-        "whyItMatters": "Fiziksel emtia akisinda aksama tespit edildi — arz kisitlamalari genellikle fiyat artislarindan once gelir.",
+        "whyItMatters": "Fiziksel emtia akisinda aksama tespit edildi â€” arz kisitlamalari genellikle fiyat artislarindan once gelir.",
         "actionableInsight": "Enerji emtia fiyatlarini izleyin; tedarik zinciri maruziyetini degerlendirin.",
         "confidenceNote": "Guvenilirlik aksama suresine ve alternatif arz kullanilabilirligine baglidir."
       },
       "flow_price_divergence": {
-        "whyItMatters": "Arz aksamasi haberleri henuz emtia fiyatlarina yansimadi — potansiyel bilgi avantaji.",
+        "whyItMatters": "Arz aksamasi haberleri henuz emtia fiyatlarina yansimadi â€” potansiyel bilgi avantaji.",
         "actionableInsight": "Ya piyasalar tepki vermekte yavas ya da aksama bildirilenden daha az onemli.",
-        "confidenceNote": "Orta guvenilirlik — piyasalar haber raporlarindan daha iyi bilgiye sahip olabilir."
+        "confidenceNote": "Orta guvenilirlik â€” piyasalar haber raporlarindan daha iyi bilgiye sahip olabilir."
       },
       "geo_convergence": {
-        "whyItMatters": "Birden fazla haber olayi ayni cografi konumda kumeleniyor — potansiyel tirmanma veya koordineli faaliyet.",
+        "whyItMatters": "Birden fazla haber olayi ayni cografi konumda kumeleniyor â€” potansiyel tirmanma veya koordineli faaliyet.",
         "actionableInsight": "Bu bolge icin izleme onceligi artirin; mevcutsa uydu/AIS verileriyle iliskilendirin.",
         "confidenceNote": "Olaylar birden fazla kaynak turu ve zaman dilimini kapsiyorsa guvenilirlik artar."
       },
       "explained_market_move": {
-        "whyItMatters": "Piyasa hareketinin net bir haber katalizoru var — gizem yok, fiyat hareketi bilinen bilgiyi yansitiyor.",
+        "whyItMatters": "Piyasa hareketinin net bir haber katalizoru var â€” gizem yok, fiyat hareketi bilinen bilgiyi yansitiyor.",
         "actionableInsight": "Hareketi yonlendiren anlatilyi anlayin; tepkinin orantili olup olmadigini degerlendirin.",
-        "confidenceNote": "Yuksek guvenilirlik — haber ve fiyat hareketi iliskili."
+        "confidenceNote": "Yuksek guvenilirlik â€” haber ve fiyat hareketi iliskili."
       },
       "hotspot_escalation": {
         "whyItMatters": "Jeopolitik sicak nokta haber aktivitesi, ulke istikrarsizligi, cografi yakinlasma ve askeri varliga dayali onemli tirmanma gosteriyor.",
         "actionableInsight": "Izleme onceligi artirin; altyapi, piyasalar ve bolgesel istikrar uzerindeki etkileri degerlendirin.",
-        "confidenceNote": "Guvenilirlik birden fazla veri kaynagina gore agirliklandirilmistir — haber (%35), ulke istikrarsizligi (%25), cografi yakinlasma (%25), askeri faaliyet (%15)."
+        "confidenceNote": "Guvenilirlik birden fazla veri kaynagina gore agirliklandirilmistir â€” haber (%35), ulke istikrarsizligi (%25), cografi yakinlasma (%25), askeri faaliyet (%15)."
       },
       "sector_cascade": {
-        "whyItMatters": "Piyasa hareketi ilgili sektorler arasinda domino etkisi yapiyor — katalizor olaya sistemik tepkiyi gosterir.",
+        "whyItMatters": "Piyasa hareketi ilgili sektorler arasinda domino etkisi yapiyor â€” katalizor olaya sistemik tepkiyi gosterir.",
         "actionableInsight": "Birincil katalizoru tanimlayin; iliskili varliklar arasindaki maruziyeti degerlendirin.",
         "confidenceNote": "Birden fazla sektor benzer hiz ve yonde hareket ettiginde guvenilirlik artar."
       },
       "military_surge": {
-        "whyItMatters": "Askeri nakliye faaliyeti temel degerin onemli olcude ustunde — potansiyel konuslandirma, insani yardim operasyonu veya guc projeksiyonu gosteriyor.",
+        "whyItMatters": "Askeri nakliye faaliyeti temel degerin onemli olcude ustunde â€” potansiyel konuslandirma, insani yardim operasyonu veya guc projeksiyonu gosteriyor.",
         "actionableInsight": "Bolgesel haberlerle iliskilendirin; yakindaki us faaliyetini ve deniz hareketlerini degerlendirin.",
         "confidenceNote": "Birden fazla saat boyunca suregelen faaliyet ve cesitli ucak turleriyle guvenilirlik artar."
       },
@@ -1949,7 +1935,7 @@
     "retrying": "Tekrar deneniyor...",
     "failedToLoad": "Veri yuklenemedi",
     "noDataShort": "Veri yok",
-    "upstreamUnavailable": "Ust kaynak API'si kullanilamiyor — otomatik yeniden denenecek",
+    "upstreamUnavailable": "Ust kaynak API'si kullanilamiyor â€” otomatik yeniden denenecek",
     "loadingUcdpEvents": "UCDP olaylari yukleniyor",
     "loadingStablecoins": "Stablecoin'ler yukleniyor...",
     "scanningThermalData": "Termal veriler taraniyor",
@@ -1986,7 +1972,7 @@
     "information": "Bilgi",
     "shareStory": "Hikayeyi paylas",
     "exportImage": "Gorsel Disari Aktar",
-    "exportPdf": "PDF Dışa Aktar",
+    "exportPdf": "PDF DÄ±ÅŸa Aktar",
     "new": "YENI",
     "live": "CANLI",
     "cached": "ONBELLEK",
@@ -1995,6 +1981,6 @@
     "currentVariant": "(mevcut)",
     "retry": "Retry",
     "refresh": "Refresh",
-    "all": "Tümü"
+    "all": "TÃ¼mÃ¼"
   }
 }

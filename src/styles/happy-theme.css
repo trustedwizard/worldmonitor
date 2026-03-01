@@ -1,7 +1,7 @@
-/* ============================================================
-   Happy Variant Theme — Calm & Serene
+﻿/* ============================================================
+   Happy Variant Theme â€” Calm & Serene
    Sage green + warm gold on cream. No dark military aesthetic.
-   Unlayered CSS — wins over main.css which is wrapped in
+   Unlayered CSS â€” wins over main.css which is wrapped in
    @layer base by base-layer.css (@import ... layer(base)).
    ============================================================ */
 
@@ -56,13 +56,13 @@
   --map-country: #B9CDA8;
   --map-stroke: #C8C0B5;
 
-  /* Typography — Nunito rounded sans-serif */
+  /* Typography â€” Nunito rounded sans-serif */
   --font-body: 'Nunito', system-ui, -apple-system, sans-serif;
 
-  /* Panel border radius — soft rounded corners */
+  /* Panel border radius â€” soft rounded corners */
   --panel-radius: 14px;
 
-  /* Severity levels — remapped to positive semantics */
+  /* Severity levels â€” remapped to positive semantics */
   --semantic-critical: #C4A35A;
   --semantic-high: #6B8F5E;
   --semantic-elevated: #7BA5C4;
@@ -71,14 +71,14 @@
   --semantic-info: #7BA5C4;
   --semantic-positive: #6B8F5E;
 
-  /* Threat levels — remapped to positive tones */
+  /* Threat levels â€” remapped to positive tones */
   --threat-critical: #C4A35A;
   --threat-high: #8BAF7A;
   --threat-medium: #7BA5C4;
   --threat-low: #6B8F5E;
   --threat-info: #7BA5C4;
 
-  /* DEFCON levels — warm gradient instead of warning */
+  /* DEFCON levels â€” warm gradient instead of warning */
   --defcon-1: #C4A35A;
   --defcon-2: #A8B86B;
   --defcon-3: #7BA5C4;
@@ -98,7 +98,7 @@
 
 /* ---------- Happy Dark Mode ---------- */
 :root[data-variant="happy"][data-theme="dark"] {
-  /* Backgrounds — deep navy, warm darks */
+  /* Backgrounds â€” deep navy, warm darks */
   --bg: #1A2332;
   --bg-secondary: #1E2838;
   --surface: #222E3E;
@@ -110,7 +110,7 @@
   --border-strong: #445868;
   --border-subtle: #283545;
 
-  /* Text — warm off-whites */
+  /* Text â€” warm off-whites */
   --text: #E8E4DC;
   --text-secondary: #D0CCC4;
   --text-dim: #A0A098;
@@ -152,7 +152,7 @@
   /* Panel border radius */
   --panel-radius: 14px;
 
-  /* Semantic — lighter variants for dark backgrounds */
+  /* Semantic â€” lighter variants for dark backgrounds */
   --semantic-critical: #D4B36A;
   --semantic-high: #8BAF7A;
   --semantic-elevated: #8BB5D4;
@@ -183,7 +183,7 @@
 }
 
 /* ==========================================================
-   Happy Panel Chrome — Rounded, Warm, Welcoming
+   Happy Panel Chrome â€” Rounded, Warm, Welcoming
    ========================================================== */
 
 /* ---------- Panel border-radius & shadow (light) ---------- */
@@ -202,31 +202,31 @@
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.20), 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* ---------- Panel title — softer casing ---------- */
+/* ---------- Panel title â€” softer casing ---------- */
 [data-variant="happy"] .panel-title {
   text-transform: none;
   letter-spacing: 0.3px;
   font-weight: 700;
 }
 
-/* ---------- Panel count badge — rounded pill ---------- */
+/* ---------- Panel count badge â€” rounded pill ---------- */
 [data-variant="happy"] .panel-count {
   border-radius: 10px;
   padding: 2px 8px;
 }
 
-/* ---------- Panel resize handle — softer ---------- */
+/* ---------- Panel resize handle â€” softer ---------- */
 [data-variant="happy"] .panel-resize-handle {
   background: linear-gradient(to top, rgba(107, 143, 94, 0.10), transparent);
 }
 
-/* ---------- Map section — rounded ---------- */
+/* ---------- Map section â€” rounded ---------- */
 [data-variant="happy"] .map-section {
   border-radius: var(--panel-radius, 14px);
   overflow: hidden;
 }
 
-/* ---------- Map controls — rounded ---------- */
+/* ---------- Map controls â€” rounded ---------- */
 [data-variant="happy"] .map-controls {
   gap: 6px;
 }
@@ -236,7 +236,7 @@
 }
 
 /* ==========================================================
-   Happy Empty States — Friendly nature-themed illustration
+   Happy Empty States â€” Friendly nature-themed illustration
    ========================================================== */
 [data-variant="happy"] .panel-empty,
 [data-variant="happy"] .empty-state {
@@ -264,7 +264,7 @@
 }
 
 /* ==========================================================
-   Happy Loading States — Gentle pulse instead of radar sweep
+   Happy Loading States â€” Gentle pulse instead of radar sweep
    ========================================================== */
 [data-variant="happy"] .panel-loading-radar {
   border-color: rgba(107, 143, 94, 0.25);
@@ -300,7 +300,7 @@
 }
 
 /* ==========================================================
-   Happy Panel Error State — Softer error display
+   Happy Panel Error State â€” Softer error display
    ========================================================== */
 [data-variant="happy"] .panel-header-error {
   background: rgba(196, 163, 90, 0.12);
@@ -308,22 +308,17 @@
 }
 
 /* ==========================================================
-   Happy Download Banner — Rounded and warm
+   Happy Download Banner â€” Rounded and warm
    ========================================================== */
-[data-variant="happy"] .wm-dl-panel {
-  border-radius: 0 0 0 14px;
-  border-left-color: var(--green);
-}
-
 /* ==========================================================
-   Happy Data Badges — Rounded pills
+   Happy Data Badges â€” Rounded pills
    ========================================================== */
 [data-variant="happy"] .panel-data-badge {
   border-radius: 10px;
 }
 
 /* ==========================================================
-   Happy Tab Styles — Rounded tabs
+   Happy Tab Styles â€” Rounded tabs
    ========================================================== */
 [data-variant="happy"] .disp-tab,
 [data-variant="happy"] .ucdp-tab {
@@ -338,7 +333,7 @@
 }
 
 /* ==========================================================
-   Happy Severity Badges — Warm tones
+   Happy Severity Badges â€” Warm tones
    ========================================================== */
 [data-variant="happy"] .severity-extreme {
   background: color-mix(in srgb, var(--semantic-critical) 15%, transparent);
@@ -351,14 +346,14 @@
 }
 
 /* ==========================================================
-   Happy Posture Radar — Softer animation
+   Happy Posture Radar â€” Softer animation
    ========================================================== */
 [data-variant="happy"] .posture-radar-sweep {
   animation: happy-radar-sweep 3s linear infinite;
 }
 
 /* ==========================================================
-   Happy Positive News Feed — Filter Bar & Cards
+   Happy Positive News Feed â€” Filter Bar & Cards
    ========================================================== */
 
 /* ---------- Filter bar ---------- */
@@ -522,7 +517,7 @@
 }
 
 /* ==========================================================
-   Happy Counters Panel — Ticking positive metrics grid
+   Happy Counters Panel â€” Ticking positive metrics grid
    ========================================================== */
 
 /* ---------- Counters grid layout (auto-fit to container) ---------- */
@@ -583,7 +578,7 @@
 }
 
 /* ==========================================================
-   Happy Progress Charts Panel — D3 area chart containers
+   Happy Progress Charts Panel â€” D3 area chart containers
    ========================================================== */
 
 /* ---------- Progress chart container ---------- */
@@ -663,7 +658,7 @@
 }
 
 /* ==========================================================
-   Phase 6 — Breakthroughs Ticker
+   Phase 6 â€” Breakthroughs Ticker
    ========================================================== */
 
 @keyframes happy-ticker-scroll {
@@ -722,7 +717,7 @@
 }
 
 /* ==========================================================
-   Phase 6 — Hero Spotlight Card
+   Phase 6 â€” Hero Spotlight Card
    ========================================================== */
 
 [data-variant="happy"] .hero-card {
@@ -805,7 +800,7 @@
 }
 
 /* ==========================================================
-   Phase 6 — Good Things Digest
+   Phase 6 â€” Good Things Digest
    ========================================================== */
 
 [data-variant="happy"] .digest-list {
@@ -887,7 +882,7 @@
 }
 
 /* ==========================================================
-   Phase 6 — Dark Mode Overrides
+   Phase 6 â€” Dark Mode Overrides
    ========================================================== */
 
 [data-variant="happy"][data-theme="dark"] .ticker-item {
@@ -911,7 +906,7 @@
 }
 
 /* ==========================================================
-   Phase 7 — Species Comeback Panel
+   Phase 7 â€” Species Comeback Panel
    ========================================================== */
 
 [data-variant='happy'] .species-grid {
@@ -1049,7 +1044,7 @@
 }
 
 /* ==========================================================
-   Phase 7 — Renewable Energy Panel
+   Phase 7 â€” Renewable Energy Panel
    ========================================================== */
 
 [data-variant='happy'] .renewable-container {
@@ -1185,7 +1180,7 @@
 }
 
 /* ==========================================================
-   Phase 7 — Dark Mode Overrides
+   Phase 7 â€” Dark Mode Overrides
    ========================================================== */
 
 [data-variant='happy'][data-theme='dark'] .species-card:hover {
@@ -1197,7 +1192,7 @@
 }
 
 /* ==========================================================
-   Phase 9 — TV Mode (Ambient Fullscreen Panel Cycling)
+   Phase 9 â€” TV Mode (Ambient Fullscreen Panel Cycling)
    Driven by data-tv-mode attribute on <html>
    ========================================================== */
 
@@ -1259,7 +1254,7 @@
   overflow: auto;
 }
 
-/* ---------- 5. Ambient floating particles (TV-03) — CSS-only ---------- */
+/* ---------- 5. Ambient floating particles (TV-03) â€” CSS-only ---------- */
 [data-tv-mode]::before,
 [data-tv-mode]::after {
   content: '';
