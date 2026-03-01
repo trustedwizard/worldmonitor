@@ -217,7 +217,7 @@ export default function handler(req, res) {
 
   <!-- URL + date -->
   <text x="60" y="610" font-family="system-ui, sans-serif" font-size="14" fill="#555"
-    >worldmonitor.app · ${dateStr} · Free &amp; open source</text>
+    >monitor.neuralnewscast.com · ${dateStr} · Neural Newscast</text>
 </svg>`;
 
   res.setHeader('Content-Type', 'image/svg+xml');

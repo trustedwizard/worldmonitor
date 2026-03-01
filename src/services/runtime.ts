@@ -118,7 +118,7 @@ export function getRemoteApiBaseUrl(): string {
   if (fromHosts) return fromHosts;
 
   // Desktop builds may not set VITE_WS_API_URL; default to production.
-  if (isDesktopRuntime()) return 'https://worldmonitor.app';
+  if (isDesktopRuntime()) return 'https://monitor.neuralnewscast.com';
   return '';
 }
 
@@ -145,10 +145,10 @@ function extractHostnames(...urls: (string | undefined)[]): string[] {
 }
 
 const APP_HOSTS = new Set([
-  'worldmonitor.app',
-  'www.worldmonitor.app',
-  'tech.worldmonitor.app',
-  'api.worldmonitor.app',
+  'monitor.neuralnewscast.com',
+  'neuralnewscast.com',
+  'www.monitor.neuralnewscast.com',
+
   'localhost',
   '127.0.0.1',
   ...extractHostnames(WS_API_URL, import.meta.env.VITE_WS_RELAY_URL),

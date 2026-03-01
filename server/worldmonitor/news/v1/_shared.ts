@@ -187,12 +187,25 @@ export function getProviderCredentials(provider: string): ProviderCredentials | 
     if (!apiKey) return null;
     return {
       apiUrl: 'https://openrouter.ai/api/v1/chat/completions',
-      model: 'openrouter/free',
+      model: 'anthropic/claude-3-haiku',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://worldmonitor.app',
-        'X-Title': 'WorldMonitor',
+        'HTTP-Referer': 'https://monitor.neuralnewscast.com',
+        'X-Title': 'Neural Newscast - Global Monitor',
+      },
+    };
+  }
+
+  if (provider === 'minimax') {
+    const apiKey = process.env.MINIMAX_API_KEY;
+    if (!apiKey) return null;
+    return {
+      apiUrl: 'https://api.minimax.io/v1/chat/completions',
+      model: 'MiniMax-M2.5',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
       },
     };
   }
