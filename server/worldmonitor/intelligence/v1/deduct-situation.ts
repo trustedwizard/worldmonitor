@@ -12,20 +12,55 @@ import { CHROME_UA } from '../../../_shared/constants';
 
 const DEDUCT_TIMEOUT_MS = 120_000;
 const DEDUCT_CACHE_TTL = 3600;
-const DEFAULT_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const DEFAULT_MODEL = 'llama-3.1-8b-instant';
+const DEFAULT_API_URL = 'https://api.minimax.io/v1/chat/completions';
+const DEFAULT_MODEL = 'MiniMax-M2.5';
+const FALLBACK_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+const FALLBACK_MODEL = 'llama-3.1-8b-instant';
+
+interface LLMConfig {
+    apiUrl: string;
+    model: string;
+    apiKey: string;
+    provider: string;
+}
+
+function getLlmConfig(): LLMConfig | null {
+    // Try MiniMax first
+    const minimaxKey = process.env.MINIMAX_API_KEY;
+    if (minimaxKey) {
+        return {
+            apiUrl: process.env.LLM_API_URL || DEFAULT_API_URL,
+            model: process.env.LLM_MODEL || DEFAULT_MODEL,
+            apiKey: minimaxKey,
+            provider: 'minimax',
+        };
+    }
+
+    // Fallback to Groq
+    const groqKey = process.env.LLM_API_KEY || process.env.GROQ_API_KEY;
+    if (groqKey) {
+        return {
+            apiUrl: process.env.LLM_API_URL || FALLBACK_API_URL,
+            model: process.env.LLM_MODEL || FALLBACK_MODEL,
+            apiKey: groqKey,
+            provider: 'groq',
+        };
+    }
+
+    return null;
+}
 
 export async function deductSituation(
     _ctx: ServerContext,
     req: DeductSituationRequest,
 ): Promise<DeductSituationResponse> {
-    const apiKey = process.env.LLM_API_KEY || process.env.GROQ_API_KEY;
-    const apiUrl = process.env.LLM_API_URL || DEFAULT_API_URL;
-    const model = process.env.LLM_MODEL || DEFAULT_MODEL;
+    const config = getLlmConfig();
 
-    if (!apiKey) {
+    if (!config) {
         return { analysis: '', model: '', provider: 'skipped' };
     }
+
+    const { apiUrl, model: modelName, apiKey, provider } = config;
 
     const MAX_QUERY_LEN = 500;
     const MAX_GEO_LEN = 2000;
@@ -63,7 +98,7 @@ Your task is to DEDUCT the situation in a near timeline (e.g. 24 hours to a few 
                         'User-Agent': CHROME_UA
                     },
                     body: JSON.stringify({
-                        model,
+                        model: modelName,
                         messages: [
                             { role: 'system', content: systemPrompt },
                             { role: 'user', content: userPrompt },
@@ -86,7 +121,7 @@ Your task is to DEDUCT the situation in a near timeline (e.g. 24 hours to a few 
 
                 raw = raw.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
 
-                return { analysis: raw, model, provider: 'groq' };
+                return { analysis: raw, model: modelName, provider };
             } catch (err) {
                 console.error('[DeductSituation] Error calling LLM:', err);
                 return null;

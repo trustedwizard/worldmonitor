@@ -25,11 +25,13 @@ export type RuntimeSecretKey =
   | 'WORLDMONITOR_API_KEY'
   | 'WTO_API_KEY'
   | 'AVIATIONSTACK_API'
-  | 'ICAO_API_KEY';
+  | 'ICAO_API_KEY'
+  | 'MINIMAX_API_KEY';
 
 export type RuntimeFeatureId =
   | 'aiGroq'
   | 'aiOpenRouter'
+  | 'aiMinimax'
   | 'economicFred'
   | 'energyEia'
   | 'internetOutages'
@@ -79,6 +81,7 @@ function getSidecarSecretValidateUrl(): string {
 const defaultToggles: Record<RuntimeFeatureId, boolean> = {
   aiGroq: true,
   aiOpenRouter: true,
+  aiMinimax: true,
   economicFred: true,
   energyEia: true,
   internetOutages: true,
@@ -120,6 +123,13 @@ export const RUNTIME_FEATURES: RuntimeFeatureDefinition[] = [
     description: 'Secondary LLM provider for AI summary fallback.',
     requiredSecrets: ['OPENROUTER_API_KEY'],
     fallback: 'Falls back to local browser model only.',
+  },
+  {
+    id: 'aiMinimax',
+    name: 'MiniMax summarization',
+    description: 'MiniMax M2.5 model via OpenAI-compatible API (custom URL).',
+    requiredSecrets: ['MINIMAX_API_KEY'],
+    fallback: 'Falls back to OpenRouter, then local browser model.',
   },
   {
     id: 'economicFred',

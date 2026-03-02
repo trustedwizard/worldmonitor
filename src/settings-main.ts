@@ -235,6 +235,7 @@ function renderOverview(area: HTMLElement): void {
 
       <div class="wm-divider"><span>${t('modals.settingsWindow.worldMonitor.dividerOr')}</span></div>
 
+      ${isDesktopRuntime() ? `
       <section class="wm-section">
         <h2 class="wm-section-title">${t('modals.settingsWindow.worldMonitor.register.title')}</h2>
         <p class="wm-section-desc">${t('modals.settingsWindow.worldMonitor.register.description')}</p>
@@ -251,6 +252,7 @@ function renderOverview(area: HTMLElement): void {
         <p class="wm-reg-status" data-wm-reg-status></p>
         `}
       </section>
+      ` : ''}
     </div>
   `;
 
@@ -271,6 +273,8 @@ function initOverviewListeners(area: HTMLElement): void {
   });
 
   area.querySelector('[data-wm-register]')?.addEventListener('click', async () => {
+    if (!isDesktopRuntime()) return;
+
     const emailInput = area.querySelector<HTMLInputElement>('[data-wm-email]');
     const regStatus = area.querySelector<HTMLElement>('[data-wm-reg-status]');
     const btn = area.querySelector<HTMLButtonElement>('[data-wm-register]');

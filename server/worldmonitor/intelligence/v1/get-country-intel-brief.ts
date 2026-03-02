@@ -1,5 +1,3 @@
-declare const process: { env: Record<string, string | undefined> };
-
 import type {
   ServerContext,
   GetCountryIntelBriefRequest,
@@ -7,7 +5,7 @@ import type {
 } from '../../../../src/generated/server/worldmonitor/intelligence/v1/service_server';
 
 import { cachedFetchJson } from '../../../_shared/redis';
-import { UPSTREAM_TIMEOUT_MS, GROQ_API_URL, GROQ_MODEL, TIER1_COUNTRIES, hashString } from './_shared';
+import { UPSTREAM_TIMEOUT_MS, GROQ_MODEL, TIER1_COUNTRIES, getLlmConfig, hashString } from './_shared';
 import { CHROME_UA } from '../../../_shared/constants';
 
 // ========================================================================
@@ -24,18 +22,17 @@ export async function getCountryIntelBrief(
   ctx: ServerContext,
   req: GetCountryIntelBriefRequest,
 ): Promise<GetCountryIntelBriefResponse> {
+  const config = getLlmConfig();
+
   const empty: GetCountryIntelBriefResponse = {
     countryCode: req.countryCode,
     countryName: '',
     brief: '',
-    model: GROQ_MODEL,
+    model: config?.model || GROQ_MODEL,
     generatedAt: Date.now(),
   };
 
-  if (!req.countryCode) return empty;
-
-  const apiKey = process.env.GROQ_API_KEY;
-  if (!apiKey) return empty;
+  if (!req.countryCode || !config) return empty;
 
   let contextSnapshot = '';
   try {
@@ -77,11 +74,11 @@ Rules:
           userPromptParts.push(`Context snapshot:\n${contextSnapshot}`);
         }
 
-        const resp = await fetch(GROQ_API_URL, {
+        const resp = await fetch(config.apiUrl, {
           method: 'POST',
-          headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json', 'User-Agent': CHROME_UA },
+          headers: { Authorization: `Bearer ${config.apiKey}`, 'Content-Type': 'application/json', 'User-Agent': CHROME_UA },
           body: JSON.stringify({
-            model: GROQ_MODEL,
+            model: config.model,
             messages: [
               { role: 'system', content: systemPrompt },
               { role: 'user', content: userPromptParts.join('\n\n') },
@@ -101,7 +98,7 @@ Rules:
           countryCode: req.countryCode,
           countryName,
           brief,
-          model: GROQ_MODEL,
+          model: config.model,
           generatedAt: Date.now(),
         };
       } catch {
