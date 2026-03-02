@@ -199,6 +199,7 @@ export function getProviderCredentials(provider: string): ProviderCredentials | 
 
   if (provider === 'minimax') {
     const apiKey = process.env.MINIMAX_API_KEY;
+    console.log('[Minimax] API Key present:', !!apiKey, '| URL:', process.env.LLM_API_URL || 'https://api.minimax.io/v1');
     if (!apiKey) return null;
     // Support custom endpoint via LLM_API_URL env var (base URL without /chat/completions)
     const baseUrl = process.env.LLM_API_URL || 'https://api.minimax.io/v1';
