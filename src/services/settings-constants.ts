@@ -3,6 +3,7 @@ import type { RuntimeSecretKey, RuntimeFeatureId } from './runtime-config';
 export const SIGNUP_URLS: Partial<Record<RuntimeSecretKey, string>> = {
   GROQ_API_KEY: 'https://console.groq.com/keys',
   OPENROUTER_API_KEY: 'https://openrouter.ai/settings/keys',
+  OPENAI_API_KEY: 'https://platform.openai.com/api-keys',
   FRED_API_KEY: 'https://fred.stlouisfed.org/docs/api/api_key.html',
   EIA_API_KEY: 'https://www.eia.gov/opendata/register.php',
   CLOUDFLARE_API_TOKEN: 'https://dash.cloudflare.com/profile/api-tokens',
@@ -37,6 +38,7 @@ export const MASKED_SENTINEL = '__WM_MASKED__';
 export const HUMAN_LABELS: Record<RuntimeSecretKey, string> = {
   GROQ_API_KEY: 'Groq API Key',
   OPENROUTER_API_KEY: 'OpenRouter API Key',
+  OPENAI_API_KEY: 'OpenAI API Key',
   FRED_API_KEY: 'FRED API Key',
   EIA_API_KEY: 'EIA API Key',
   CLOUDFLARE_API_TOKEN: 'Cloudflare API Token',
@@ -72,7 +74,7 @@ export const SETTINGS_CATEGORIES: SettingsCategory[] = [
   {
     id: 'ai',
     label: 'AI & Summarization',
-    features: ['aiOllama', 'aiGroq', 'aiOpenRouter', 'aiMinimax'],
+    features: ['aiOllama', 'aiGroq', 'aiOpenRouter', 'aiMinimax', 'aiOpenAI'],
   },
   {
     id: 'economy',

@@ -9,6 +9,29 @@ import { brotliCompress, gzipSync } from 'node:zlib';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 
+// Load .env.local for development (MiniMax, etc.) - try multiple locations
+console.log('[local-api] cwd:', process.cwd());
+const possiblePaths = [
+  path.join(process.cwd(), '.env.local'),
+  path.join(process.cwd(), '..', '.env.local'),
+  path.join(process.cwd(), '..', '..', '.env.local'),
+];
+for (const envLocalPath of possiblePaths) {
+  if (existsSync(envLocalPath)) {
+    try {
+      const envContent = readFileSync(envLocalPath, 'utf-8');
+      for (const line of envContent.split('\n')) {
+        const match = line.match(/^([^=]+)=(.*)$/);
+        if (match && !process.env[match[1]]) {
+          process.env[match[1]] = match[2].trim();
+        }
+      }
+      console.log('[local-api] loaded .env.local from', envLocalPath);
+    } catch {}
+    break;
+  }
+}
+
 const brotliCompressAsync = promisify(brotliCompress);
 
 // Monkey-patch globalThis.fetch to force IPv4 for HTTPS requests.
@@ -108,6 +131,8 @@ const ALLOWED_ENV_KEYS = new Set([
   'AVIATIONSTACK_API', 'ICAO_API_KEY',
   // MiniMax AI
   'MINIMAX_API_KEY', 'LLM_API_URL', 'LLM_MODEL',
+  // OpenAI
+  'OPENAI_API_KEY',
 ]);
 
 const CHROME_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
@@ -684,6 +709,16 @@ async function validateSecretAgainstProvider(key, rawValue, context = {}) {
       if (isAuthFailure(response.status, text)) return fail('OpenRouter rejected this key');
       if (!response.ok) return fail(`OpenRouter probe failed (${response.status})`);
       return ok('OpenRouter key verified');
+    }
+
+    case 'OPENAI_API_KEY': {
+      const response = await fetchWithTimeout('https://api.openai.com/v1/models', {
+        headers: { Authorization: `Bearer ${value}`, 'User-Agent': CHROME_UA },
+      });
+      const text = await response.text();
+      if (isAuthFailure(response.status, text)) return fail('OpenAI rejected this key');
+      if (!response.ok) return fail(`OpenAI probe failed (${response.status})`);
+      return ok('OpenAI key verified');
     }
 
     case 'FRED_API_KEY': {

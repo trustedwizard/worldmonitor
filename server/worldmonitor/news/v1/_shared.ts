@@ -210,6 +210,20 @@ export function getProviderCredentials(provider: string): ProviderCredentials | 
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
       },
+      extraBody: { reasoning_split: true },
+    };
+  }
+
+  if (provider === 'openai') {
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) return null;
+    return {
+      apiUrl: 'https://api.openai.com/v1/chat/completions',
+      model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
     };
   }
 

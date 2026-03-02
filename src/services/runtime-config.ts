@@ -26,12 +26,14 @@ export type RuntimeSecretKey =
   | 'WTO_API_KEY'
   | 'AVIATIONSTACK_API'
   | 'ICAO_API_KEY'
-  | 'MINIMAX_API_KEY';
+  | 'MINIMAX_API_KEY'
+  | 'OPENAI_API_KEY';
 
 export type RuntimeFeatureId =
   | 'aiGroq'
   | 'aiOpenRouter'
   | 'aiMinimax'
+  | 'aiOpenAI'
   | 'economicFred'
   | 'energyEia'
   | 'internetOutages'
@@ -82,6 +84,7 @@ const defaultToggles: Record<RuntimeFeatureId, boolean> = {
   aiGroq: true,
   aiOpenRouter: true,
   aiMinimax: true,
+  aiOpenAI: true,
   economicFred: true,
   energyEia: true,
   internetOutages: true,
@@ -130,6 +133,13 @@ export const RUNTIME_FEATURES: RuntimeFeatureDefinition[] = [
     description: 'MiniMax M2.5 model via OpenAI-compatible API (custom URL).',
     requiredSecrets: ['MINIMAX_API_KEY'],
     fallback: 'Falls back to OpenRouter, then local browser model.',
+  },
+  {
+    id: 'aiOpenAI',
+    name: 'OpenAI summarization',
+    description: 'OpenAI GPT-4o Mini model for AI summary generation.',
+    requiredSecrets: ['OPENAI_API_KEY'],
+    fallback: 'Falls back to Groq, then OpenRouter, then local browser model.',
   },
   {
     id: 'economicFred',

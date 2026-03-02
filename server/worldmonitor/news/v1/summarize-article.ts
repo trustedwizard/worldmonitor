@@ -52,6 +52,7 @@ export async function summarizeArticle(
     groq: 'GROQ_API_KEY not configured',
     openrouter: 'OPENROUTER_API_KEY not configured',
     minimax: 'MINIMAX_API_KEY not configured',
+    openai: 'OPENAI_API_KEY not configured',
   };
 
   const credentials = getProviderCredentials(provider);
@@ -91,7 +92,7 @@ export async function summarizeArticle(
   try {
     const cacheKey = getCacheKey(headlines, mode, sanitizedGeoContext, variant, lang);
 
-    // Single atomic call — source tracking happens inside cachedFetchJsonWithMeta,
+    // Single atomic call - source tracking happens inside cachedFetchJsonWithMeta,
     // eliminating the TOCTOU race between a separate getCachedJson and cachedFetchJson.
     const { data: result, source } = await cachedFetchJsonWithMeta<{ summary: string; model: string; tokens: number }>(
       cacheKey,
@@ -115,7 +116,7 @@ export async function summarizeArticle(
               { role: 'user', content: userPrompt },
             ],
             temperature: 0.3,
-            max_tokens: 100,
+            max_tokens: 2000,
             top_p: 0.9,
             ...extraBody,
           }),
@@ -131,27 +132,24 @@ export async function summarizeArticle(
         const data = await response.json() as any;
         const tokens = (data.usage?.total_tokens as number) || 0;
         const message = data.choices?.[0]?.message;
-        let rawContent = typeof message?.content === 'string' ? message.content.trim() : '';
 
-        rawContent = rawContent
-          .replace(/<think>[\s\S]*?<\/think>/gi, '')
-          .replace(/<\|thinking\|>[\s\S]*?<\|\/thinking\|>/gi, '')
-          .replace(/<reasoning>[\s\S]*?<\/reasoning>/gi, '')
-          .replace(/<reflection>[\s\S]*?<\/reflection>/gi, '')
-          .replace(/<\|begin_of_thought\|>[\s\S]*?<\|end_of_thought\|>/gi, '')
-          .trim();
-
-        // Strip unterminated thinking blocks (no closing tag)
-        rawContent = rawContent
-          .replace(/<think>[\s\S]*/gi, '')
-          .replace(/<\|thinking\|>[\s\S]*/gi, '')
-          .replace(/<reasoning>[\s\S]*/gi, '')
-          .replace(/<reflection>[\s\S]*/gi, '')
-          .replace(/<\|begin_of_thought\|>[\s\S]*/gi, '')
-          .trim();
+        // With reasoning_split: true, thinking is in reasoning_details, content should be clean
+        let rawContent = '';
+        if (message?.reasoning_details && Array.isArray(message.reasoning_details) && message.reasoning_details.length > 0) {
+          // Reasoning is separated - content should be clean already
+          rawContent = typeof message?.content === 'string' ? message.content.trim() : '';
+        } else {
+          // Fallback: extract and strip thinking content manually
+          rawContent = typeof message?.content === 'string' ? message.content.trim() : '';
+          rawContent = rawContent
+            .replace(/<note>[\s\S]*?<\/note>/gi, '')
+            .replace(/<thinking>[\s\S]*?<\/thinking>/gi, '')
+            .replace(/<[\w-]+>[\s\S]*?<\/[\w-]+>/gi, '')
+            .trim();
+        }
 
         if (['brief', 'analysis'].includes(mode) && rawContent.length < 20) {
-          console.warn(`[SummarizeArticle:${provider}] Output too short after stripping (${rawContent.length} chars), rejecting`);
+          console.warn(`[SummarizeArticle:${provider}] Output too short after stripping (${rawContent.length} chars), rejecting, raw:`, rawContent.slice(0, 200));
           return null;
         }
 
@@ -179,6 +177,7 @@ export async function summarizeArticle(
       };
     }
 
+    console.log(`[SummarizeArticle:${provider}] Empty result, source=${source}, result=`, result);
     return {
       summary: '',
       model: '',
@@ -194,7 +193,7 @@ export async function summarizeArticle(
 
   } catch (err: unknown) {
     const error = err instanceof Error ? err : new Error(String(err));
-    console.error(`[SummarizeArticle:${provider}] Error:`, error.name, error.message);
+    console.error(`[SummarizeArticle:${provider}] Error:`, error.name, error.message, error.stack);
     return {
       summary: '',
       model: '',
