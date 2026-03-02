@@ -29,15 +29,17 @@
       "information": "ä¿¡æ¯"
     },
     "signals": {
-      "protests": "æŠ—è®®æ´»åŠ¨",
-      "militaryAir": "å†›ç”¨é£žæœº",
-      "militarySea": "å†›ç”¨èˆ°è‰‡",
-      "outages": "ç½‘ç»œä¸­æ–­",
-      "earthquakes": "åœ°éœ‡",
-      "displaced": "æµç¦»å¤±æ‰€",
-      "climate": "æ°”å€™åŽ‹åŠ›",
-      "conflictEvents": "å†²çªäº‹ä»¶",
-      "gpsJammingZones": "GPS Jamming Zones"
+      "protests": "抗议活动",
+      "militaryAir": "军用飞机",
+      "militarySea": "军用舰艇",
+      "outages": "网络中断",
+      "earthquakes": "地震",
+      "displaced": "流离失所",
+      "climate": "气候压力",
+      "conflictEvents": "冲突事件",
+      "gpsJammingZones": "GPS Jamming Zones",
+      "activeStrikes": "活跃罢工",
+      "aviationDisruptions": "机场中断"
     },
     "timeAgo": {
       "m": "{{count}}åˆ†é’Ÿå‰",
@@ -66,14 +68,15 @@
       "stable": "ç¨³å®š"
     },
     "fallback": {
-      "instabilityIndex": "**ä¸ç¨³å®šæŒ‡æ•°ï¼š{{score}}/100**ï¼ˆ{{level}}ï¼Œ{{trend}}ï¼‰",
-      "protestsDetected": "æ£€æµ‹åˆ°{{count}}èµ·æ´»è·ƒæŠ—è®®",
-      "aircraftTracked": "è¿½è¸ªåˆ°{{count}}æž¶å†›ç”¨é£žæœº",
-      "vesselsTracked": "è¿½è¸ªåˆ°{{count}}è‰˜å†›ç”¨èˆ°è‰‡",
-      "internetOutages": "{{count}}èµ·äº’è”ç½‘ä¸­æ–­",
-      "recentEarthquakes": "{{count}}èµ·è¿‘æœŸåœ°éœ‡",
-      "stockIndex": "è‚¡ç¥¨æŒ‡æ•°ï¼š{{value}}",
-      "recentHeadlines": "**è¿‘æœŸå¤´æ¡ï¼š**"
+      "instabilityIndex": "**不稳定指数：{{score}}/100**（{{level}}，{{trend}}）",
+      "protestsDetected": "检测到{{count}}起活跃抗议",
+      "aircraftTracked": "追踪到{{count}}架军用飞机",
+      "vesselsTracked": "追踪到{{count}}艘军用舰艇",
+      "internetOutages": "{{count}}起互联网中断",
+      "recentEarthquakes": "{{count}}起近期地震",
+      "stockIndex": "股票指数：{{value}}",
+      "recentHeadlines": "**近期头条：**",
+      "activeStrikes": "检测到{{count}}起活跃罢工"
     }
   },
   "header": {
@@ -207,7 +210,13 @@
     "liveWebcams": "å®žæ—¶æ‘„åƒå¤´",
     "securityAdvisories": "å®‰å…¨è­¦å‘Š",
     "orefSirens": "Israel Sirens",
-    "telegramIntel": "Telegram æƒ…æŠ¥"
+    "telegramIntel": "Telegram 情报",
+    "giving": "全球捐赠",
+    "supplyChain": "供应链",
+    "gulfEconomies": "海湾经济",
+    "gulfIndices": "海湾指数",
+    "gulfCurrencies": "海湾货币",
+    "gulfOil": "海湾石油"
   },
   "modals": {
     "search": {
@@ -333,14 +342,15 @@
         "staged": "å·²æš‚å­˜ï¼ˆç‚¹å‡»ç¡®å®šä¿å­˜ï¼‰"
       },
       "help": {
-        "URLHAUS_AUTH_KEY": "ç”¨äºŽURLhauså’ŒThreatFox APIã€‚",
-        "OTX_API_KEY": "ç½‘ç»œå¨èƒå›¾å±‚çš„å¯é€‰å¢žå¼ºæ•°æ®æºã€‚",
-        "ABUSEIPDB_API_KEY": "æ¶æ„IPä¿¡èª‰çš„å¯é€‰å¢žå¼ºæ•°æ®æºã€‚",
-        "FINNHUB_API_KEY": "å®žæ—¶è‚¡ç¥¨æŠ¥ä»·å’Œå¸‚åœºæ•°æ®ã€‚",
-        "NASA_FIRMS_API_KEY": "æ¶ˆé˜²ä¿¡æ¯èµ„æºç®¡ç†ç³»ç»Ÿã€‚",
-        "OLLAMA_API_URL": "e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio) â€” OpenAI-compatible endpoint.",
-        "OLLAMA_MODEL": "e.g. llama3.1:8b â€” model tag to use for summarization."
-      }
+        "URLHAUS_AUTH_KEY": "用于URLhaus和ThreatFox API。",
+        "OTX_API_KEY": "网络威胁图层的可选增强数据源。",
+        "ABUSEIPDB_API_KEY": "恶意IP信誉的可选增强数据源。",
+        "FINNHUB_API_KEY": "实时股票报价和市场数据。",
+        "NASA_FIRMS_API_KEY": "消防信息资源管理系统。",
+        "OLLAMA_API_URL": "e.g. http://127.0.0.1:11434 (Ollama) or http://127.0.0.1:1234/v1 (LM Studio) — OpenAI-compatible endpoint.",
+        "OLLAMA_MODEL": "e.g. llama3.1:8b — model tag to use for summarization."
+      },
+      "skipSetup": "跳过设置 — 一个World Monitor许可证即可解锁全部功能。加入候补名单抢先体验。"
     },
     "settingsWindow": {
       "validating": "æ­£åœ¨éªŒè¯APIå¯†é’¥...",
@@ -357,11 +367,37 @@
       "sidecarUnreachable": "Sidecarä¸å¯è¾¾ã€‚",
       "logCleared": "æ—¥å¿—å·²æ¸…é™¤ã€‚",
       "table": {
-        "time": "æ—¶é—´",
-        "method": "æ–¹æ³•",
-        "path": "è·¯å¾„",
-        "status": "çŠ¶æ€",
-        "duration": "è€—æ—¶"
+        "time": "时间",
+        "method": "方法",
+        "path": "路径",
+        "status": "状态",
+        "duration": "耗时"
+      },
+      "worldMonitor": {
+        "tabLabel": "World Monitor",
+        "heroTitle": "一个密钥，万事俱备。",
+        "heroDescription": "一个World Monitor许可证即可替代所有需要自行配置的API密钥和LLM提供商。AI摘要、实时情报、市场数据、冲突追踪、火灾检测、卫星图像 — 全部就绪，全部托管，零配置。",
+        "apiKey": {
+          "title": "许可证密钥",
+          "placeholder": "wm_xxxxxxxxxxxxxxxxxxxxxxxx",
+          "description": "粘贴您的许可证，即刻解锁所有数据源和AI功能。",
+          "statusValid": "已授权",
+          "statusMissing": "未授权"
+        },
+        "dividerOr": "或",
+        "register": {
+          "title": "预留您的名额",
+          "description": "World Monitor许可证即将上线。立即注册成为首批用户 — 早期会员享有优先访问和创始会员价格。",
+          "emailPlaceholder": "your@email.com",
+          "submitBtn": "加入候补名单",
+          "submitting": "提交中...",
+          "success": "您已加入名单！我们会第一时间通知您。",
+          "alreadyRegistered": "您已在候补名单中。",
+          "error": "注册失败，请重试。",
+          "invalidEmail": "请输入有效的电子邮件地址。"
+        },
+        "byokTitle": "或使用自有密钥",
+        "byokDescription": "偏好完全掌控？前往API密钥和LLM标签页，逐一配置各数据源和AI提供商。"
       }
     },
     "countryIntel": {
@@ -408,15 +444,17 @@
         "information": "ä¿¡æ¯"
       },
       "signals": {
-        "protests": "æŠ—è®®æ´»åŠ¨",
-        "militaryAir": "å†›ç”¨é£žæœº",
-        "militarySea": "å†›ç”¨èˆ°è‰‡",
-        "outages": "ç½‘ç»œä¸­æ–­",
-        "earthquakes": "åœ°éœ‡",
-        "displaced": "æµç¦»å¤±æ‰€",
-        "climate": "æ°”å€™åŽ‹åŠ›",
-        "conflictEvents": "å†²çªäº‹ä»¶",
-        "gpsJammingZones": "GPS Jamming Zones"
+        "protests": "抗议活动",
+        "militaryAir": "军用飞机",
+        "militarySea": "军用舰艇",
+        "outages": "网络中断",
+        "earthquakes": "地震",
+        "displaced": "流离失所",
+        "climate": "气候压力",
+        "conflictEvents": "冲突事件",
+        "gpsJammingZones": "GPS Jamming Zones",
+        "activeStrikes": "活跃罢工",
+        "aviationDisruptions": "机场中断"
       },
       "timeAgo": {
         "m": "{{count}}åˆ†é’Ÿå‰",
@@ -452,7 +490,8 @@
         "internetOutages": "{{count}} internet outages",
         "recentEarthquakes": "{{count}} recent earthquakes",
         "stockIndex": "Stock index: {{value}}",
-        "recentHeadlines": "**Recent headlines:**"
+        "recentHeadlines": "**Recent headlines:**",
+        "activeStrikes": "检测到{{count}}起活跃罢工"
       }
     }
   },
@@ -460,12 +499,13 @@
     "webcams": {
       "regions": {
         "iran": "IRAN ATTACKS",
-        "all": "å…¨éƒ¨",
-        "mideast": "ä¸­ä¸œ",
-        "europe": "æ¬§æ´²",
-        "americas": "ç¾Žæ´²",
-        "asia": "äºšæ´²"
-      }
+        "all": "全部",
+        "mideast": "中东",
+        "europe": "欧洲",
+        "americas": "美洲",
+        "asia": "亚洲"
+      },
+      "expand": "展开"
     },
     "monitor": {
       "placeholder": "å…³é”®è¯ï¼ˆé€—å·åˆ†éš”ï¼‰",
@@ -530,7 +570,8 @@
       "change": "Change",
       "cut": "cut",
       "hike": "hike",
-      "hold": "hold"
+      "hold": "hold",
+      "fredKeyMissing": "需要FRED API密钥 — 请在设置中添加以启用经济指标"
     },
     "tradePolicy": {
       "restrictions": "é™åˆ¶æŽªæ–½",
@@ -781,7 +822,8 @@
         "gulfInvestments": "GCCæŠ•èµ„",
         "tradeRoutes": "è´¸æ˜“èˆªçº¿",
         "gpsJamming": "GPS JAMMING",
-        "dayNight": "æ˜¼/å¤œ"
+        "dayNight": "昼/夜",
+        "iranAttacks": "伊朗袭击"
       },
       "tooltip": {
         "earthquake": "åœ°éœ‡",
@@ -834,47 +876,58 @@
           "overlays": "å åŠ å±‚å’Œæ ‡ç­¾"
         },
         "descriptions": {
-          "techStartupHubs": "ä¸»è¦åˆ›ä¸šç”Ÿæ€ç³»ç»Ÿï¼ˆæ—§é‡‘å±±ã€çº½çº¦ã€ä¼¦æ•¦ç­‰ï¼‰",
-          "techCloudRegions": "AWSã€Azureã€GCPæ•°æ®ä¸­å¿ƒåŒºåŸŸ",
-          "techHQs": "å¤§åž‹ç§‘æŠ€å…¬å¸æ€»éƒ¨",
-          "techAccelerators": "Y Combinatorã€Techstarsã€500 Startupsæ‰€åœ¨åœ°",
-          "infraCables": "ä¸»è¦æµ·åº•å…‰çº¤ç”µç¼†ï¼ˆäº’è”ç½‘éª¨å¹²ï¼‰",
-          "infraDatacenters": "AIç®—åŠ›é›†ç¾¤ >=10,000 GPU",
-          "infraOutages": "äº’è”ç½‘ä¸­æ–­å’ŒæœåŠ¡æ•…éšœ",
-          "naturalEventsTech": "åœ°éœ‡ã€é£Žæš´ã€ç«ç¾ï¼ˆå¯èƒ½å½±å“æ•°æ®ä¸­å¿ƒï¼‰",
-          "weatherAlerts": "æ¶åŠ£å¤©æ°”é¢„è­¦",
-          "economicCenters": "è¯åˆ¸äº¤æ˜“æ‰€å’Œå¤®è¡Œ",
-          "countriesOverlay": "å›½å®¶åç§°å åŠ å±‚",
-          "financeExchanges": "æŒ‰å¸‚åœºå±‚çº§åˆ’åˆ†çš„å…¨çƒä¸»è¦äº¤æ˜“æ‰€",
-          "financeCenters": "å…¨çƒå’ŒåŒºåŸŸé‡‘èžæž¢çº½",
-          "financeCentralBanks": "å…¨çƒè´§å¸æ”¿ç­–æœºæž„",
-          "financeCommodityHubs": "ä¸»è¦äº¤æ˜“æ‰€ã€æ¸¯å£å’Œç‚¼æ²¹æž¢çº½",
-          "financeCables": "ä¸Žå¸‚åœºåŸºç¡€è®¾æ–½ç›¸å…³çš„ä¸»è¦æµ·åº•å…‰çº¤çº¿è·¯",
-          "financePipelines": "å½±å“èƒ½æºå¸‚åœºçš„æ²¹æ°”ç®¡é“çº¿è·¯",
-          "financeOutages": "å¯èƒ½å½±å“å¸‚åœºè¿è¥çš„äº’è”ç½‘ä¸­æ–­",
-          "financeCyberThreats": "é‡‘èžåŸºç¡€è®¾æ–½å‘¨è¾¹çš„å®‰å…¨äº‹ä»¶",
-          "macroWaterways": "å¤§å®—å•†å“èˆªè¿çš„æˆ˜ç•¥å’½å–‰è¦é“",
-          "weatherAlertsMarket": "ä¸Žå¸‚åœºç›¸å…³çš„æ¶åŠ£å¤©æ°”äº‹ä»¶",
-          "naturalEventsMacro": "åœ°éœ‡ã€ç«ç¾ã€æ´ªæ°´ç­‰è‡ªç„¶ç¾å®³",
-          "timeRecent": "æŒ‰è¿‘å‡ å°æ—¶ç­›é€‰æ—¶é—´æ•°æ®",
-          "timeExtended": "æ˜¾ç¤ºè¿‡åŽ»ä¸€å‘¨ã€ä¸€ä¸ªæœˆæˆ–æ‰€æœ‰æ—¶é—´çš„æ•°æ®",
-          "geoConflicts": "æ´»è·ƒæˆ˜åŒºï¼ˆä¹Œå…‹å…°ã€åŠ æ²™ç­‰ï¼‰åŠè¾¹ç•Œ",
-          "geoHotspots": "ç´§å¼ åœ°åŒº â€” æŒ‰æ–°é—»æ´»åŠ¨çº§åˆ«ç€è‰²",
-          "geoSanctions": "å—ç¾Žå›½/æ¬§ç›Ÿ/è”åˆå›½ç»æµŽåˆ¶è£çš„å›½å®¶",
-          "geoProtests": "ç¤¾ä¼šåŠ¨è¡ã€ç¤ºå¨æ´»åŠ¨ï¼ˆæŒ‰æ—¶é—´ç­›é€‰ï¼‰",
-          "militaryBases": "ç¾Žå›½/NATOã€ä¸­å›½ã€ä¿„ç½—æ–¯å†›äº‹è®¾æ–½ï¼ˆ150+ï¼‰",
-          "militaryNuclear": "æ ¸ç”µç«™ã€æµ“ç¼©è®¾æ–½ã€æ­¦å™¨è®¾æ–½",
-          "militaryIrradiators": "å·¥ä¸šä¼½é©¬è¾ç…§å™¨è®¾æ–½",
-          "militaryActivity": "å®žæ—¶å†›ç”¨é£žæœºå’Œèˆ°è‰‡è¿½è¸ª",
-          "infraCablesFull": "ä¸»è¦æµ·åº•å…‰çº¤ç”µç¼†ï¼ˆ20æ¡éª¨å¹²çº¿è·¯ï¼‰",
-          "infraPipelinesFull": "æ²¹æ°”ç®¡é“ï¼ˆåŒ—æºªã€TAPIç­‰ï¼‰",
-          "infraDatacentersFull": "ä»…æ˜¾ç¤ºAIç®—åŠ›é›†ç¾¤ >=10,000 GPU",
-          "transportShipping": "èˆ¹èˆ¶ã€å’½å–‰è¦é“ã€61ä¸ªæˆ˜ç•¥æ¸¯å£",
-          "transportDelays": "æœºåœºå»¶è¯¯å’Œåœ°é¢åœèˆªï¼ˆFAAï¼‰",
-          "naturalEventsFull": "åœ°éœ‡ï¼ˆUSGSï¼‰+ é£Žæš´ã€ç«ç¾ã€ç«å±±ã€æ´ªæ°´ï¼ˆNASA EONETï¼‰",
-          "waterwaysLabels": "æˆ˜ç•¥å’½å–‰è¦é“æ ‡ç­¾",
-          "tradeRoutes": "è¿žæŽ¥æ¸¯å£å¹¶ç»è¿‡æˆ˜ç•¥å’½å–‰è¦é“çš„å…¨çƒä¸»è¦èˆªè¿é€šé“",
-          "dayNight": "å®žæ—¶å¤ªé˜³ç»ˆç»“çº¿æ˜¾ç¤ºæ˜¼å¤œåŒºåŸŸ"
+          "techStartupHubs": "主要创业生态系统（旧金山、纽约、伦敦等）",
+          "techCloudRegions": "AWS、Azure、GCP数据中心区域",
+          "techHQs": "大型科技公司总部",
+          "techAccelerators": "Y Combinator、Techstars、500 Startups所在地",
+          "infraCables": "主要海底光纤电缆（互联网骨干）",
+          "infraDatacenters": "AI算力集群 >=10,000 GPU",
+          "infraOutages": "互联网中断和服务故障",
+          "naturalEventsTech": "地震、风暴、火灾（可能影响数据中心）",
+          "weatherAlerts": "恶劣天气预警",
+          "economicCenters": "证券交易所和央行",
+          "countriesOverlay": "国家名称叠加层",
+          "financeExchanges": "按市场层级划分的全球主要交易所",
+          "financeCenters": "全球和区域金融枢纽",
+          "financeCentralBanks": "全球货币政策机构",
+          "financeCommodityHubs": "主要交易所、港口和炼油枢纽",
+          "financeCables": "与市场基础设施相关的主要海底光纤线路",
+          "financePipelines": "影响能源市场的油气管道线路",
+          "financeOutages": "可能影响市场运营的互联网中断",
+          "financeCyberThreats": "金融基础设施周边的安全事件",
+          "macroWaterways": "大宗商品航运的战略咽喉要道",
+          "weatherAlertsMarket": "与市场相关的恶劣天气事件",
+          "naturalEventsMacro": "地震、火灾、洪水等自然灾害",
+          "timeRecent": "按近几小时筛选时间数据",
+          "timeExtended": "显示过去一周、一个月或所有时间的数据",
+          "geoConflicts": "活跃战区（乌克兰、加沙等）及边界",
+          "geoHotspots": "紧张地区 — 按新闻活动级别着色",
+          "geoSanctions": "受美国/欧盟/联合国经济制裁的国家",
+          "geoProtests": "社会动荡、示威活动（按时间筛选）",
+          "militaryBases": "美国/NATO、中国、俄罗斯军事设施（150+）",
+          "militaryNuclear": "核电站、浓缩设施、武器设施",
+          "militaryIrradiators": "工业伽马辐照器设施",
+          "militaryActivity": "实时军用飞机和舰艇追踪",
+          "infraCablesFull": "主要海底光纤电缆（20条骨干线路）",
+          "infraPipelinesFull": "油气管道（北溪、TAPI等）",
+          "infraDatacentersFull": "仅显示AI算力集群 >=10,000 GPU",
+          "transportShipping": "船舶、咽喉要道、61个战略港口",
+          "transportDelays": "机场延误和地面停航（FAA）",
+          "naturalEventsFull": "地震（USGS）+ 风暴、火灾、火山、洪水（NASA EONET）",
+          "waterwaysLabels": "战略咽喉要道标签",
+          "tradeRoutes": "连接港口并经过战略咽喉要道的全球主要航运通道",
+          "dayNight": "实时太阳终结线显示昼夜区域",
+          "climateAnomalies": "温度和降水异常",
+          "financeGulfInvestments": "GCC主权基金投资和外国直接投资",
+          "firesFull": "活跃野火和火灾范围（NASA FIRMS）",
+          "geoDisplacement": "难民和流离失所人口流动模式",
+          "geoUcdpEvents": "乌普萨拉冲突数据项目武装冲突事件",
+          "infraCyberThreats": "网络攻击和安全事件",
+          "militarySpaceports": "火箭发射场和航天设施",
+          "mineralsFull": "战略矿产资源矿床和采矿点",
+          "techCyberThreats": "网络攻击和安全事件",
+          "techEvents": "主要科技会议和活动",
+          "techFires": "科技基础设施附近的活跃野火"
         },
         "notes": {
           "timeAffects": "å½±å“èŒƒå›´ï¼šåœ°éœ‡ã€å¤©æ°”ã€æŠ—è®®ã€ä¸­æ–­"
@@ -899,24 +952,30 @@
       "sectionAi": "AI Analysis",
       "mapFlashLabel": "Live Event Pulse",
       "mapFlashDesc": "Flash locations on the map when breaking news arrives",
-      "sectionPanels": "Panels",
-      "badgeAnimLabel": "Count Badge Pulse",
-      "badgeAnimDesc": "Animate panel count badges when new items arrive",
       "aiFlowTitle": "Settings",
-      "aiFlowCloudLabel": "äº‘ç«¯AIï¼ˆGroq & OpenRouterï¼‰",
-      "aiFlowCloudDesc": "å°†æ ‡é¢˜å‘é€åˆ°äº‘ç«¯è¿›è¡ŒAIæ‘˜è¦ï¼ˆæŽ¨èï¼‰",
-      "aiFlowBrowserLabel": "æµè§ˆå™¨æœ¬åœ°æ¨¡åž‹",
-      "aiFlowBrowserDesc": "åœ¨æµè§ˆå™¨ä¸­æœ¬åœ°è¿è¡ŒAI",
-      "aiFlowBrowserWarn": "å°†ä¸‹è½½çº¦250MBçš„æ•°æ®åˆ°æ‚¨çš„ç”µè„‘",
-      "aiFlowStatusActive": "äº‘ç«¯AIå·²æ¿€æ´»",
-      "aiFlowStatusCloudAndBrowser": "äº‘ç«¯AI + æµè§ˆå™¨æ¨¡åž‹å·²æ¿€æ´»",
-      "aiFlowStatusBrowserOnly": "ä»…æµè§ˆå™¨æ¨¡åž‹",
-      "aiFlowStatusDisabled": "æ²¡æœ‰å¯ç”¨çš„AIæä¾›å•†",
-      "sectionIntelligence": "æƒ…æŠ¥",
-      "headlineMemoryLabel": "æ ‡é¢˜è®°å¿†",
-      "headlineMemoryDesc": "è®°ä½è¿‡åŽ»çš„æ ‡é¢˜ï¼Œä¸ºå›½å®¶ç®€æŠ¥æä¾›åŽ†å²èƒŒæ™¯",
-      "insightsDisabledTitle": "AIåˆ†æžå·²ç¦ç”¨",
-      "insightsDisabledHint": "Enable providers via the settings gear in the map header"
+      "aiFlowCloudLabel": "云端AI（Groq & OpenRouter）",
+      "aiFlowCloudDesc": "将标题发送到云端进行AI摘要（推荐）",
+      "aiFlowBrowserLabel": "浏览器本地模型",
+      "aiFlowBrowserDesc": "在浏览器中本地运行AI",
+      "aiFlowBrowserWarn": "将下载约250MB的数据到您的电脑",
+      "aiFlowOllamaCta": "想要完全本地化的AI？",
+      "aiFlowOllamaCtaDesc": "下载桌面应用以支持Ollama",
+      "aiFlowDownloadDesktop": "下载桌面应用 →",
+      "aiFlowStatusActive": "云端AI已激活",
+      "aiFlowStatusCloudAndBrowser": "云端AI + 浏览器模型已激活",
+      "aiFlowStatusBrowserOnly": "仅浏览器模型",
+      "aiFlowStatusDisabled": "没有启用的AI提供商",
+      "insightsDisabledTitle": "AI分析已禁用",
+      "insightsDisabledHint": "Enable providers via the settings gear in the map header",
+      "sectionStreaming": "直播",
+      "streamQualityDesc": "设置所有直播流的画质（低画质可节省带宽）",
+      "streamQualityLabel": "视频画质",
+      "sectionPanels": "面板",
+      "badgeAnimLabel": "徽章动画",
+      "badgeAnimDesc": "在面板标题中显示更新徽章动画",
+      "sectionIntelligence": "情报",
+      "headlineMemoryLabel": "标题记忆",
+      "headlineMemoryDesc": "记住已阅标题以突出显示新内容"
     },
     "cascade": {
       "noImpacts": "æœªæ£€æµ‹åˆ°å›½å®¶å½±å“",
@@ -1124,11 +1183,14 @@
         "review": "å®¡æŸ¥ä»¥ä¿æŒæ€åŠ¿æ„ŸçŸ¥"
       },
       "time": {
-        "justNow": "åˆšåˆš",
-        "minutesAgo": "{{count}}åˆ†é’Ÿå‰",
-        "hoursAgo": "{{count}}å°æ—¶å‰",
-        "daysAgo": "{{count}}å¤©å‰"
-      }
+        "justNow": "刚刚",
+        "minutesAgo": "{{count}}分钟前",
+        "hoursAgo": "{{count}}小时前",
+        "daysAgo": "{{count}}天前"
+      },
+      "breakingAlerts": "突发警报",
+      "popupAlerts": "弹出新警报",
+      "hideFindings": "隐藏发现"
     },
     "countryTimeline": {
       "now": "çŽ°åœ¨",
@@ -1199,12 +1261,13 @@
       "netInflow": "å‡€æµå…¥",
       "netOutflow": "å‡€æµå‡º",
       "table": {
-        "ticker": "ä»£ç ",
-        "issuer": "å‘è¡Œæ–¹",
-        "estFlow": "é¢„ä¼°æµé‡",
-        "volume": "æˆäº¤é‡",
-        "change": "æ¶¨è·Œå¹…"
-      }
+        "ticker": "代码",
+        "issuer": "发行方",
+        "estFlow": "预估流量",
+        "volume": "成交量",
+        "change": "涨跌幅"
+      },
+      "rateLimited": "ETF数据暂时不可用（请求受限）— 即将自动重试"
     },
     "macroSignals": {
       "overall": "ç»¼åˆ",
@@ -1280,28 +1343,33 @@
       "notLive": "{{name}} is not currently live",
       "cannotEmbed": "{{name}} cannot be embedded in this app (YouTube {{code}})",
       "openOnYouTube": "Open on YouTube",
-      "manage": "ç®¡ç†é¢‘é“",
-      "addChannel": "æ·»åŠ é¢‘é“",
-      "remove": "åˆ é™¤",
-      "youtubeHandle": "YouTube å¥æŸ„ï¼ˆå¦‚ @Channelï¼‰",
-      "youtubeHandleOrUrl": "YouTube é¢‘é“åç§°æˆ–é“¾æŽ¥",
-      "displayName": "æ˜¾ç¤ºåç§°ï¼ˆå¯é€‰ï¼‰",
-      "openPanelSettings": "é¢æ¿æ˜¾ç¤ºè®¾ç½®",
-      "channelSettings": "é¢‘é“è®¾ç½®",
-      "save": "ä¿å­˜",
-      "cancel": "å–æ¶ˆ",
-      "confirmDelete": "ç¡®å®šè¦åˆ é™¤æ­¤é¢‘é“å—ï¼Ÿ",
-      "confirmTitle": "ç¡®è®¤",
-      "restoreDefaults": "æ¢å¤é»˜è®¤é¢‘é“",
-      "availableChannels": "å¯ç”¨é¢‘é“",
-      "customChannel": "è‡ªå®šä¹‰é¢‘é“",
-      "regionNorthAmerica": "åŒ—ç¾Ž",
-      "regionEurope": "æ¬§æ´²",
-      "regionLatinAmerica": "æ‹‰ä¸ç¾Žæ´²",
-      "regionAsia": "äºšæ´²",
-      "regionMiddleEast": "ä¸­ä¸œ",
-      "regionAfrica": "éžæ´²",
-      "regionOceania": "å¤§æ´‹æ´²"
+      "manage": "管理频道",
+      "addChannel": "添加频道",
+      "remove": "删除",
+      "youtubeHandle": "YouTube 句柄（如 @Channel）",
+      "youtubeHandleOrUrl": "YouTube 频道名称或链接",
+      "displayName": "显示名称（可选）",
+      "openPanelSettings": "面板显示设置",
+      "channelSettings": "频道设置",
+      "save": "保存",
+      "cancel": "取消",
+      "confirmDelete": "确定要删除此频道吗？",
+      "confirmTitle": "确认",
+      "restoreDefaults": "恢复默认频道",
+      "availableChannels": "可用频道",
+      "customChannel": "自定义频道",
+      "regionNorthAmerica": "北美",
+      "regionEurope": "欧洲",
+      "regionLatinAmerica": "拉丁美洲",
+      "regionAsia": "亚洲",
+      "regionMiddleEast": "中东",
+      "regionAfrica": "非洲",
+      "regionOceania": "大洋洲",
+      "botCheck": "YouTube要求登录才能播放{{name}}",
+      "channelNotFound": "未找到YouTube频道",
+      "invalidHandle": "请输入有效的YouTube用户名（例如 @ChannelName）",
+      "signInToYouTube": "登录YouTube",
+      "verifying": "验证中…"
     },
     "securityAdvisories": {
       "loading": "æ­£åœ¨åŠ è½½æ—…è¡Œè­¦å‘Š...",
@@ -1334,7 +1402,59 @@
       "time": "Time",
       "justNow": "just now",
       "historyCount": "{{count}} alerts in last 24h",
-      "infoTooltip": "<strong>Israel Sirens</strong><br>Real-time rocket and missile siren alerts from Israel Home Front Command.<br><br>Data is polled every 10 seconds. A pulsing red indicator means active sirens are sounding."
+      "infoTooltip": "<strong>Israel Sirens</strong><br>Real-time rocket and missile siren alerts from Israel Home Front Command.<br><br>Data is polled every 10 seconds. A pulsing red indicator means active sirens are sounding.",
+      "historySummary": "24小时内{{count}}次警报 — {{waves}}波次",
+      "loadingHistory": "正在加载历史记录..."
+    },
+    "breakingNews": {
+      "critical": "紧急",
+      "dismiss": "忽略",
+      "enableNotifications": "开启桌面通知",
+      "high": "重要"
+    },
+    "giving": {
+      "activityIndex": "活动指数",
+      "cafIndex": "CAF指数",
+      "candidGrants": "Candid拨款",
+      "category": "类别",
+      "cryptoDaily": "加密日报",
+      "dailyInflow": "24小时流入",
+      "dailyVol": "日成交量",
+      "dataLag": "数据延迟",
+      "estDailyFlow": "估计日流量",
+      "freshness": "数据",
+      "infoTooltip": "<strong>全球捐赠活动指数</strong> 跟踪众筹平台和加密钱包个人捐赠的综合指数。<ul><li><strong>平台</strong>：GoFundMe、GlobalGiving、JustGiving活动抽样</li><li><strong>加密</strong>：链上慈善钱包流入（Endaoment、Giving Block）</li><li><strong>机构</strong>：OECD ODA、CAF世界捐赠指数、Candid拨款</li></ul>指数为方向性指标，非精确金额。结合实时抽样与已发布年度报告。",
+      "oecdOda": "OECD ODA",
+      "ofTotal": "占总计",
+      "platform": "平台",
+      "share": "份额",
+      "tabs": {
+        "categories": "类别",
+        "crypto": "加密",
+        "institutional": "机构",
+        "platforms": "平台"
+      },
+      "topReceivers": "主要受益方",
+      "trend": "趋势",
+      "trending": "趋势",
+      "velocity": "增速",
+      "wallets": "钱包"
+    },
+    "supplyChain": {
+      "chokepoints": "咽喉要道",
+      "fredKeyMissing": "航运费率需要FRED API密钥 — 请在设置中添加。咽喉要道和矿产无需密钥即可使用。",
+      "mineral": "矿产",
+      "minerals": "矿产",
+      "noChokepoints": "正在加载咽喉要道数据...",
+      "noMinerals": "正在加载矿产数据...",
+      "noShipping": "航运费率数据不可用",
+      "risk": "风险",
+      "shipping": "航运",
+      "sources": "FRED / NGA / USGS",
+      "spikeAlert": "检测到异常飙升 — 费率显著高于52周均值（周度）",
+      "topProducers": "主要生产国",
+      "upstreamUnavailable": "供应链数据暂时不可用 — 显示缓存数据",
+      "warnings": "条警告"
     }
   },
   "popups": {
@@ -1781,27 +1901,30 @@
       "energy_space": "èƒ½æº/èˆªå¤©",
       "financial_hub": "é‡‘èžæž¢çº½",
       "gchq_mi6": "GCHQ/MI6",
-      "greenland_intel": "æ ¼é™µå…°æƒ…æŠ¥",
-      "haiti_crisis": "æµ·åœ°å±æœº",
-      "irgc_activity": "ä¼Šæœ—é©å‘½å«é˜Ÿæ´»åŠ¨",
-      "insurgency_coups": "å›ä¹±/æ”¿å˜",
-      "iraq_pmf": "ä¼Šæ‹‰å…‹/äººæ°‘åŠ¨å‘˜åŠ›é‡",
-      "kremlin_activity": "å…‹é‡Œå§†æž—å®«æ´»åŠ¨",
-      "lebanon_hezbollah": "é»Žå·´å«©/çœŸä¸»å…š",
-      "mossad_idf": "æ‘©è¨å¾·/ä»¥è‰²åˆ—å›½é˜²å†›",
-      "nato_hq": "NATOæ€»éƒ¨",
-      "pla_mss_activity": "è§£æ”¾å†›/å›½å®‰éƒ¨æ´»åŠ¨",
-      "pentagon_pizza_index": "äº”è§’å¤§æ¥¼æŠ«è¨æŒ‡æ•°",
-      "piracy_conflict": "æµ·ç›—/å†²çª",
-      "qatar_al_udeid": "å¡å¡”å°”/ä¹Œä»£å¾·",
-      "saudi_gip_mbs": "æ²™ç‰¹GIP/MBS",
-      "strait_watch": "æµ·å³¡ç›‘æŽ§",
-      "syria_crisis": "å™åˆ©äºšå±æœº",
-      "tech_ai_hub": "ç§‘æŠ€/AIæž¢çº½",
-      "turkey_mit": "åœŸè€³å…¶/MIT",
-      "uae_ecsr": "é˜¿è”é…‹/ECSR",
-      "venezuela_crisis": "å§”å†…ç‘žæ‹‰å±æœº",
-      "yemen_houthis": "ä¹Ÿé—¨/èƒ¡å¡žæ­¦è£…"
+      "greenland_intel": "格陵兰情报",
+      "haiti_crisis": "海地危机",
+      "irgc_activity": "伊朗革命卫队活动",
+      "insurgency_coups": "叛乱/政变",
+      "iraq_pmf": "伊拉克/人民动员力量",
+      "kremlin_activity": "克里姆林宫活动",
+      "lebanon_hezbollah": "黎巴嫩/真主党",
+      "mossad_idf": "摩萨德/以色列国防军",
+      "nato_hq": "NATO总部",
+      "pla_mss_activity": "解放军/国安部活动",
+      "pentagon_pizza_index": "五角大楼披萨指数",
+      "piracy_conflict": "海盗/冲突",
+      "qatar_al_udeid": "卡塔尔/乌代德",
+      "saudi_gip_mbs": "沙特GIP/MBS",
+      "strait_watch": "海峡监控",
+      "syria_crisis": "叙利亚危机",
+      "tech_ai_hub": "科技/AI枢纽",
+      "turkey_mit": "土耳其/MIT",
+      "uae_ecsr": "阿联酋/ECSR",
+      "venezuela_crisis": "委内瑞拉危机",
+      "yemen_houthis": "也门/胡塞武装"
+    },
+    "iranEvent": {
+      "relatedEvents": "相关事件"
     }
   },
   "signals": {
@@ -1981,6 +2104,8 @@
     "currentVariant": "(å½“å‰)",
     "retry": "Retry",
     "refresh": "Refresh",
-    "all": "å…¨éƒ¨"
+    "all": "全部",
+    "loadingGiving": "正在加载全球捐赠数据",
+    "rateLimitedMarket": "市场数据暂时不可用（请求受限）— 即将自动重试"
   }
 }

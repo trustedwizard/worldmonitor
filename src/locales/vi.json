@@ -29,15 +29,17 @@
       "information": "ThÃ´ng tin"
     },
     "signals": {
-      "protests": "biá»ƒu tÃ¬nh",
-      "militaryAir": "mÃ¡y bay quÃ¢n sá»±",
-      "militarySea": "tÃ u quÃ¢n sá»±",
-      "outages": "giÃ¡n Ä‘oáº¡n máº¡ng",
-      "earthquakes": "Ä‘á»™ng Ä‘áº¥t",
-      "displaced": "di dá»i",
-      "climate": "CÄƒng tháº³ng khÃ­ háº­u",
-      "conflictEvents": "sá»± kiá»‡n xung Ä‘á»™t",
-      "gpsJammingZones": "GPS Jamming Zones"
+      "protests": "biểu tình",
+      "militaryAir": "máy bay quân sự",
+      "militarySea": "tàu quân sự",
+      "outages": "gián đoạn mạng",
+      "earthquakes": "động đất",
+      "displaced": "di dời",
+      "climate": "Căng thẳng khí hậu",
+      "conflictEvents": "sự kiện xung đột",
+      "gpsJammingZones": "GPS Jamming Zones",
+      "activeStrikes": "đình công đang diễn ra",
+      "aviationDisruptions": "gián đoạn sân bay"
     },
     "timeAgo": {
       "m": "{{count}}ph trÆ°á»›c",
@@ -66,14 +68,15 @@
       "stable": "á»”n Ä‘á»‹nh"
     },
     "fallback": {
-      "instabilityIndex": "**Chá»‰ sá»‘ Báº¥t á»•n: {{score}}/100** ({{level}}, {{trend}})",
-      "protestsDetected": "PhÃ¡t hiá»‡n {{count}} cuá»™c biá»ƒu tÃ¬nh Ä‘ang diá»…n ra",
-      "aircraftTracked": "Äang theo dÃµi {{count}} mÃ¡y bay quÃ¢n sá»±",
-      "vesselsTracked": "Äang theo dÃµi {{count}} tÃ u quÃ¢n sá»±",
-      "internetOutages": "{{count}} sá»± cá»‘ giÃ¡n Ä‘oáº¡n internet",
-      "recentEarthquakes": "{{count}} tráº­n Ä‘á»™ng Ä‘áº¥t gáº§n Ä‘Ã¢y",
-      "stockIndex": "Chá»‰ sá»‘ chá»©ng khoÃ¡n: {{value}}",
-      "recentHeadlines": "**Tin tá»©c gáº§n Ä‘Ã¢y:**"
+      "instabilityIndex": "**Chỉ số Bất ổn: {{score}}/100** ({{level}}, {{trend}})",
+      "protestsDetected": "Phát hiện {{count}} cuộc biểu tình đang diễn ra",
+      "aircraftTracked": "Đang theo dõi {{count}} máy bay quân sự",
+      "vesselsTracked": "Đang theo dõi {{count}} tàu quân sự",
+      "internetOutages": "{{count}} sự cố gián đoạn internet",
+      "recentEarthquakes": "{{count}} trận động đất gần đây",
+      "stockIndex": "Chỉ số chứng khoán: {{value}}",
+      "recentHeadlines": "**Tin tức gần đây:**",
+      "activeStrikes": "Phát hiện {{count}} cuộc đình công đang diễn ra"
     }
   },
   "header": {
@@ -207,7 +210,13 @@
     "liveWebcams": "Webcam Trá»±c tiáº¿p",
     "securityAdvisories": "Cáº£nh bÃ¡o An ninh",
     "orefSirens": "Israel Sirens",
-    "telegramIntel": "TÃ¬nh bÃ¡o Telegram"
+    "telegramIntel": "Tình báo Telegram",
+    "giving": "Từ thiện Toàn cầu",
+    "supplyChain": "Chuỗi Cung ứng",
+    "gulfEconomies": "Kinh tế vùng Vịnh",
+    "gulfIndices": "Chỉ số vùng Vịnh",
+    "gulfCurrencies": "Tiền tệ vùng Vịnh",
+    "gulfOil": "Dầu vùng Vịnh"
   },
   "modals": {
     "search": {
@@ -333,14 +342,15 @@
         "staged": "ÄÃ£ chuáº©n bá»‹ (lÆ°u báº±ng OK)"
       },
       "help": {
-        "URLHAUS_AUTH_KEY": "DÃ¹ng cho cáº£ API URLhaus vÃ  ThreatFox.",
-        "OTX_API_KEY": "Nguá»“n bá»• sung tÃ¹y chá»n cho lá»›p má»‘i Ä‘e dá»a máº¡ng.",
-        "ABUSEIPDB_API_KEY": "Nguá»“n bá»• sung tÃ¹y chá»n cho danh tiáº¿ng IP Ä‘á»™c háº¡i.",
-        "FINNHUB_API_KEY": "BÃ¡o giÃ¡ cá»• phiáº¿u vÃ  dá»¯ liá»‡u thá»‹ trÆ°á»ng thá»i gian thá»±c.",
-        "NASA_FIRMS_API_KEY": "Há»‡ thá»‘ng ThÃ´ng tin ChÃ¡y rá»«ng Ä‘á»ƒ Quáº£n lÃ½ TÃ i nguyÃªn.",
-        "OLLAMA_API_URL": "VÃ­ dá»¥: http://127.0.0.1:11434 (Ollama) hoáº·c http://127.0.0.1:1234/v1 (LM Studio) â€” endpoint tÆ°Æ¡ng thÃ­ch OpenAI.",
-        "OLLAMA_MODEL": "VÃ­ dá»¥: llama3.1:8b â€” tháº» mÃ´ hÃ¬nh dÃ¹ng Ä‘á»ƒ tÃ³m táº¯t."
-      }
+        "URLHAUS_AUTH_KEY": "Dùng cho cả API URLhaus và ThreatFox.",
+        "OTX_API_KEY": "Nguồn bổ sung tùy chọn cho lớp mối đe dọa mạng.",
+        "ABUSEIPDB_API_KEY": "Nguồn bổ sung tùy chọn cho danh tiếng IP độc hại.",
+        "FINNHUB_API_KEY": "Báo giá cổ phiếu và dữ liệu thị trường thời gian thực.",
+        "NASA_FIRMS_API_KEY": "Hệ thống Thông tin Cháy rừng để Quản lý Tài nguyên.",
+        "OLLAMA_API_URL": "Ví dụ: http://127.0.0.1:11434 (Ollama) hoặc http://127.0.0.1:1234/v1 (LM Studio) — endpoint tương thích OpenAI.",
+        "OLLAMA_MODEL": "Ví dụ: llama3.1:8b — thẻ mô hình dùng để tóm tắt."
+      },
+      "skipSetup": "Bỏ qua cài đặt — một giấy phép World Monitor mở khóa tất cả. Tham gia danh sách chờ để truy cập sớm."
     },
     "settingsWindow": {
       "validating": "Äang xÃ¡c thá»±c khÃ³a API...",
@@ -357,11 +367,37 @@
       "sidecarUnreachable": "KhÃ´ng thá»ƒ káº¿t ná»‘i sidecar.",
       "logCleared": "ÄÃ£ xÃ³a log.",
       "table": {
-        "time": "Thá»i gian",
-        "method": "PhÆ°Æ¡ng thá»©c",
-        "path": "ÄÆ°á»ng dáº«n",
-        "status": "Tráº¡ng thÃ¡i",
-        "duration": "Thá»i lÆ°á»£ng"
+        "time": "Thời gian",
+        "method": "Phương thức",
+        "path": "Đường dẫn",
+        "status": "Trạng thái",
+        "duration": "Thời lượng"
+      },
+      "worldMonitor": {
+        "apiKey": {
+          "description": "Dán giấy phép của bạn để mở khóa mọi nguồn dữ liệu và tính năng AI ngay lập tức.",
+          "placeholder": "wm_xxxxxxxxxxxxxxxxxxxxxxxx",
+          "statusMissing": "CHƯA CÓ GIẤY PHÉP",
+          "statusValid": "ĐÃ CẤP PHÉP",
+          "title": "Khóa Giấy phép"
+        },
+        "byokDescription": "Muốn kiểm soát hoàn toàn? Đến tab Khóa API và LLM để cấu hình từng nguồn dữ liệu và nhà cung cấp AI riêng lẻ.",
+        "byokTitle": "Hoặc sử dụng khóa của riêng bạn",
+        "dividerOr": "HOẶC",
+        "heroDescription": "Một giấy phép World Monitor thay thế mọi khóa API và nhà cung cấp LLM mà bạn phải tự cấu hình. Tóm tắt AI, tình báo thời gian thực, dữ liệu thị trường, theo dõi xung đột, phát hiện cháy, ảnh vệ tinh — tất cả được vận hành, quản lý, không cần cài đặt.",
+        "heroTitle": "Một khóa. Bao gồm tất cả.",
+        "register": {
+          "alreadyRegistered": "Bạn đã có trong danh sách chờ.",
+          "description": "Chúng tôi đang chuẩn bị ra mắt giấy phép World Monitor. Đăng ký ngay để được ưu tiên — thành viên sớm được quyền truy cập trước và giá ưu đãi.",
+          "emailPlaceholder": "email@cuaban.com",
+          "error": "Đăng ký thất bại. Vui lòng thử lại.",
+          "invalidEmail": "Vui lòng nhập địa chỉ email hợp lệ.",
+          "submitBtn": "Tham gia Danh sách Chờ",
+          "submitting": "Đang gửi...",
+          "success": "Bạn đã vào danh sách! Chúng tôi sẽ thông báo cho bạn đầu tiên.",
+          "title": "Đặt chỗ của bạn"
+        },
+        "tabLabel": "World Monitor"
       }
     },
     "countryIntel": {
@@ -408,15 +444,17 @@
         "information": "ThÃ´ng tin"
       },
       "signals": {
-        "protests": "biá»ƒu tÃ¬nh",
-        "militaryAir": "mÃ¡y bay quÃ¢n sá»±",
-        "militarySea": "tÃ u quÃ¢n sá»±",
-        "outages": "giÃ¡n Ä‘oáº¡n máº¡ng",
-        "earthquakes": "Ä‘á»™ng Ä‘áº¥t",
-        "displaced": "di dá»i",
-        "climate": "CÄƒng tháº³ng khÃ­ háº­u",
-        "conflictEvents": "sá»± kiá»‡n xung Ä‘á»™t",
-        "gpsJammingZones": "GPS Jamming Zones"
+        "protests": "biểu tình",
+        "militaryAir": "máy bay quân sự",
+        "militarySea": "tàu quân sự",
+        "outages": "gián đoạn mạng",
+        "earthquakes": "động đất",
+        "displaced": "di dời",
+        "climate": "Căng thẳng khí hậu",
+        "conflictEvents": "sự kiện xung đột",
+        "gpsJammingZones": "GPS Jamming Zones",
+        "activeStrikes": "đình công đang diễn ra",
+        "aviationDisruptions": "gián đoạn sân bay"
       },
       "timeAgo": {
         "m": "{{count}}ph trÆ°á»›c",
@@ -445,14 +483,15 @@
         "stable": "á»”n Ä‘á»‹nh"
       },
       "fallback": {
-        "instabilityIndex": "**Chá»‰ sá»‘ Báº¥t á»•n: {{score}}/100** ({{level}}, {{trend}})",
-        "protestsDetected": "PhÃ¡t hiá»‡n {{count}} cuá»™c biá»ƒu tÃ¬nh Ä‘ang diá»…n ra",
-        "aircraftTracked": "Äang theo dÃµi {{count}} mÃ¡y bay quÃ¢n sá»±",
-        "vesselsTracked": "Äang theo dÃµi {{count}} tÃ u quÃ¢n sá»±",
-        "internetOutages": "{{count}} sá»± cá»‘ giÃ¡n Ä‘oáº¡n internet",
-        "recentEarthquakes": "{{count}} tráº­n Ä‘á»™ng Ä‘áº¥t gáº§n Ä‘Ã¢y",
-        "stockIndex": "Chá»‰ sá»‘ chá»©ng khoÃ¡n: {{value}}",
-        "recentHeadlines": "**Tin tá»©c gáº§n Ä‘Ã¢y:**"
+        "instabilityIndex": "**Chỉ số Bất ổn: {{score}}/100** ({{level}}, {{trend}})",
+        "protestsDetected": "Phát hiện {{count}} cuộc biểu tình đang diễn ra",
+        "aircraftTracked": "Đang theo dõi {{count}} máy bay quân sự",
+        "vesselsTracked": "Đang theo dõi {{count}} tàu quân sự",
+        "internetOutages": "{{count}} sự cố gián đoạn internet",
+        "recentEarthquakes": "{{count}} trận động đất gần đây",
+        "stockIndex": "Chỉ số chứng khoán: {{value}}",
+        "recentHeadlines": "**Tin tức gần đây:**",
+        "activeStrikes": "Phát hiện {{count}} cuộc đình công đang diễn ra"
       }
     }
   },
@@ -460,12 +499,13 @@
     "webcams": {
       "regions": {
         "iran": "IRAN ATTACKS",
-        "all": "Táº¤T Cáº¢",
-        "mideast": "TRUNG ÄÃ”NG",
-        "europe": "CHÃ‚U Ã‚U",
-        "americas": "CHÃ‚U Má»¸",
-        "asia": "CHÃ‚U Ã"
-      }
+        "all": "TẤT CẢ",
+        "mideast": "TRUNG ĐÔNG",
+        "europe": "CHÂU ÂU",
+        "americas": "CHÂU MỸ",
+        "asia": "CHÂU Á"
+      },
+      "expand": "Mở rộng"
     },
     "monitor": {
       "placeholder": "Tá»« khÃ³a (phÃ¢n cÃ¡ch báº±ng dáº¥u pháº©y)",
@@ -530,7 +570,8 @@
       "change": "Change",
       "cut": "cut",
       "hike": "hike",
-      "hold": "hold"
+      "hold": "hold",
+      "fredKeyMissing": "Cần khóa API FRED — thêm trong Cài đặt để bật chỉ số kinh tế"
     },
     "tradePolicy": {
       "restrictions": "Háº¡n cháº¿",
@@ -781,7 +822,8 @@
         "gulfInvestments": "Äáº§u tÆ° GCC",
         "tradeRoutes": "Tuyáº¿n ThÆ°Æ¡ng máº¡i",
         "gpsJamming": "GPS JAMMING",
-        "dayNight": "NgÃ y/ÄÃªm"
+        "dayNight": "Ngày/Đêm",
+        "iranAttacks": "Tấn công Iran"
       },
       "tooltip": {
         "earthquake": "Äá»™ng Ä‘áº¥t",
@@ -834,47 +876,58 @@
           "overlays": "Lá»›p phá»§ vÃ  nhÃ£n"
         },
         "descriptions": {
-          "techStartupHubs": "Há»‡ sinh thÃ¡i khá»Ÿi nghiá»‡p lá»›n (SF, NYC, London, v.v.)",
-          "techCloudRegions": "VÃ¹ng trung tÃ¢m dá»¯ liá»‡u AWS, Azure, GCP",
-          "techHQs": "Trá»¥ sá»Ÿ cÃ¡c cÃ´ng ty cÃ´ng nghá»‡ lá»›n",
-          "techAccelerators": "Vá»‹ trÃ­ Y Combinator, Techstars, 500 Startups",
-          "infraCables": "CÃ¡p quang ngáº§m chÃ­nh (xÆ°Æ¡ng sá»‘ng internet)",
-          "infraDatacenters": "Cá»¥m tÃ­nh toÃ¡n AI >=10.000 GPU",
-          "infraOutages": "Máº¥t káº¿t ná»‘i internet vÃ  giÃ¡n Ä‘oáº¡n dá»‹ch vá»¥",
-          "naturalEventsTech": "Äá»™ng Ä‘áº¥t, bÃ£o, chÃ¡y (cÃ³ thá»ƒ áº£nh hÆ°á»Ÿng trung tÃ¢m dá»¯ liá»‡u)",
-          "weatherAlerts": "Cáº£nh bÃ¡o thá»i tiáº¿t nghiÃªm trá»ng",
-          "economicCenters": "SÃ n chá»©ng khoÃ¡n & ngÃ¢n hÃ ng trung Æ°Æ¡ng",
-          "countriesOverlay": "Lá»›p phá»§ tÃªn quá»‘c gia",
-          "financeExchanges": "SÃ n giao dá»‹ch toÃ n cáº§u lá»›n theo cáº¥p thá»‹ trÆ°á»ng",
-          "financeCenters": "Trung tÃ¢m tÃ i chÃ­nh toÃ n cáº§u vÃ  khu vá»±c",
-          "financeCentralBanks": "Tá»• chá»©c chÃ­nh sÃ¡ch tiá»n tá»‡ toÃ n tháº¿ giá»›i",
-          "financeCommodityHubs": "SÃ n giao dá»‹ch, cáº£ng vÃ  nhÃ  mÃ¡y lá»c dáº§u chá»§ chá»‘t",
-          "financeCables": "Tuyáº¿n cÃ¡p quang ngáº§m chÃ­nh gáº¯n vá»›i háº¡ táº§ng thá»‹ trÆ°á»ng",
-          "financePipelines": "Tuyáº¿n Ä‘Æ°á»ng á»‘ng dáº§u/khÃ­ áº£nh hÆ°á»Ÿng thá»‹ trÆ°á»ng nÄƒng lÆ°á»£ng",
-          "financeOutages": "GiÃ¡n Ä‘oáº¡n internet cÃ³ thá»ƒ áº£nh hÆ°á»Ÿng hoáº¡t Ä‘á»™ng thá»‹ trÆ°á»ng",
-          "financeCyberThreats": "Sá»± kiá»‡n an ninh quanh háº¡ táº§ng tÃ i chÃ­nh",
-          "macroWaterways": "Äiá»ƒm ngháº½n chiáº¿n lÆ°á»£c cho váº­n chuyá»ƒn hÃ ng hÃ³a",
-          "weatherAlertsMarket": "Sá»± kiá»‡n thá»i tiáº¿t nghiÃªm trá»ng liÃªn quan thá»‹ trÆ°á»ng",
-          "naturalEventsMacro": "Äá»™ng Ä‘áº¥t, chÃ¡y, lÅ© lá»¥t vÃ  thiÃªn tai khÃ¡c",
-          "timeRecent": "Lá»c dá»¯ liá»‡u theo thá»i gian gáº§n Ä‘Ã¢y",
-          "timeExtended": "Hiá»ƒn thá»‹ dá»¯ liá»‡u tuáº§n qua, thÃ¡ng qua hoáº·c táº¥t cáº£",
-          "geoConflicts": "VÃ¹ng chiáº¿n sá»± Ä‘ang diá»…n ra (Ukraine, Gaza, v.v.) vá»›i ranh giá»›i",
-          "geoHotspots": "VÃ¹ng cÄƒng tháº³ng - mÃ£ mÃ u theo má»©c hoáº¡t Ä‘á»™ng tin tá»©c",
-          "geoSanctions": "Quá»‘c gia bá»‹ cáº¥m váº­n kinh táº¿ Má»¹/EU/LHQ",
-          "geoProtests": "Báº¥t á»•n dÃ¢n sá»±, biá»ƒu tÃ¬nh (lá»c theo thá»i gian)",
-          "militaryBases": "CÄƒn cá»© quÃ¢n sá»± US/NATO, Trung Quá»‘c, Nga (150+)",
-          "militaryNuclear": "NhÃ  mÃ¡y Ä‘iá»‡n, lÃ m giÃ u, cÆ¡ sá»Ÿ vÅ© khÃ­",
-          "militaryIrradiators": "CÆ¡ sá»Ÿ chiáº¿u xáº¡ gamma cÃ´ng nghiá»‡p",
-          "militaryActivity": "Theo dÃµi mÃ¡y bay vÃ  tÃ u quÃ¢n sá»± trá»±c tiáº¿p",
-          "infraCablesFull": "CÃ¡p quang ngáº§m chÃ­nh (20 tuyáº¿n xÆ°Æ¡ng sá»‘ng)",
-          "infraPipelinesFull": "ÄÆ°á»ng á»‘ng dáº§u/khÃ­ (Nord Stream, TAPI, v.v.)",
-          "infraDatacentersFull": "Chá»‰ cá»¥m tÃ­nh toÃ¡n AI >=10.000 GPU",
-          "transportShipping": "TÃ u, Ä‘iá»ƒm ngháº½n, 61 cáº£ng chiáº¿n lÆ°á»£c",
-          "transportDelays": "Cháº­m trá»… sÃ¢n bay vÃ  dá»«ng máº·t Ä‘áº¥t (FAA)",
-          "naturalEventsFull": "Äá»™ng Ä‘áº¥t (USGS) + bÃ£o, chÃ¡y, nÃºi lá»­a, lÅ© lá»¥t (NASA EONET)",
-          "waterwaysLabels": "NhÃ£n Ä‘iá»ƒm ngháº½n chiáº¿n lÆ°á»£c",
-          "tradeRoutes": "CÃ¡c tuyáº¿n váº­n táº£i biá»ƒn chÃ­nh toÃ n cáº§u káº¿t ná»‘i cÃ¡c cáº£ng qua cÃ¡c Ä‘iá»ƒm chiáº¿n lÆ°á»£c",
-          "dayNight": "ÄÆ°á»ng phÃ¢n chia máº·t trá»i thá»i gian thá»±c hiá»ƒn thá»‹ vÃ¹ng ngÃ y vÃ  Ä‘Ãªm"
+          "techStartupHubs": "Hệ sinh thái khởi nghiệp lớn (SF, NYC, London, v.v.)",
+          "techCloudRegions": "Vùng trung tâm dữ liệu AWS, Azure, GCP",
+          "techHQs": "Trụ sở các công ty công nghệ lớn",
+          "techAccelerators": "Vị trí Y Combinator, Techstars, 500 Startups",
+          "infraCables": "Cáp quang ngầm chính (xương sống internet)",
+          "infraDatacenters": "Cụm tính toán AI >=10.000 GPU",
+          "infraOutages": "Mất kết nối internet và gián đoạn dịch vụ",
+          "naturalEventsTech": "Động đất, bão, cháy (có thể ảnh hưởng trung tâm dữ liệu)",
+          "weatherAlerts": "Cảnh báo thời tiết nghiêm trọng",
+          "economicCenters": "Sàn chứng khoán & ngân hàng trung ương",
+          "countriesOverlay": "Lớp phủ tên quốc gia",
+          "financeExchanges": "Sàn giao dịch toàn cầu lớn theo cấp thị trường",
+          "financeCenters": "Trung tâm tài chính toàn cầu và khu vực",
+          "financeCentralBanks": "Tổ chức chính sách tiền tệ toàn thế giới",
+          "financeCommodityHubs": "Sàn giao dịch, cảng và nhà máy lọc dầu chủ chốt",
+          "financeCables": "Tuyến cáp quang ngầm chính gắn với hạ tầng thị trường",
+          "financePipelines": "Tuyến đường ống dầu/khí ảnh hưởng thị trường năng lượng",
+          "financeOutages": "Gián đoạn internet có thể ảnh hưởng hoạt động thị trường",
+          "financeCyberThreats": "Sự kiện an ninh quanh hạ tầng tài chính",
+          "macroWaterways": "Điểm nghẽn chiến lược cho vận chuyển hàng hóa",
+          "weatherAlertsMarket": "Sự kiện thời tiết nghiêm trọng liên quan thị trường",
+          "naturalEventsMacro": "Động đất, cháy, lũ lụt và thiên tai khác",
+          "timeRecent": "Lọc dữ liệu theo thời gian gần đây",
+          "timeExtended": "Hiển thị dữ liệu tuần qua, tháng qua hoặc tất cả",
+          "geoConflicts": "Vùng chiến sự đang diễn ra (Ukraine, Gaza, v.v.) với ranh giới",
+          "geoHotspots": "Vùng căng thẳng - mã màu theo mức hoạt động tin tức",
+          "geoSanctions": "Quốc gia bị cấm vận kinh tế Mỹ/EU/LHQ",
+          "geoProtests": "Bất ổn dân sự, biểu tình (lọc theo thời gian)",
+          "militaryBases": "Căn cứ quân sự US/NATO, Trung Quốc, Nga (150+)",
+          "militaryNuclear": "Nhà máy điện, làm giàu, cơ sở vũ khí",
+          "militaryIrradiators": "Cơ sở chiếu xạ gamma công nghiệp",
+          "militaryActivity": "Theo dõi máy bay và tàu quân sự trực tiếp",
+          "infraCablesFull": "Cáp quang ngầm chính (20 tuyến xương sống)",
+          "infraPipelinesFull": "Đường ống dầu/khí (Nord Stream, TAPI, v.v.)",
+          "infraDatacentersFull": "Chỉ cụm tính toán AI >=10.000 GPU",
+          "transportShipping": "Tàu, điểm nghẽn, 61 cảng chiến lược",
+          "transportDelays": "Chậm trễ sân bay và dừng mặt đất (FAA)",
+          "naturalEventsFull": "Động đất (USGS) + bão, cháy, núi lửa, lũ lụt (NASA EONET)",
+          "waterwaysLabels": "Nhãn điểm nghẽn chiến lược",
+          "tradeRoutes": "Các tuyến vận tải biển chính toàn cầu kết nối các cảng qua các điểm chiến lược",
+          "dayNight": "Đường phân chia mặt trời thời gian thực hiển thị vùng ngày và đêm",
+          "climateAnomalies": "Bất thường nhiệt độ và lượng mưa",
+          "financeGulfInvestments": "Đầu tư quỹ tài sản quốc gia GCC và đầu tư trực tiếp nước ngoài",
+          "firesFull": "Cháy rừng đang hoạt động và phạm vi cháy (NASA FIRMS)",
+          "geoDisplacement": "Mô hình dòng chảy tị nạn và di dời",
+          "geoUcdpEvents": "Sự kiện xung đột vũ trang từ Chương trình Dữ liệu Xung đột Uppsala",
+          "infraCyberThreats": "Tấn công mạng và sự kiện an ninh",
+          "militarySpaceports": "Bãi phóng tên lửa và cơ sở không gian",
+          "mineralsFull": "Mỏ khoáng sản chiến lược và địa điểm khai thác",
+          "techCyberThreats": "Tấn công mạng và sự kiện an ninh",
+          "techEvents": "Hội nghị và sự kiện công nghệ lớn",
+          "techFires": "Cháy rừng đang hoạt động gần hạ tầng công nghệ"
         },
         "notes": {
           "timeAffects": "áº¢nh hÆ°á»Ÿng: Äá»™ng Ä‘áº¥t, Thá»i tiáº¿t, Biá»ƒu tÃ¬nh, GiÃ¡n Ä‘oáº¡n"
@@ -899,24 +952,30 @@
       "sectionAi": "AI Analysis",
       "mapFlashLabel": "Live Event Pulse",
       "mapFlashDesc": "Flash locations on the map when breaking news arrives",
-      "sectionPanels": "Panels",
-      "badgeAnimLabel": "Count Badge Pulse",
-      "badgeAnimDesc": "Animate panel count badges when new items arrive",
       "aiFlowTitle": "Settings",
       "aiFlowCloudLabel": "Cloud AI (Groq & OpenRouter)",
-      "aiFlowCloudDesc": "Gá»­i tiÃªu Ä‘á» tá»›i cloud Ä‘á»ƒ AI tÃ³m táº¯t (khuyáº¿n nghá»‹)",
-      "aiFlowBrowserLabel": "MÃ´ hÃ¬nh cá»¥c bá»™ trÃªn trÃ¬nh duyá»‡t",
-      "aiFlowBrowserDesc": "Cháº¡y AI cá»¥c bá»™ trong trÃ¬nh duyá»‡t cá»§a báº¡n",
-      "aiFlowBrowserWarn": "Sáº½ táº£i xuá»‘ng khoáº£ng 250MB dá»¯ liá»‡u vÃ o mÃ¡y tÃ­nh cá»§a báº¡n",
-      "aiFlowStatusActive": "Cloud AI Ä‘ang hoáº¡t Ä‘á»™ng",
-      "aiFlowStatusCloudAndBrowser": "Cloud AI + MÃ´ hÃ¬nh trÃ¬nh duyá»‡t Ä‘ang hoáº¡t Ä‘á»™ng",
-      "aiFlowStatusBrowserOnly": "Chá»‰ mÃ´ hÃ¬nh trÃ¬nh duyá»‡t",
-      "aiFlowStatusDisabled": "KhÃ´ng cÃ³ nhÃ  cung cáº¥p AI nÃ o Ä‘Æ°á»£c báº­t",
-      "sectionIntelligence": "TÃ¬nh bÃ¡o",
-      "headlineMemoryLabel": "Bá»™ nhá»› tiÃªu Ä‘á»",
-      "headlineMemoryDesc": "Ghi nhá»› cÃ¡c tiÃªu Ä‘á» trÆ°á»›c Ä‘Ã³ Ä‘á»ƒ lÃ m giÃ u bÃ¡o cÃ¡o quá»‘c gia vá»›i bá»‘i cáº£nh lá»‹ch sá»­",
-      "insightsDisabledTitle": "PhÃ¢n tÃ­ch AI Ä‘Ã£ bá»‹ táº¯t",
-      "insightsDisabledHint": "Enable providers via the settings gear in the map header"
+      "aiFlowCloudDesc": "Gửi tiêu đề tới cloud để AI tóm tắt (khuyến nghị)",
+      "aiFlowBrowserLabel": "Mô hình cục bộ trên trình duyệt",
+      "aiFlowBrowserDesc": "Chạy AI cục bộ trong trình duyệt của bạn",
+      "aiFlowBrowserWarn": "Sẽ tải xuống khoảng 250MB dữ liệu vào máy tính của bạn",
+      "aiFlowOllamaCta": "Muốn AI hoàn toàn cục bộ?",
+      "aiFlowOllamaCtaDesc": "Tải ứng dụng desktop để hỗ trợ Ollama",
+      "aiFlowDownloadDesktop": "Tải Desktop App →",
+      "aiFlowStatusActive": "Cloud AI đang hoạt động",
+      "aiFlowStatusCloudAndBrowser": "Cloud AI + Mô hình trình duyệt đang hoạt động",
+      "aiFlowStatusBrowserOnly": "Chỉ mô hình trình duyệt",
+      "aiFlowStatusDisabled": "Không có nhà cung cấp AI nào được bật",
+      "insightsDisabledTitle": "Phân tích AI đã bị tắt",
+      "insightsDisabledHint": "Enable providers via the settings gear in the map header",
+      "sectionStreaming": "Phát trực tiếp",
+      "streamQualityDesc": "Đặt chất lượng cho tất cả luồng phát trực tiếp (thấp hơn tiết kiệm băng thông)",
+      "streamQualityLabel": "Chất lượng Video",
+      "sectionPanels": "Bảng điều khiển",
+      "badgeAnimLabel": "Hoạt ảnh huy hiệu",
+      "badgeAnimDesc": "Hoạt ảnh huy hiệu cập nhật trên tiêu đề bảng",
+      "sectionIntelligence": "Tình báo",
+      "headlineMemoryLabel": "Bộ nhớ tiêu đề",
+      "headlineMemoryDesc": "Ghi nhớ tiêu đề đã xem để làm nổi bật tin mới"
     },
     "cascade": {
       "noImpacts": "KhÃ´ng phÃ¡t hiá»‡n tÃ¡c Ä‘á»™ng quá»‘c gia",
@@ -1124,11 +1183,14 @@
         "review": "Xem xÃ©t Ä‘á»ƒ náº¯m báº¯t tÃ¬nh hÃ¬nh"
       },
       "time": {
-        "justNow": "vá»«a xong",
-        "minutesAgo": "{{count}}ph trÆ°á»›c",
-        "hoursAgo": "{{count}}g trÆ°á»›c",
-        "daysAgo": "{{count}}ng trÆ°á»›c"
-      }
+        "justNow": "vừa xong",
+        "minutesAgo": "{{count}}ph trước",
+        "hoursAgo": "{{count}}g trước",
+        "daysAgo": "{{count}}ng trước"
+      },
+      "breakingAlerts": "Cảnh báo Khẩn cấp",
+      "popupAlerts": "Hiển thị cảnh báo mới dạng popup",
+      "hideFindings": "Ẩn phát hiện"
     },
     "countryTimeline": {
       "now": "hiá»‡n táº¡i",
@@ -1199,12 +1261,13 @@
       "netInflow": "DÃ’NG VÃ€O RÃ’NG",
       "netOutflow": "DÃ’NG RA RÃ’NG",
       "table": {
-        "ticker": "MÃ£",
-        "issuer": "Tá»• chá»©c PhÃ¡t hÃ nh",
-        "estFlow": "DÃ²ng tiá»n Æ¯T",
-        "volume": "Khá»‘i lÆ°á»£ng",
-        "change": "Thay Ä‘á»•i"
-      }
+        "ticker": "Mã",
+        "issuer": "Tổ chức Phát hành",
+        "estFlow": "Dòng tiền ƯT",
+        "volume": "Khối lượng",
+        "change": "Thay đổi"
+      },
+      "rateLimited": "Dữ liệu ETF tạm thời không khả dụng (bị giới hạn tốc độ) — đang thử lại"
     },
     "macroSignals": {
       "overall": "Tá»•ng thá»ƒ",
@@ -1284,24 +1347,29 @@
       "addChannel": "ThÃªm kÃªnh",
       "remove": "XÃ³a",
       "youtubeHandle": "Handle YouTube (vd: @Channel)",
-      "youtubeHandleOrUrl": "TÃªn kÃªnh hoáº·c URL YouTube",
-      "displayName": "TÃªn hiá»ƒn thá»‹ (tÃ¹y chá»n)",
-      "openPanelSettings": "CÃ i Ä‘áº·t hiá»ƒn thá»‹ báº£ng",
-      "channelSettings": "CÃ i Ä‘áº·t kÃªnh",
-      "save": "LÆ°u",
-      "cancel": "Há»§y",
-      "confirmDelete": "XÃ³a kÃªnh nÃ y?",
-      "confirmTitle": "XÃ¡c nháº­n",
-      "restoreDefaults": "KhÃ´i phá»¥c kÃªnh máº·c Ä‘á»‹nh",
-      "availableChannels": "KÃªnh cÃ³ sáºµn",
-      "customChannel": "KÃªnh tÃ¹y chá»‰nh",
-      "regionNorthAmerica": "Báº¯c Má»¹",
-      "regionEurope": "ChÃ¢u Ã‚u",
-      "regionLatinAmerica": "Má»¹ Latinh",
-      "regionAsia": "ChÃ¢u Ã",
-      "regionMiddleEast": "Trung ÄÃ´ng",
-      "regionAfrica": "ChÃ¢u Phi",
-      "regionOceania": "ChÃ¢u Äáº¡i DÆ°Æ¡ng"
+      "youtubeHandleOrUrl": "Tên kênh hoặc URL YouTube",
+      "displayName": "Tên hiển thị (tùy chọn)",
+      "openPanelSettings": "Cài đặt hiển thị bảng",
+      "channelSettings": "Cài đặt kênh",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "confirmDelete": "Xóa kênh này?",
+      "confirmTitle": "Xác nhận",
+      "restoreDefaults": "Khôi phục kênh mặc định",
+      "availableChannels": "Kênh có sẵn",
+      "customChannel": "Kênh tùy chỉnh",
+      "regionNorthAmerica": "Bắc Mỹ",
+      "regionEurope": "Châu Âu",
+      "regionLatinAmerica": "Mỹ Latinh",
+      "regionAsia": "Châu Á",
+      "regionMiddleEast": "Trung Đông",
+      "regionAfrica": "Châu Phi",
+      "regionOceania": "Châu Đại Dương",
+      "botCheck": "YouTube yêu cầu đăng nhập để phát {{name}}",
+      "channelNotFound": "Không tìm thấy kênh YouTube",
+      "invalidHandle": "Nhập handle YouTube hợp lệ (ví dụ: @TênKênh)",
+      "signInToYouTube": "Đăng nhập YouTube",
+      "verifying": "Đang xác minh…"
     },
     "securityAdvisories": {
       "loading": "Äang táº£i cáº£nh bÃ¡o du lá»‹ch...",
@@ -1334,7 +1402,59 @@
       "time": "Time",
       "justNow": "just now",
       "historyCount": "{{count}} alerts in last 24h",
-      "infoTooltip": "<strong>Israel Sirens</strong><br>Real-time rocket and missile siren alerts from Israel Home Front Command.<br><br>Data is polled every 10 seconds. A pulsing red indicator means active sirens are sounding."
+      "infoTooltip": "<strong>Israel Sirens</strong><br>Real-time rocket and missile siren alerts from Israel Home Front Command.<br><br>Data is polled every 10 seconds. A pulsing red indicator means active sirens are sounding.",
+      "historySummary": "{{count}} cảnh báo trong 24h — {{waves}} đợt",
+      "loadingHistory": "Đang tải lịch sử..."
+    },
+    "breakingNews": {
+      "critical": "NGHIÊM TRỌNG",
+      "dismiss": "Bỏ qua",
+      "enableNotifications": "Bật thông báo trên máy tính",
+      "high": "CAO"
+    },
+    "giving": {
+      "activityIndex": "Chỉ số Hoạt động",
+      "cafIndex": "Chỉ số CAF",
+      "candidGrants": "Tài trợ Candid",
+      "category": "Danh mục",
+      "cryptoDaily": "Crypto hàng ngày",
+      "dailyInflow": "Dòng vào 24h",
+      "dailyVol": "KL hàng ngày",
+      "dataLag": "Độ trễ Dữ liệu",
+      "estDailyFlow": "Dòng tiền ước tính/ngày",
+      "freshness": "Dữ liệu",
+      "infoTooltip": "<strong>Chỉ số Hoạt động Từ thiện Toàn cầu</strong> Chỉ số tổng hợp theo dõi quyên góp cá nhân qua nền tảng gây quỹ cộng đồng và ví tiền mã hóa.<ul><li><strong>Nền tảng</strong>: GoFundMe, GlobalGiving, JustGiving lấy mẫu chiến dịch</li><li><strong>Crypto</strong>: Dòng tiền vào ví từ thiện on-chain (Endaoment, Giving Block)</li><li><strong>Tổ chức</strong>: OECD ODA, CAF World Giving Index, tài trợ Candid</li></ul>Chỉ số mang tính định hướng (không phải số tiền chính xác). Kết hợp lấy mẫu trực tiếp với báo cáo thường niên đã công bố.",
+      "oecdOda": "OECD ODA",
+      "ofTotal": "% tổng",
+      "platform": "Nền tảng",
+      "share": "Tỷ lệ",
+      "tabs": {
+        "categories": "Danh mục",
+        "crypto": "Crypto",
+        "institutional": "Tổ chức",
+        "platforms": "Nền tảng"
+      },
+      "topReceivers": "Người nhận hàng đầu",
+      "trend": "Xu hướng",
+      "trending": "XU HƯỚNG",
+      "velocity": "Tốc độ",
+      "wallets": "Ví"
+    },
+    "supplyChain": {
+      "chokepoints": "Điểm nghẽn",
+      "fredKeyMissing": "Cần khóa API FRED cho giá cước vận chuyển — thêm trong Cài đặt. Điểm nghẽn và khoáng sản khả dụng mà không cần khóa.",
+      "mineral": "Khoáng sản",
+      "minerals": "Khoáng sản",
+      "noChokepoints": "Đang tải dữ liệu điểm nghẽn...",
+      "noMinerals": "Đang tải dữ liệu khoáng sản...",
+      "noShipping": "Dữ liệu giá cước vận chuyển không khả dụng",
+      "risk": "Rủi ro",
+      "shipping": "Vận tải biển",
+      "sources": "FRED / NGA / USGS",
+      "spikeAlert": "Phát hiện đột biến — giá cao hơn đáng kể so với trung bình 52 tuần (hàng tuần)",
+      "topProducers": "Nhà sản xuất hàng đầu",
+      "upstreamUnavailable": "Dữ liệu chuỗi cung ứng tạm thời không khả dụng — hiển thị dữ liệu đã lưu cache",
+      "warnings": "cảnh báo"
     }
   },
   "popups": {
@@ -1802,6 +1922,9 @@
       "uae_ecsr": "UAE/ECSR",
       "venezuela_crisis": "Khá»§ng hoáº£ng Venezuela",
       "yemen_houthis": "Yemen/Houthis"
+    },
+    "iranEvent": {
+      "relatedEvents": "Sự kiện Liên quan"
     }
   },
   "signals": {
@@ -1969,18 +2092,20 @@
     "unrest": "Báº¥t á»•n",
     "conflict": "Xung Ä‘á»™t",
     "security": "An ninh",
-    "information": "ThÃ´ng tin",
-    "shareStory": "Chia sáº» bÃ i viáº¿t",
-    "exportImage": "Xuáº¥t HÃ¬nh áº£nh",
-    "exportPdf": "Xuáº¥t PDF",
-    "new": "Má»šI",
-    "live": "TRá»°C TIáº¾P",
-    "cached": "ÄÃƒ LÆ¯U",
-    "unavailable": "KHÃ”NG KHáº¢ Dá»¤NG",
-    "close": "ÄÃ³ng",
-    "currentVariant": "(hiá»‡n táº¡i)",
-    "retry": "Thá»­ láº¡i",
-    "refresh": "LÃ m má»›i",
-    "all": "Táº¥t cáº£"
+    "information": "Thông tin",
+    "shareStory": "Chia sẻ bài viết",
+    "exportImage": "Xuất Hình ảnh",
+    "exportPdf": "Xuất PDF",
+    "new": "MỚI",
+    "live": "TRỰC TIẾP",
+    "cached": "ĐÃ LƯU",
+    "unavailable": "KHÔNG KHẢ DỤNG",
+    "close": "Đóng",
+    "currentVariant": "(hiện tại)",
+    "retry": "Thử lại",
+    "refresh": "Làm mới",
+    "all": "Tất cả",
+    "loadingGiving": "Đang tải dữ liệu từ thiện toàn cầu",
+    "rateLimitedMarket": "Dữ liệu thị trường tạm thời không khả dụng (bị giới hạn tốc độ) — đang thử lại"
   }
 }
