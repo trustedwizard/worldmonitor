@@ -15,7 +15,7 @@ import { trackLLMUsage, trackLLMFailure } from './analytics';
 import { NewsServiceClient, type SummarizeArticleResponse } from '@/generated/client/worldmonitor/news/v1/service_client';
 import { createCircuitBreaker } from '@/utils';
 
-export type SummarizationProvider = 'ollama' | 'groq' | 'openrouter' | 'minimax' | 'browser' | 'cache';
+export type SummarizationProvider = 'ollama' | 'groq' | 'openrouter' | 'minimax' | 'openai' | 'browser' | 'cache';
 
 export interface SummarizationResult {
   summary: string;
