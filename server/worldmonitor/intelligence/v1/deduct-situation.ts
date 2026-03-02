@@ -12,9 +12,9 @@ import { CHROME_UA } from '../../../_shared/constants';
 
 const DEDUCT_TIMEOUT_MS = 120_000;
 const DEDUCT_CACHE_TTL = 3600;
-const DEFAULT_API_URL = 'https://api.minimax.io/v1/chat/completions';
+const DEFAULT_API_URL = 'https://api.minimax.io/v1';
 const DEFAULT_MODEL = 'MiniMax-M2.5';
-const FALLBACK_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
+const FALLBACK_API_URL = 'https://api.groq.com/openai/v1';
 const FALLBACK_MODEL = 'llama-3.1-8b-instant';
 
 interface LLMConfig {
@@ -28,8 +28,9 @@ function getLlmConfig(): LLMConfig | null {
     // Try MiniMax first
     const minimaxKey = process.env.MINIMAX_API_KEY;
     if (minimaxKey) {
+        const baseUrl = process.env.LLM_API_URL || DEFAULT_API_URL;
         return {
-            apiUrl: process.env.LLM_API_URL || DEFAULT_API_URL,
+            apiUrl: new URL('/v1/chat/completions', baseUrl).toString(),
             model: process.env.LLM_MODEL || DEFAULT_MODEL,
             apiKey: minimaxKey,
             provider: 'minimax',
@@ -39,8 +40,9 @@ function getLlmConfig(): LLMConfig | null {
     // Fallback to Groq
     const groqKey = process.env.LLM_API_KEY || process.env.GROQ_API_KEY;
     if (groqKey) {
+        const baseUrl = process.env.LLM_API_URL || FALLBACK_API_URL;
         return {
-            apiUrl: process.env.LLM_API_URL || FALLBACK_API_URL,
+            apiUrl: new URL('/v1/chat/completions', baseUrl).toString(),
             model: process.env.LLM_MODEL || FALLBACK_MODEL,
             apiKey: groqKey,
             provider: 'groq',

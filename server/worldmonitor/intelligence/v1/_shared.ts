@@ -11,7 +11,7 @@ declare const process: { env: Record<string, string | undefined> };
 export const UPSTREAM_TIMEOUT_MS = 30_000;
 
 // MiniMax as primary (for coding plan)
-export const PRIMARY_API_URL = 'https://api.minimax.io/v1/chat/completions';
+export const PRIMARY_API_URL = 'https://api.minimax.io/v1';
 export const PRIMARY_MODEL = 'MiniMax-M2.5';
 
 // Groq as fallback
@@ -33,8 +33,9 @@ export function getLlmConfig(): LlmConfig | null {
     // Try MiniMax first
     const minimaxKey = process.env.MINIMAX_API_KEY;
     if (minimaxKey) {
+        const baseUrl = process.env.LLM_API_URL || PRIMARY_API_URL;
         return {
-            apiUrl: process.env.LLM_API_URL || PRIMARY_API_URL,
+            apiUrl: new URL('/v1/chat/completions', baseUrl).toString(),
             model: process.env.LLM_MODEL || PRIMARY_MODEL,
             apiKey: minimaxKey,
             provider: 'minimax',
@@ -44,8 +45,9 @@ export function getLlmConfig(): LlmConfig | null {
     // Fallback to Groq
     const groqKey = process.env.LLM_API_KEY || process.env.GROQ_API_KEY;
     if (groqKey) {
+        const baseUrl = process.env.LLM_API_URL || GROQ_API_URL;
         return {
-            apiUrl: process.env.LLM_API_URL || GROQ_API_URL,
+            apiUrl: new URL('/v1/chat/completions', baseUrl).toString(),
             model: process.env.LLM_MODEL || GROQ_MODEL,
             apiKey: groqKey,
             provider: 'groq',

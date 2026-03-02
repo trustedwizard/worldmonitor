@@ -200,9 +200,11 @@ export function getProviderCredentials(provider: string): ProviderCredentials | 
   if (provider === 'minimax') {
     const apiKey = process.env.MINIMAX_API_KEY;
     if (!apiKey) return null;
+    // Support custom endpoint via LLM_API_URL env var (base URL without /chat/completions)
+    const baseUrl = process.env.LLM_API_URL || 'https://api.minimax.io/v1';
     return {
-      apiUrl: 'https://api.minimax.io/v1/chat/completions',
-      model: 'MiniMax-M2.5',
+      apiUrl: new URL('/v1/chat/completions', baseUrl).toString(),
+      model: process.env.LLM_MODEL || 'MiniMax-M2.5',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
