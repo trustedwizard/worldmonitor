@@ -47,7 +47,7 @@ export function updateMetaTagsForStory(meta: StoryMeta): void {
 export function resetMetaTags(): void {
   const defaultTitle = 'Neural Newscast - Global Monitor';
   const defaultDesc = 'AI-powered global monitor with live news, markets, military tracking, and geopolitical data.';
-  const variantMeta = VARIANT_META[SITE_VARIANT];
+  const variantMeta = VARIANT_META[SITE_VARIANT] ?? VARIANT_META.full;
   
   setMetaTag('title', defaultTitle);
   setMetaTag('description', defaultDesc);

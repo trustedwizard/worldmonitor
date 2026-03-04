@@ -39,7 +39,6 @@ import {
   trackMapViewChange,
   trackMapLayerToggle,
   trackPanelToggled,
-  trackDownloadClicked,
 } from '@/services/analytics';
 import { invokeTauri } from '@/services/tauri-bridge';
 import { dataFreshness } from '@/services/data-freshness';
@@ -246,8 +245,6 @@ export class EventHandlerManager implements AppModule {
         this.setCopyLinkFeedback(button, 'Copy failed');
       }
     });
-
-    this.initShareButton();
 
     this.boundStorageHandler = (e: StorageEvent) => {
       if (e.key === STORAGE_KEYS.panels && e.newValue) {
