@@ -19,7 +19,7 @@ export type RuntimeSecretKey =
   | 'AISSTREAM_API_KEY'
   | 'FINNHUB_API_KEY'
   | 'NASA_FIRMS_API_KEY'
-  | 'UC_DP_KEY'
+  | 'UCDP_ACCESS_TOKEN'
   | 'OLLAMA_API_URL'
   | 'OLLAMA_MODEL'
   | 'WORLDMONITOR_API_KEY'
@@ -51,6 +51,7 @@ export type RuntimeFeatureId =
   | 'supplyChain'
   | 'newsPerFeedFallback'
   | 'aviationStack'
+  | 'ucdpConflicts'
   | 'icaoNotams';
 
 export interface RuntimeFeatureDefinition {
@@ -89,6 +90,7 @@ const defaultToggles: Record<RuntimeFeatureId, boolean> = {
   energyEia: true,
   internetOutages: true,
   acledConflicts: true,
+  ucdpConflicts: true,
   abuseChThreatIntel: true,
   alienvaultOtxThreatIntel: true,
   abuseIpdbThreatIntel: true,
@@ -168,6 +170,13 @@ export const RUNTIME_FEATURES: RuntimeFeatureDefinition[] = [
     description: 'Conflict and protest event feeds from ACLED.',
     requiredSecrets: ['ACLED_ACCESS_TOKEN'],
     fallback: 'Conflict/protest overlays are hidden.',
+  },
+  {
+    id: 'ucdpConflicts',
+    name: 'UCDP conflict events',
+    description: 'Armed conflict georeferenced event data from Uppsala Conflict Data Program.',
+    requiredSecrets: ['UCDP_ACCESS_TOKEN'],
+    fallback: 'UCDP conflict layer is disabled.',
   },
   {
     id: 'abuseChThreatIntel',

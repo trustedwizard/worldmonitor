@@ -5,8 +5,6 @@
  * to 'GET, POST, OPTIONS' (sebuf routes support GET and POST).
  */
 
-declare const process: { env: Record<string, string | undefined> };
-
 const PRODUCTION_PATTERNS: RegExp[] = [
   /^https:\/\/monitor\.neuralnewscast\.com$/,
   /^https:\/\/(.*\.)?neuralnewscast\.com$/,

@@ -5,6 +5,7 @@ import { mkdir, readFile, writeFile } from 'fs/promises';
 import { brotliCompress } from 'zlib';
 import { promisify } from 'util';
 import pkg from './package.json';
+import { VARIANT_META } from './src/config/variant-meta';
 
 const isE2E = process.env.VITE_E2E === '1';
 const isDesktopBuild = process.env.VITE_DESKTOP_RUNTIME === '1';
@@ -180,8 +181,8 @@ function htmlVariantPlugin(): Plugin {
         );
       }
 
-      // Inject build-time variant into the inline script so data-variant is set before CSS loads.
-      // Force the variant (don't let stale localStorage override the build-time setting).
+      // Desktop builds: inject build-time variant into the inline script so data-variant is set
+      // before CSS loads. Web builds always use 'full' — runtime hostname detection handles variants.
       if (activeVariant !== 'full') {
         result = result.replace(
           /if\(v\)document\.documentElement\.dataset\.variant=v;/,
@@ -203,7 +204,8 @@ function htmlVariantPlugin(): Plugin {
           );
       }
 
-      // Favicon variant paths — replace /favico/ paths with variant-specific subdirectory
+      // Desktop builds: replace favicon paths with variant-specific subdirectory.
+      // Web builds use 'full' favicons in HTML; runtime JS swaps them per hostname.
       if (activeVariant !== 'full') {
         result = result
           .replace(/\/favico\/favicon/g, `/favico/${activeVariant}/favicon`)
@@ -299,6 +301,8 @@ function sebufApiPlugin(): Plugin {
       positiveEventsServerMod, positiveEventsHandlerMod,
       givingServerMod, givingHandlerMod,
       tradeServerMod, tradeHandlerMod,
+      supplyChainServerMod, supplyChainHandlerMod,
+      naturalServerMod, naturalHandlerMod,
     ] = await Promise.all([
         import('./server/router'),
         import('./server/cors'),
@@ -343,6 +347,10 @@ function sebufApiPlugin(): Plugin {
         import('./server/worldmonitor/giving/v1/handler'),
         import('./src/generated/server/worldmonitor/trade/v1/service_server'),
         import('./server/worldmonitor/trade/v1/handler'),
+        import('./src/generated/server/worldmonitor/supply_chain/v1/service_server'),
+        import('./server/worldmonitor/supply-chain/v1/handler'),
+        import('./src/generated/server/worldmonitor/natural/v1/service_server'),
+        import('./server/worldmonitor/natural/v1/handler'),
       ]);
 
     const serverOptions = { onError: errorMod.mapErrorToResponse };
@@ -367,6 +375,8 @@ function sebufApiPlugin(): Plugin {
       ...positiveEventsServerMod.createPositiveEventsServiceRoutes(positiveEventsHandlerMod.positiveEventsHandler, serverOptions),
       ...givingServerMod.createGivingServiceRoutes(givingHandlerMod.givingHandler, serverOptions),
       ...tradeServerMod.createTradeServiceRoutes(tradeHandlerMod.tradeHandler, serverOptions),
+      ...supplyChainServerMod.createSupplyChainServiceRoutes(supplyChainHandlerMod.supplyChainHandler, serverOptions),
+      ...naturalServerMod.createNaturalServiceRoutes(naturalHandlerMod.naturalHandler, serverOptions),
     ];
     cachedCorsMod = corsMod;
     return routerMod.createRouter(allRoutes);
@@ -452,12 +462,19 @@ function sebufApiPlugin(): Plugin {
           // Route matching
           const matchedHandler = router.match(webRequest);
           if (!matchedHandler) {
-            res.statusCode = 404;
-            res.setHeader('Content-Type', 'application/json');
+            const allowed = router.allowedMethods(new URL(webRequest.url).pathname);
+            if (allowed.length > 0) {
+              res.statusCode = 405;
+              res.setHeader('Content-Type', 'application/json');
+              res.setHeader('Allow', allowed.join(', '));
+            } else {
+              res.statusCode = 404;
+              res.setHeader('Content-Type', 'application/json');
+            }
             for (const [key, value] of Object.entries(corsHeaders)) {
               res.setHeader(key, value);
             }
-            res.end(JSON.stringify({ error: 'Not found' }));
+            res.end(JSON.stringify({ error: res.statusCode === 405 ? 'Method not allowed' : 'Not found' }));
             return;
           }
 
@@ -706,6 +723,8 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,ico,png,svg,woff2}'],
         globIgnores: ['**/ml*.js', '**/onnx*.wasm', '**/locale-*.js'],
+        // globe.gl + three.js grows main bundle past the 2 MiB default limit
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         navigateFallback: null,
         skipWaiting: true,
         clientsClaim: true,

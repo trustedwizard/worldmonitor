@@ -8,12 +8,12 @@ import type { MarketData, ClusteredEvent } from '@/types';
 import type { PredictionMarket } from '@/services/prediction';
 import type { TimeRange } from '@/components';
 import type { Earthquake } from '@/services/earthquakes';
-import type { CountryBriefPage } from '@/components/CountryBriefPage';
+import type { CountryBriefPanel } from '@/components/CountryBriefPanel';
 import type { CountryTimeline } from '@/components/CountryTimeline';
 import type { PlaybackControl } from '@/components';
 import type { ExportPanel } from '@/utils';
 import type { UnifiedSettings } from '@/components/UnifiedSettings';
-import type { MobileWarningModal, PizzIntIndicator } from '@/components';
+import type { PizzIntIndicator } from '@/components';
 import type { ParsedMapUrlState } from '@/utils';
 import type { PositiveNewsFeedPanel } from '@/components/PositiveNewsFeedPanel';
 import type { CountersPanel } from '@/components/CountersPanel';
@@ -102,9 +102,8 @@ export interface AppContext {
   playbackControl: PlaybackControl | null;
   exportPanel: ExportPanel | null;
   unifiedSettings: UnifiedSettings | null;
-  mobileWarningModal: MobileWarningModal | null;
   pizzintIndicator: PizzIntIndicator | null;
-  countryBriefPage: CountryBriefPage | null;
+  countryBriefPage: CountryBriefPanel | null;
   countryTimeline: CountryTimeline | null;
 
   // Happy variant state

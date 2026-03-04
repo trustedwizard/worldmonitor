@@ -766,7 +766,11 @@ async function validateSecretAgainstProvider(key, rawValue, context = {}) {
     }
 
     case 'ACLED_ACCESS_TOKEN': {
-      const response = await fetchWithTimeout('https://acleddata.com/api/acled/read?_format=json&limit=1', {
+      const now = new Date();
+      const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+      const fmt = (d) => d.toISOString().split('T')[0];
+      const acledProbeUrl = `https://acleddata.com/api/acled/read?event_type=Protests&event_date=${fmt(weekAgo)}|${fmt(now)}&event_date_where=BETWEEN&limit=1&_format=json`;
+      const response = await fetchWithTimeout(acledProbeUrl, {
         headers: {
           Accept: 'application/json',
           Authorization: `Bearer ${value}`,
@@ -841,8 +845,8 @@ async function validateSecretAgainstProvider(key, rawValue, context = {}) {
     }
 
     case 'FINNHUB_API_KEY': {
-      const response = await fetchWithTimeout(`https://finnhub.io/api/v1/quote?symbol=AAPL&token=${encodeURIComponent(value)}`, {
-        headers: { Accept: 'application/json', 'User-Agent': CHROME_UA },
+      const response = await fetchWithTimeout(`https://finnhub.io/api/v1/quote?symbol=AAPL`, {
+        headers: { Accept: 'application/json', 'User-Agent': CHROME_UA, 'X-Finnhub-Token': value },
       });
       const text = await response.text();
       if (isCloudflareChallenge403(response, text)) return ok('Finnhub key stored (Cloudflare blocked verification)');
@@ -869,6 +873,26 @@ async function validateSecretAgainstProvider(key, rawValue, context = {}) {
       if (!response.ok) return fail(`NASA FIRMS probe failed (${response.status})`);
       if (/invalid api key|not authorized|forbidden/i.test(text)) return fail('NASA FIRMS rejected this key');
       return ok('NASA FIRMS key verified');
+    }
+
+    case 'UCDP_ACCESS_TOKEN': {
+      const year = new Date().getFullYear() - 2000;
+      const candidates = [...new Set([`${year}.1`, `${year - 1}.1`, '25.1', '24.1'])];
+      for (const version of candidates) {
+        try {
+          const response = await fetchWithTimeout(
+            `https://ucdpapi.pcr.uu.se/api/gedevents/${version}?pagesize=1`,
+            { headers: { Accept: 'application/json', 'x-ucdp-access-token': value, 'User-Agent': CHROME_UA } }
+          );
+          if (isAuthFailure(response.status)) return fail('UCDP rejected this token');
+          if (!response.ok) continue;
+          const text = await response.text();
+          let payload = null;
+          try { payload = JSON.parse(text); } catch { /* ignore */ }
+          if (Array.isArray(payload?.Result)) return ok(`UCDP token verified (GED v${version})`);
+        } catch { continue; }
+      }
+      return fail('Could not verify UCDP token (all GED versions failed)');
     }
 
     case 'OLLAMA_API_URL': {
@@ -1151,6 +1175,15 @@ async function dispatch(requestUrl, req, routes, context) {
       context.logger.error(`[register-interest] error: ${e.message}`);
       return json({ error: 'Registration service unreachable' }, 502);
     }
+  }
+
+  // YouTube live detection — requires residential proxy (Railway relay).
+  // Direct fetch from sidecar fails (YouTube blocks datacenter IPs).
+  // Always proxy to cloud, bypassing the cloudFallback flag.
+  if (requestUrl.pathname === '/api/youtube/live') {
+    const cloudResponse = await tryCloudFallback(requestUrl, req, context, 'youtube-live needs relay');
+    if (cloudResponse) return cloudResponse;
+    return json({ error: 'YouTube live detection unavailable' }, 503);
   }
 
   // RSS proxy — fetch public feeds with SSRF protection

@@ -48,6 +48,7 @@
     "regulation": "Dashboard voor AI-regulering",
     "serviceStatus": "Servicestatus",
     "stablecoins": "Stabiele munten",
+    "deduction": "Situatie afleiden",
     "events": "Technische evenementen",
     "techHubs": "Hottech-hubs",
     "techReadiness": "Tech Readiness-index",
@@ -72,6 +73,39 @@
     "gulfIndices": "Golfindices",
     "gulfCurrencies": "Golfvaluta",
     "gulfOil": "Golfolie"
+  },
+  "commands": {
+    "prefixes": {
+      "map": "Kaart",
+      "panel": "Paneel",
+      "brief": "Samenvatting"
+    },
+    "categories": {
+      "navigate": "Navigeren",
+      "layers": "Lagen",
+      "panels": "Panelen",
+      "view": "Weergave",
+      "actions": "Acties",
+      "country": "Land"
+    },
+    "regions": {
+      "global": "Globaal overzicht",
+      "mena": "Midden-Oosten & Noord-Afrika",
+      "eu": "Europa",
+      "asia": "Azië-Pacific",
+      "america": "Amerika",
+      "africa": "Afrika",
+      "latam": "Latijns-Amerika",
+      "oceania": "Oceanië"
+    },
+    "tips": {
+      "map": "Typ een landnaam om ernaartoe te vliegen op de kaart",
+      "panel": "Typ een paneelnaam om ernaartoe te scrollen",
+      "brief": "Typ een landnaam voor een inlichtingenbriefing",
+      "layers": "Typ \"military\" of \"finance\" voor laagpresets",
+      "time": "Typ \"1h\", \"24h\" of \"7d\" om te filteren op tijd",
+      "settings": "Typ \"dark mode\", \"settings\" of \"fullscreen\""
+    }
   },
   "modals": {
     "search": {
@@ -374,7 +408,12 @@
     "playback": {
       "live": "Live",
       "toggleMode": "Schakel de afspeelmodus in",
-      "historicalPlayback": "Historisch afspelen"
+      "historicalPlayback": "Historisch afspelen",
+      "close": "Dichtbij",
+      "skipToStart": "Skip to start",
+      "previous": "Previous",
+      "next": "Next",
+      "skipToEnd": "Skip to end"
     },
     "deckgl": {
       "views": {
@@ -447,7 +486,8 @@
         "tradeRoutes": "Handelsroutes",
         "gpsJamming": "GPS JAMMING",
         "dayNight": "Dag/Nacht",
-        "iranAttacks": "Iraanse aanvallen"
+        "iranAttacks": "Iraanse aanvallen",
+        "geopoliticalBoundaries": "Geopolitieke Grenzen"
       },
       "layersTitle": "Lagen",
       "layerGuide": "Lagengids",
@@ -553,7 +593,8 @@
           "mineralsFull": "Strategische minerale afzettingen en mijnbouwlocaties",
           "techCyberThreats": "Cyberaanvallen en beveiligingsincidenten",
           "techEvents": "Grote techconferenties en evenementen",
-          "techFires": "Actieve bosbranden nabij technische infrastructuur"
+          "techFires": "Actieve bosbranden nabij technische infrastructuur",
+          "geoBoundaries": "Gedemilitariseerde zones, staakt-het-vuren-lijnen en betwiste grenzen"
         },
         "notes": {
           "timeAffects": "BeÃ¯nvloedt: aardbevingen, weer, protesten, stroomstoringen"
@@ -1041,7 +1082,9 @@
       "badgeAnimDesc": "Update-badges in paneelkoppen animeren",
       "sectionIntelligence": "Inlichtingen",
       "headlineMemoryLabel": "Koptekstgeheugen",
-      "headlineMemoryDesc": "Gezien koppen onthouden om nieuwe te markeren"
+      "headlineMemoryDesc": "Gezien koppen onthouden om nieuwe te markeren",
+      "streamAlwaysOnLabel": "Live streams actief houden",
+      "streamAlwaysOnDesc": "Voorkomt dat Live Cams en Live News automatisch pauzeren wanneer je inactief bent. Aanbevolen voor tweede monitor / wallboard-gebruik. Schakel uit (Eco) om CPU/bandbreedte te besparen."
     },
     "techHubs": {
       "infoTooltip": "<strong>Tech Hub-activiteit</strong><br>Toont tech-hubs met de meeste nieuwsactiviteit.<br><br><em>Activiteitsniveaus:</em><br>â€¢ <span style=\"color: {{highColor}}\">Hoog</span> â€” Breaking news of 50+ score<br>â€¢ <span style=\"color: {{elevatedColor}}\">Verhoogd</span> â€” Score 20-49<br>â€¢ <span style=\"color: {{lowColor}}\">Laag</span> â€” Score lager dan 20<br><br>Klik op een hub om naar de locatie ervan te zoomen.",
@@ -1128,8 +1171,8 @@
         "regime": "Regime",
         "btcTrend": "BTC Trend",
         "hashRate": "Hash Rate",
-        "mining": "Mining",
-        "fearGreed": "Fear &amp; Greed"
+        "fearGreed": "Fear &amp; Greed",
+        "momentum": "Momentum"
       }
     },
     "export": {
@@ -1193,7 +1236,7 @@
     "liveNews": {
       "retry": "Retry",
       "notLive": "{{name}} is not currently live",
-      "cannotEmbed": "{{name}} cannot be embedded in this app (YouTube {{code}})",
+      "cannotEmbed": "{{name}} kan hier niet worden afgespeeld — mogelijk beperkt in uw regio (fout {{code}})",
       "openOnYouTube": "Open on YouTube",
       "manage": "Kanalen beheren",
       "addChannel": "Kanaal toevoegen",
@@ -1210,6 +1253,7 @@
       "restoreDefaults": "Standaardkanalen herstellen",
       "availableChannels": "Beschikbare kanalen",
       "customChannel": "Aangepast kanaal",
+      "regionAll": "Alle",
       "regionNorthAmerica": "Noord-Amerika",
       "regionEurope": "Europa",
       "regionLatinAmerica": "Latijns-Amerika",
@@ -1777,6 +1821,19 @@
     },
     "iranEvent": {
       "relatedEvents": "Gerelateerde gebeurtenissen"
+    },
+    "geopoliticalBoundary": {
+      "title": "GEOPOLITIEKE GRENS",
+      "established": "OPGERICHT",
+      "dimensions": "AFMETINGEN",
+      "legalBasis": "JURIDISCHE BASIS",
+      "parties": "ONDERTEKENAARS",
+      "types": {
+        "demilitarized": "GEDEMILITARISEERDE ZONE",
+        "ceasefire": "STAAKT-HET-VUREN-LIJN",
+        "disputed": "BETWISTE GRENS",
+        "armistice": "WAPENSTILSTANDSLIJN"
+      }
     }
   },
   "signals": {
@@ -2007,6 +2064,7 @@
     "sourceRegionFinRegulation": "Financial Regulation",
     "sourceRegionGulfMena": "Golf & MENA",
     "filterPanels": "Panels filteren...",
+    "resetLayout": "Layout resetten",
     "panelCatCore": "Kern",
     "panelCatIntelligence": "Inlichtingen",
     "panelCatRegionalNews": "Regionaal Nieuws",

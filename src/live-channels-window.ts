@@ -8,12 +8,13 @@ import {
   saveChannelsToStorage,
   BUILTIN_IDS,
   getDefaultLiveChannels,
-  OPTIONAL_LIVE_CHANNELS,
-  OPTIONAL_CHANNEL_REGIONS,
+  getFilteredOptionalChannels,
+  getFilteredChannelRegions,
 } from '@/components/LiveNewsPanel';
 import { t } from '@/services/i18n';
 import { escapeHtml } from '@/utils/sanitize';
 import { isDesktopRuntime, getRemoteApiBaseUrl } from '@/services/runtime';
+import { resolveUserCountryCode } from '@/utils/user-location';
 
 /** Builds a stable custom channel id from a YouTube handle (e.g. @Foo -> custom-foo). */
 function customChannelIdFromHandle(handle: string): string {
@@ -56,19 +57,21 @@ function parseYouTubeInput(raw: string): { handle: string } | { videoId: string 
 }
 
 // Persist active region tab across re-renders
-let activeRegionTab = OPTIONAL_CHANNEL_REGIONS[0]?.key ?? 'na';
-
-// Build a lookup map: channel id → LiveChannel for optional channels
-const optionalChannelMap = new Map<string, LiveChannel>();
-for (const c of OPTIONAL_LIVE_CHANNELS) optionalChannelMap.set(c.id, c);
+let activeRegionTab = 'all';
 
 function channelInitials(name: string): string {
   return name.split(/[\s-]+/).map((w) => w[0] ?? '').join('').slice(0, 2).toUpperCase();
 }
 
-export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
+export async function initLiveChannelsWindow(containerEl?: HTMLElement): Promise<void> {
   const appEl = containerEl ?? document.getElementById('app');
   if (!appEl) return;
+
+  const userCountry = await resolveUserCountryCode();
+  const filteredChannels = getFilteredOptionalChannels(userCountry);
+  const filteredRegions = getFilteredChannelRegions(userCountry);
+  const optionalChannelMap = new Map<string, LiveChannel>();
+  for (const c of filteredChannels) optionalChannelMap.set(c.id, c);
 
   if (!containerEl) {
     document.title = `${t('components.liveNews.manage') ?? 'Channel management'} - World Monitor`;
@@ -76,6 +79,7 @@ export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
 
   let channels = loadChannelsFromStorage();
   let suppressRowClick = false;
+  let searchQuery = '';
 
   /** Reads current row order from DOM and persists to storage. */
   function applyOrderFromDom(listEl: HTMLElement): void {
@@ -142,6 +146,7 @@ export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
   function renderList(listEl: HTMLElement): void {
     listEl.innerHTML = '';
     for (const ch of channels) {
+      const isCustom = !BUILTIN_IDS.has(ch.id);
       const row = document.createElement('div');
       row.className = 'live-news-manage-row';
       row.dataset.channelId = ch.id;
@@ -151,13 +156,25 @@ export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
       nameSpan.textContent = ch.name ?? '';
       row.appendChild(nameSpan);
 
-      row.addEventListener('click', (e) => {
-        // Suppress click immediately after drag-drop to avoid accidental edit open.
-        if (suppressRowClick || row.classList.contains('live-news-manage-row-dragging')) return;
-        if ((e.target as HTMLElement).closest('input, button, textarea, select')) return;
-        e.preventDefault();
-        showEditForm(row, ch, listEl);
+      const removeX = document.createElement('span');
+      removeX.className = 'live-news-manage-row-remove-x';
+      removeX.textContent = '✕';
+      removeX.addEventListener('click', (e) => {
+        e.stopPropagation();
+        channels = channels.filter((c) => c.id !== ch.id);
+        saveChannelsToStorage(channels);
+        renderList(listEl);
       });
+      row.appendChild(removeX);
+
+      if (isCustom) {
+        row.addEventListener('click', (e) => {
+          if (suppressRowClick || row.classList.contains('live-news-manage-row-dragging')) return;
+          if ((e.target as HTMLElement).closest('input, button, textarea, select, .live-news-manage-row-remove-x')) return;
+          e.preventDefault();
+          showEditForm(row, ch, listEl);
+        });
+      }
 
       listEl.appendChild(row);
     }
@@ -273,16 +290,28 @@ export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
     if (!tabBar || !tabContents) return;
 
     const currentIds = new Set(channels.map((c) => c.id));
+    const term = searchQuery.toLowerCase().trim();
 
     // Render tab buttons
     tabBar.innerHTML = '';
-    for (const region of OPTIONAL_CHANNEL_REGIONS) {
-      const addedCount = region.channelIds.filter((id) => currentIds.has(id)).length;
+    for (const region of filteredRegions) {
+      const regionChannels = region.channelIds
+        .map(id => optionalChannelMap.get(id))
+        .filter((ch): ch is LiveChannel => !!ch);
+
+      const matchingChannels = term
+        ? regionChannels.filter(ch => ch.name.toLowerCase().includes(term) || ch.handle.toLowerCase().includes(term))
+        : regionChannels;
+
+      const addedCount = matchingChannels.filter(ch => currentIds.has(ch.id)).length;
+
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'live-news-manage-tab-btn' + (region.key === activeRegionTab ? ' active' : '');
       const label = t(region.labelKey) ?? region.key.toUpperCase();
-      btn.textContent = addedCount > 0 ? `${label} (${addedCount})` : label;
+      btn.textContent = term
+        ? `${label} (${matchingChannels.length})`
+        : addedCount > 0 ? `${label} (${addedCount})` : label;
       btn.addEventListener('click', () => {
         activeRegionTab = region.key;
         renderAvailableChannels(listEl);
@@ -292,21 +321,31 @@ export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
 
     // Render tab content panels
     tabContents.innerHTML = '';
-    for (const region of OPTIONAL_CHANNEL_REGIONS) {
+    for (const region of filteredRegions) {
       const panel = document.createElement('div');
       panel.className = 'live-news-manage-tab-content' + (region.key === activeRegionTab ? ' active' : '');
 
       const grid = document.createElement('div');
       grid.className = 'live-news-manage-card-grid';
 
+      let matchCount = 0;
       for (const chId of region.channelIds) {
         const ch = optionalChannelMap.get(chId);
         if (!ch) continue;
+        if (term && !ch.name.toLowerCase().includes(term) && !ch.handle.toLowerCase().includes(term)) continue;
         const isAdded = currentIds.has(chId);
         grid.appendChild(createCard(ch, isAdded, listEl));
+        matchCount++;
       }
 
-      panel.appendChild(grid);
+      if (matchCount === 0 && term) {
+        const empty = document.createElement('div');
+        empty.className = 'live-news-manage-empty';
+        empty.textContent = (t('components.liveNews.noResults') ?? 'No channels found matching "{{term}}"').replace('{{term}}', term);
+        panel.appendChild(empty);
+      } else {
+        panel.appendChild(grid);
+      }
       tabContents.appendChild(panel);
     }
   }
@@ -338,14 +377,23 @@ export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
     card.appendChild(info);
     card.appendChild(action);
 
-    if (!isAdded) {
-      card.addEventListener('click', () => {
+    card.addEventListener('mouseenter', () => {
+      if (card.classList.contains('added')) action.textContent = '✕';
+    });
+    card.addEventListener('mouseleave', () => {
+      if (card.classList.contains('added')) action.textContent = '✓';
+    });
+
+    card.addEventListener('click', () => {
+      if (isAdded) {
+        channels = channels.filter((c) => c.id !== ch.id);
+      } else {
         if (channels.some((c) => c.id === ch.id)) return;
         channels.push({ ...ch });
-        saveChannelsToStorage(channels);
-        renderList(listEl);
-      });
-    }
+      }
+      saveChannelsToStorage(channels);
+      renderList(listEl);
+    });
     return card;
   }
 
@@ -362,7 +410,15 @@ export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
         </div>
         <div class="live-news-manage-list" id="liveChannelsList"></div>
         <div class="live-news-manage-available-section">
-          <span class="live-news-manage-add-title">${escapeHtml(t('components.liveNews.availableChannels') ?? 'Available channels')}</span>
+          <div class="live-news-manage-available-header">
+            <span class="live-news-manage-add-title">${escapeHtml(t('components.liveNews.availableChannels') ?? 'Available channels')}</span>
+            <div class="live-news-manage-search-wrap">
+              <span class="live-news-manage-search-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              </span>
+              <input type="text" id="liveChannelsSearch" class="live-news-manage-search-input" placeholder="${escapeHtml(t('header.search') ?? 'Search')}..." autocomplete="off" />
+            </div>
+          </div>
           <div class="live-news-manage-tab-bar" id="liveChannelsTabBar"></div>
           <div class="live-news-manage-tab-contents" id="liveChannelsTabContents"></div>
         </div>
@@ -506,5 +562,13 @@ export function initLiveChannelsWindow(containerEl?: HTMLElement): void {
     renderList(listEl);
     if (handleInput) handleInput.value = '';
     if (nameInput) nameInput.value = '';
+  });
+
+  let searchDebounce: ReturnType<typeof setTimeout> | null = null;
+  const searchInput = document.getElementById('liveChannelsSearch') as HTMLInputElement | null;
+  searchInput?.addEventListener('input', (e) => {
+    searchQuery = (e.target as HTMLInputElement).value;
+    if (searchDebounce) clearTimeout(searchDebounce);
+    searchDebounce = setTimeout(() => renderAvailableChannels(listEl), 150);
   });
 }

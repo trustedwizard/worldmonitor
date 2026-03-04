@@ -126,6 +126,7 @@
     "sourceRegionFinRegulation": "Finanzregulierung",
     "sourceRegionGulfMena": "Golf & MENA",
     "filterPanels": "Panels filtern...",
+    "resetLayout": "Layout zurücksetzen",
     "panelCatCore": "Kern",
     "panelCatIntelligence": "Nachrichtendienst",
     "panelCatRegionalNews": "Regionale Nachrichten",
@@ -182,6 +183,7 @@
     "macroSignals": "Markt-Radar",
     "etfFlows": "BTC ETF-Tracker",
     "stablecoins": "Stablecoins",
+    "deduction": "Lagebeurteilung",
     "ucdpEvents": "UCDP Konfliktereignisse",
     "giving": "Globale Spenden",
     "supplyChain": "Lieferkette",
@@ -217,6 +219,39 @@
     "gulfIndices": "Golf-Indizes",
     "gulfCurrencies": "Golf-Währungen",
     "gulfOil": "Golf-Öl"
+  },
+  "commands": {
+    "prefixes": {
+      "map": "Karte",
+      "panel": "Panel",
+      "brief": "Kurzübersicht"
+    },
+    "categories": {
+      "navigate": "Navigieren",
+      "layers": "Ebenen",
+      "panels": "Panels",
+      "view": "Ansicht",
+      "actions": "Aktionen",
+      "country": "Land"
+    },
+    "regions": {
+      "global": "Globale Ansicht",
+      "mena": "Naher Osten & Nordafrika",
+      "eu": "Europa",
+      "asia": "Asien-Pazifik",
+      "america": "Amerika",
+      "africa": "Afrika",
+      "latam": "Lateinamerika",
+      "oceania": "Ozeanien"
+    },
+    "tips": {
+      "map": "Geben Sie einen Ländernamen ein, um dorthin auf der Karte zu fliegen",
+      "panel": "Geben Sie einen Panelnamen ein, um dorthin zu scrollen",
+      "brief": "Geben Sie einen Ländernamen für ein Nachrichtenbriefing ein",
+      "layers": "Geben Sie \"military\" oder \"finance\" für Ebenen-Voreinstellungen ein",
+      "time": "Geben Sie \"1h\", \"24h\" oder \"7d\" ein, um nach Zeit zu filtern",
+      "settings": "Geben Sie \"dark mode\", \"settings\" oder \"fullscreen\" ein"
+    }
   },
   "modals": {
     "search": {
@@ -703,7 +738,8 @@
         "tradeRoutes": "Handelsrouten",
         "iranAttacks": "Iran-Angriffe",
         "gpsJamming": "GPS JAMMING",
-        "dayNight": "Tag/Nacht"
+        "dayNight": "Tag/Nacht",
+        "geopoliticalBoundaries": "Geopolitische Grenzen"
       },
       "layersTitle": "Schichten",
       "layerGuide": "EbenenfÃ¼hrer",
@@ -809,7 +845,8 @@
           "techCyberThreats": "Cyberangriffe und Sicherheitsereignisse",
           "techEvents": "Große Technologiekonferenzen und -veranstaltungen",
           "techFires": "Aktive Waldbrände in der Nähe von Technologieinfrastruktur",
-          "financeGulfInvestments": "GCC-Staatsfonds-Investitionen und ausländische Direktinvestitionen"
+          "financeGulfInvestments": "GCC-Staatsfonds-Investitionen und ausländische Direktinvestitionen",
+          "geoBoundaries": "Entmilitarisierte Zonen, Waffenstillstandslinien und umstrittene Grenzen"
         },
         "notes": {
           "timeAffects": "Betrifft: Erdbeben, Wetter, Proteste, AusfÃ¤lle"
@@ -887,7 +924,12 @@
     "playback": {
       "toggleMode": "Schalten Sie den Wiedergabemodus um",
       "historicalPlayback": "Historische Wiedergabe",
-      "live": "LIVE"
+      "live": "LIVE",
+      "close": "Schließen",
+      "skipToStart": "Skip to start",
+      "previous": "Previous",
+      "next": "Next",
+      "skipToEnd": "Skip to end"
     },
     "stablecoins": {
       "pegHealth": "BindungsstabilitÃ¤t",
@@ -1291,7 +1333,9 @@
       "badgeAnimDesc": "Update-Badges in Panel-Kopfzeilen animieren",
       "sectionIntelligence": "Intelligence",
       "headlineMemoryLabel": "Schlagzeilen-Speicher",
-      "headlineMemoryDesc": "Gesehene Schlagzeilen merken, um neue hervorzuheben"
+      "headlineMemoryDesc": "Gesehene Schlagzeilen merken, um neue hervorzuheben",
+      "streamAlwaysOnLabel": "Live-Streams weiterlaufen lassen",
+      "streamAlwaysOnDesc": "Verhindert, dass Live Cams und Live News bei Inaktivität automatisch pausieren. Empfohlen für Zweitmonitor-/Wallboard-Nutzung. Zum Sparen von CPU/Bandbreite deaktivieren (Eco)."
     },
     "export": {
       "exportData": "Daten exportieren"
@@ -1326,8 +1370,8 @@
         "regime": "Regime",
         "btcTrend": "BTC-Trend",
         "hashRate": "Hash Rate",
-        "mining": "Mining",
-        "fearGreed": "Angst &amp; Gier"
+        "fearGreed": "Angst &amp; Gier",
+        "momentum": "Momentum"
       }
     },
     "runtimeConfig": {
@@ -1388,7 +1432,7 @@
     "liveNews": {
       "retry": "Retry",
       "notLive": "{{name}} is not currently live",
-      "cannotEmbed": "{{name}} cannot be embedded in this app (YouTube {{code}})",
+      "cannotEmbed": "{{name}} kann hier nicht abgespielt werden — möglicherweise in Ihrer Region eingeschränkt (Fehler {{code}})",
       "botCheck": "YouTube verlangt eine Anmeldung, um {{name}} abzuspielen",
       "signInToYouTube": "Bei YouTube anmelden",
       "openOnYouTube": "Auf YouTube öffnen",
@@ -1407,6 +1451,7 @@
       "restoreDefaults": "StandardkanÃ¤le wiederherstellen",
       "availableChannels": "VerfÃ¼gbare KanÃ¤le",
       "customChannel": "Benutzerdefinierter Kanal",
+      "regionAll": "Alle",
       "regionNorthAmerica": "Nordamerika",
       "regionEurope": "Europa",
       "regionLatinAmerica": "Lateinamerika",
@@ -1926,6 +1971,19 @@
       "uae_ecsr": "VAE/ECSR",
       "venezuela_crisis": "Venezuela-Krise",
       "yemen_houthis": "Jemen/Houthis"
+    },
+    "geopoliticalBoundary": {
+      "title": "GEOPOLITISCHE GRENZE",
+      "established": "ERRICHTET",
+      "dimensions": "ABMESSUNGEN",
+      "legalBasis": "RECHTSGRUNDLAGE",
+      "parties": "UNTERZEICHNER",
+      "types": {
+        "demilitarized": "ENTMILITARISIERTE ZONE",
+        "ceasefire": "WAFFENSTILLSTANDSLINIE",
+        "disputed": "UMSTRITTENE GRENZE",
+        "armistice": "WAFFENSTILLSTANDSLINIE"
+      }
     }
   },
   "signals": {
