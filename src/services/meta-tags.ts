@@ -1,6 +1,9 @@
 // Dynamic Meta Tags Service for Neural Newscast - Global Monitor
 // Updates OG tags and Twitter Cards for shared stories
 
+import { VARIANT_META } from '@/config/variant-meta';
+import { SITE_VARIANT } from '@/config/variant';
+
 interface StoryMeta {
   countryCode: string;
   countryName: string;
@@ -44,6 +47,7 @@ export function updateMetaTagsForStory(meta: StoryMeta): void {
 export function resetMetaTags(): void {
   const defaultTitle = 'Neural Newscast - Global Monitor';
   const defaultDesc = 'AI-powered global monitor with live news, markets, military tracking, and geopolitical data.';
+  const variantMeta = VARIANT_META[SITE_VARIANT];
   
   setMetaTag('title', defaultTitle);
   setMetaTag('description', defaultDesc);

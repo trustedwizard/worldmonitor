@@ -113,3 +113,11 @@ export function trackWebcamRegionFiltered(_region: string): void {
 export function trackDeeplinkOpened(_type: string, _target: string): void {
   // Intentionally no-op.
 }
+
+export function trackDownloadClicked(_platform: string): void {
+  // Intentionally no-op.
+}
+
+export function trackHotspotActivity(_lat: number, _lon: number, _weight: number = 1): void {
+  // Intentionally no-op.
+}
